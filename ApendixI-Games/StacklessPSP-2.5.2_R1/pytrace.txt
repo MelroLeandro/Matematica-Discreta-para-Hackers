@@ -1,0 +1,375 @@
+-------------- Python-PSP started Sun Jan 13 01:40:43 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+Error - could not open script.py
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sun Jan 13 01:45:28 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+Traceback (most recent call last):
+  File "script.py", line 331, in <module>
+    aux = psp2d.Image(480, 272)
+SystemError: NULL result without error in PyObject_Call
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sun Jan 13 01:52:03 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:605: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sun Jan 13 01:54:04 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:605: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+Traceback (most recent call last):
+  File "script.py", line 483, in <module>
+    lista_estrelas= inicializa_estrelas(lista_estrelas,nivel)
+NameError: name 'nivel' is not defined
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sun Jan 13 01:59:01 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:605: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sun Jan 13 02:09:18 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:605: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+Traceback (most recent call last):
+  File "script.py", line 483, in <module>
+    lista_estrelas= inicializa_estrelas(lista_estrelas,nivel)
+NameError: name 'nivel' is not defined
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sun Jan 13 02:20:34 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+Traceback (most recent call last):
+  File "script.py", line 331, in <module>
+    aux = psp2d.Image(480, 272)
+SystemError: NULL result without error in PyObject_Call
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sun Jan 13 02:21:23 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+Traceback (most recent call last):
+  File "script.py", line 331, in <module>
+    aux = psp2d.Image(480, 272)
+SystemError: NULL result without error in PyObject_Call
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sun Jan 13 02:24:05 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+Traceback (most recent call last):
+  File "script.py", line 331, in <module>
+    aux = psp2d.Image(480, 272)
+SystemError: NULL result without error in PyObject_Call
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sun Jan 13 02:26:30 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sun Jan 13 02:27:21 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:605: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+Traceback (most recent call last):
+  File "script.py", line 483, in <module>
+    lista_estrelas= inicializa_estrelas(lista_estrelas,nivel)
+NameError: name 'nivel' is not defined
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sun Jan 13 02:35:46 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:605: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sun Jan 13 02:38:32 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:605: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+Traceback (most recent call last):
+  File "script.py", line 544, in <module>
+    image = psp2d.Image(480, 272)
+SystemError: NULL result without error in PyObject_Call
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sun Jan 13 03:56:37 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:610: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sun Jan 13 04:15:27 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:611: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sun Jan 13 04:33:23 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:614: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sun Jan 13 17:23:17 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:614: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Tue Jan 22 17:19:27 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:614: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Tue Feb  5 14:43:58 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:614: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Tue Feb  5 14:51:28 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:614: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Tue Feb  5 14:54:10 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:614: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sun Jan 23 03:01:50 2011
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+-------------- Python-PSP started Sun Jan 23 13:48:26 2011
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:614: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sun Jan 23 15:42:01 2011
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:614: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Thu Sep 12 23:47:25 2013
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:614: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sat Jan 18 23:23:43 2014
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sat Jan 18 23:24:28 2014
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sun Jan 19 08:43:56 2014
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sun Jan 19 08:44:32 2014
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:614: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Sun Jan 19 08:46:19 2014
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:614: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Thu Jan 20 00:15:34 2011
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:614: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Thu Jan 20 00:18:20 2011
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:614: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+--------------------------------------------------------------------------------
+-------------- Python-PSP started Thu Jan 20 05:48:00 2011
+
+Free memory: 719872
+PyPSP running in: ms0:/PSP/GAME/StacklessPSP-2.5.2_R1
+Could not find platform independent libraries <prefix>
+Consider setting $PYTHONHOME to <prefix>[:<exec_prefix>]
+Search path: python.zip;ms0:/lib/python21.zip;ms0:/python/site-packages;ms0:/python
+
+script.py:614: DeprecationWarning: integer argument expected, got float
+  font.drawText(image,120+52-math.log10(pontos)*7,266-17,str(pontos))
+--------------------------------------------------------------------------------
