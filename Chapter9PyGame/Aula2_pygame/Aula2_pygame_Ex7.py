@@ -32,7 +32,7 @@
 #   OVNI devem ser emitidos sons diferentes.   
 #
  
-import pygame
+import pygame_sdl2 as pygame
 
 black = [  0,  0,  0]
 white = [255,255,255]

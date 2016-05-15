@@ -1,5 +1,5 @@
 # -*- coding: cp1252 -*-
-import pygame
+import pygame_sdl2 as pygame
 
 black = [  0,  0,  0]
 white = [255,255,255]
@@ -18,12 +18,18 @@ clock = pygame.time.Clock()
 
 background = pygame.image.load("fundo.jpg").convert()
 
-# Carrega imagens - Jogador
-NaveU = pygame.image.load("nave.png").convert()
-NaveU.set_colorkey([191,220,191])
-NaveE = pygame.image.load("naveE.png").convert()
-NaveE.set_colorkey([191,220,191])
-NaveD = pygame.image.load("naveD.png").convert()
+# Carrega imagens - Jogador
+
+NaveU = pygame.image.load("nave.png").convert()
+
+NaveU.set_colorkey([191,220,191])
+
+NaveE = pygame.image.load("naveE.png").convert()
+
+NaveE.set_colorkey([191,220,191])
+
+NaveD = pygame.image.load("naveD.png").convert()
+
 NaveD.set_colorkey([191,220,191])
 
 moveX=0
@@ -38,18 +44,28 @@ while done==False:
         if event.type == pygame.QUIT: 
             done=True
         if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_LEFT:
-                moveX = -1
-                if event.key == pygame.K_RIGHT:
-                    moveX = 1                
+            if event.key == pygame.K_LEFT:
+
+                moveX = -1
+
+                if event.key == pygame.K_RIGHT:
+
+                    moveX = 1                
+
                 if event.key == pygame.K_UP:
-                    moveY = -1
+                    moveY = -1
+
                 if event.key == pygame.K_DOWN:
-                    moveY = 1
-        # Anula movimento quando a tecla é largada
-        if event.type == pygame.KEYUP:
-            if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
-                moveX = 0                
+                    moveY = 1
+
+        # Anula movimento quando a tecla é largada
+
+        if event.type == pygame.KEYUP:
+
+            if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
+
+                moveX = 0                
+
             if event.key == pygame.K_UP or event.key == pygame.K_DOWN:
                 moveY = 0
  
