@@ -1,9 +1,9 @@
 ---
 layout: project
 title:  "Descrição"
-description: " Matemática Discreta para Hackers"
+description: " atemática Discreta para Hackers"
 header-img: "img/home-bg.jpg"
-category:  Python
+category:  python
 ---
 
  Matemática Discreta para Hackers
