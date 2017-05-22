@@ -607,8 +607,9 @@ As duas primeiras linhas da tabela da implicação
 não apresentam qualquer problema sob o ponto de vista intuitivo do senso comum. Quanto às duas últimas, qualquer outra escolha possível apresenta desvantagens sob o ponto de vista lógico, o que levou à escolha das soluções apresentadas, já que:
 
 1. fazendo F na 3º linha e F na 4º linha, obtém-se a tabela da conjunção
-+ fazendo F na 3º linha e V na 4º linha, obtém-se a tabela da bi-implicação
-+ resta a possibilidade de fazer V na 3º linha e F na 4º linha que também não é, pois isso equivaleria a recusar a equivalência
+1. fazendo F na 3º linha e V na 4º linha, obtém-se a tabela da bi-implicação
+1. resta a possibilidade de fazer V na 3º linha e F na 4º linha que também não é, pois isso equivaleria a recusar a equivalência
+
 $$
 (p\rightarrow q)\Leftrightarrow(\neg q\rightarrow\neg p)
 $$
@@ -645,14 +646,14 @@ F & V & F \\
 A partir duma implicação $r$ dada por $p\rightarrow q$ define-se as
 proposições:
 1. $q\rightarrow p$, designada de *recíproca* da implicação $r$;
-+ $\neg q\rightarrow \neg p$, designada por *contra-recíproca* de $r$;
-+ $\neg p\rightarrow \neg q$, designada por *inversa* de $r$.
+1. $\neg q\rightarrow \neg p$, designada por *contra-recíproca* de $r$;
+1. $\neg p\rightarrow \neg q$, designada por *inversa* de $r$.
 Observe-se que, embora a contra-recíproca seja equivalente à proposição original, o mesmo não acontece com a recíproca (e a inversa, que lhe é equivalente) o que se pode verificar através das respectivas tabelas de verdade.
 
 
 #### Exercício
 Determine:
 1. a contra-recíproca de $(\neg p)\rightarrow q$
-+ a inversa de $(\neg q)\rightarrow p$
-+ a recíproca da inversa de $q\rightarrow (\neg p)$
-+ a negação de $p\rightarrow (\neg q)$
+1. a inversa de $(\neg q)\rightarrow p$
+1. a recíproca da inversa de $q\rightarrow (\neg p)$
+1. a negação de $p\rightarrow (\neg q)$
