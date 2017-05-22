@@ -3,8 +3,8 @@ layout: post
 title: "Descrição"
 subtitle: "Matemática Discreta para Hackers"
 author:  Mellean
-tags:   python
-category:  descricao
+tags:   python descricao
+category:  python
 visualworkflow: false
 ---
 <!-- Start Writing Below in Markdown -->
