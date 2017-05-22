@@ -3,8 +3,8 @@ layout: post
 title:  Int
 subtitle: Matemica Discreta para Hackers
 author:  Mellean
-tags:   Python
-category:  Python
+tags:   python
+category:  python
 visualworkflow: false
 ---
 <!-- Start Writing Below in Markdown -->
