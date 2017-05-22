@@ -4,7 +4,7 @@ title: "Descrição"
 subtitle: "Matemática Discreta para Hackers"
 author:  Mellean
 tags:   python
-category:  python
+category:  descricao
 visualworkflow: false
 ---
 <!-- Start Writing Below in Markdown -->
