@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "Capítulo 1: Introdução"
-subtitle: "Matemática Discreta para Hackers"
+title:  Capítulo 1: Introdução
+subtitle: Matemática Discreta para Hackers
 author:  Mellean
 tags:   Python
 category:  Python
 visualworkflow: false
 ---
+<!-- Start Writing Below in Markdown -->
 
 Matemática Discreta para Hackers
 =====
