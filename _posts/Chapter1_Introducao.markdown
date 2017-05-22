@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Introdução
-subtitle: Matemática Discreta para Hackers
+title:  Int
+subtitle: Matemica Discreta para Hackers
 author:  Mellean
 tags:   Python
 category:  Python
