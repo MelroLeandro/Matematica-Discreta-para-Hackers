@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Protein local propensity</title>
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/update/2015/06/20/Protein-local-propensit.html">
+  <link rel="alternate" type="application/rss+xml" title="Protein periodicity" href="/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">Protein periodicity</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Protein local propensity</h1>
+    <p class="post-meta">
+      <time datetime="2015-06-20T15:03:31+01:00" itemprop="datePublished">
+        
+        Jun 20, 2015
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<h1 id="protein-structure">Protein structure</h1>
+
+<p>The method described in this work will be evaluated for the kinematic analysis of polypeptide chains. Biological proteins are polymeric chains build from amino acid monomers. These amino acids contain five chemical components: a central <script type="math/tex">\alpha</script>-carbon (<script type="math/tex">C_\alpha</script>), an <script type="math/tex">\alpha</script>-proton (<script type="math/tex">H</script>), an amino functional group (<script type="math/tex">-NH</script>), a carboxylic acid functional group (<script type="math/tex">-COOH</script>), a side chain group (<script type="math/tex">R</script>)</p>
+
+<p><img src="../../../../../images/AminoAcid.png" alt="Image" width="500px" /></p>
+
+<p><em>Figure  1: Amino acid.</em></p>
+
+<p>Amino acids are molecules containing an amine group (<script type="math/tex">H_2N</script>-), a carboxylic acid group (-<script type="math/tex">COOH</script>), and a side chain (<script type="math/tex">R</script>) that is pecific to each amino acide. The first carbon that attaches to a functional group is named apha-carbon (<script type="math/tex">C_\alpha</script>).</p>
+
+<p>The residual side chain group differentiates the common biological amino acids, and is the main factor of the peptide chains local stable conformations. These amino acids combine to become proteins through an energy-driven combination. This result in the creation of a peptide bond between the two amino acids, and repeating the process creates a polypeptide containing several peptide bonds. These peptide bonds behave like a partial double bond, which have restricted rotation about the bond. This restriction results in a stable peptide plane. These peptide planes are repeating units that exhibit constant structures in the protein and reduce the number of degrees of freedom. The polypeptide chain is intrinsically flexible because many of the covalent bonds that occur in its backbone and side chains are rotationally permissible. A protein can be defined by one or more polypeptide chains.</p>
+
+<p><img src="../../../../../images/peptide1.gif" alt="Image" width="500px" /></p>
+
+<p><em>Figure 2: Every peptide has a <script type="math/tex">N</script>-terminus residue and a <script type="math/tex">C</script>-terminus residue on the ends of the peptide (Source Wikipedia).</em></p>
+
+<p>Geometric relationship involving atoms in the polypeptide fully define a thee-dimensional proteins stable conformation. The relationships consist of bond lengths, bond angles, dihedral angles and improper dihedral angles. The primary contributions from these parameters, which determine overall polypeptide structure, are the dihedral angles. Typically, the peptide plane remains relatively rigid during protein dynamics such that the bond lengths and bond angles remain constant, due the large energy cost for its deformation. As a result, the dihedral angles are the essential degrees of freedom that dictate the position of the polypeptide backbone atoms, defining the protein secondary structure.</p>
+
+<p><img src="../../../../../images/trialanine.jpg" alt="Image" width="500px" /></p>
+
+<p><em>Figure  3:Backbone dihedral angles in the molecular structure of trialanine (Altis 2008).</em></p>
+
+<h1 id="coarse-grained-models">Coarse-grained models</h1>
+
+<p>In a polypeptide chain the torsional motion is predominantly local in character. Therefore its model is here simplified as a constrained multibody system, and the overall dynamic is described by backbone dihedral angles, and possible linear elastic deformation allowing only covalent bonds lengths fluctuations. This type of model is not new, it have been used on molecular coarse-grained simulations, e.g. in systems like GROMACS,  widely used for long time simulations, where however the system dynamics is constrain by force fields like MARTINI force field. The most important feature of this type of approach is the possibility of modelling protein dynamics without explicitly treating every atom in the problem. Using this quasi-continuum approach, must degrees of freedom are eliminate, and force or energy calculations are largely expedited. Here however we are interested in analysing the possible advantages of imposing kinematic constrains on the system using kinematic joints. Since the definition of such constrains increase the simulation computational complexity, we are concern on its numerical stability for long time simulations.</p>
+
+<p><img src="../../../../../images/multibody.jpg" alt="Image" width="500px" /></p>
+
+<p><em>Figure  4:Refinement for a protein with <script type="math/tex">n</script> amino acids split in <script type="math/tex">2n+1</script> bodies, with its <script type="math/tex">2n</script> dihedral angles identified with <script type="math/tex">\beta_1,\cdots,\beta_{2n}</script></em></p>
+
+<p>The methodology described bellow was evaluated on two types of  coarse-grained models, defined using different kinematic joints. The first is defined by an open chain of rigid bodies, linked together using revolute joints. For the second model we used the same open chain system but, to allow some fluctuations in the system structure, the components of the system are linked using cylindrical joints. In Fig. \ref{fig3}, presents the coarse-grained model for a generic polypeptide chain defined by <script type="math/tex">n</script> amino acid, using a constrained multibody system with <script type="math/tex">N=2n+1</script> bodies <script type="math/tex">b_1,b_2,\dots,b_{2n+1}</script>, with dihedral angles <script type="math/tex">\beta_1,\beta_2,\dots,\beta_{2n}</script>. Note that, each amino acid is split between three bodies, and each body is linked to the next by a covalent bonds. This gives great flexibility to them and its conformation can be characterized by dihedral angles on this bonds. The values of these angles are not uniformly distributed, they have strong local propensity  and are highly correlated.</p>
+
+<p>The use of simplified models reduces the complexity of the interactions and hence reduces the amount of computation involved. This shouldn’t be seen as a limitation. Software tools for reconstructing all-atoms structure from backbone structures (e.q. PHOENIX [cbsu.tc.cornell.edu/software/photarch}  and Maxsprout [www.ebi.ac.uk/maxsprout] ) are often employed to complete folding trajectory with side chain information.</p>
+
+<h1 id="protein-local-propensity">Protein local propensity</h1>
+
+<p>Polypeptide chains are known to have strong local propensities, well characterized by the existence of specific amino acid patterns in chain with predefined ranges of dihedral angles. A commune strategy to study the angular propensity is through Ramachandran maps used to produce distributions of the dihedral angles and their probabilities, extracted from statistical libraries with local propensities generated using the PDB. Studies of this plots show that they reflect the local interactions of free energy. The type of conformation are determined from a balance between local interactions (those closed to the sequence) and non-local ones. Effective statistical potentials can be extract from these populations have been studied for over 40 years. These potentials are based on the correlation of the observed frequency of a structure with its associated free energy. Thus, those potentials have a global minimum corresponding to the must frequency observed native informations (or collections of substructures found must often in native conformations). Such local potentials have been combined with non-local potential to predict protein folding structure, used  by the state-of-the-art systems for conformation perdition like ROSETTA.</p>
+
+<h1 id="van-mises-propensity-distributions">Van Mises propensity distributions</h1>
+
+<p>Ramachandran maps play a central role in developing empirical energy functions for structure prediction and simulation. Those are used as a probability density function gives the probability of finding an amino acid conformation in a specific range of <script type="math/tex">\phi</script>, <script type="math/tex">\psi</script> values. For this work these functions are given on a <script type="math/tex">2^\circ\times 2^\circ</script> grid from <script type="math/tex">-180^\circ</script> to <script type="math/tex">180^\circ</script> in <script type="math/tex">\phi</script>, <script type="math/tex">\psi</script> values. Such distributions was derived for each amino acid types, but since they are very irregular we used the van Mises density estimations to have soother surfaces. The quality and quantity of the data are crucial in determining distributions to approximate the system free energy and its gradients. Here all the distribution are computed using a datasets of <script type="math/tex">254</script> globular proteins with a resolution cutoffs of 1.0 <script type="math/tex">\AA</script>, filters to reduce the number of amino acids angles evaluated over great structural stresses. Those distribution estimations were used to build a library of conformational propensities for each amino acid, applied for drive polypeptide chain kinematics. Examples of van Mises propensity distributions for two amino acids are presented in Figure \ref{fig10}. The library was developed by combining a prior estimate of the probabilities of each <script type="math/tex">(\phi,\psi)</script> bin raw counts by amino acid. This standard probability distributions are quite bumpy in their variation, a result of using raw counts in the probability estimates and calculation of simple averages. In order to produce smooth and continuous estimates of the conformation probabilities, we use kernel density estimation. A kernel is a nonnegative symmetric function that integrates to <script type="math/tex">1.0</script> and is centered on each data point. Density estimates at specific query points are determined by summing the values of the kernel functions centered on the data points. The smoothness of the density estimate is determined by the form of the kernel, in particular its bandwidth. For each amino acid, <script type="math/tex">aa</script>, we determine a probability density estimate, <script type="math/tex">P(\phi,\psi | aa)</script>. For that \textit{von Mises probability density function} (PDF) as the kernel are used since this density estimates are more appropriately for angles than the usual Gaussian or other nonperiodic kernels. Because Ramachandran probability density is defined for the backbone torsion angles <script type="math/tex">\phi</script> and <script type="math/tex">\psi</script> as two arguments, we use a nonadaptive kernel density estimators in two dimensions written as the sum over products of <script type="math/tex">\phi</script> and <script type="math/tex">\psi</script> van Mises kernels for <script type="math/tex">N_r</script> data points of amino acid of type, $aa$:
+\begin{equation}
+P(\phi,\psi | aa)=\frac{1}{4\pi^2N_r}\sum_{i=1}^{N_r}\frac{1}{I_0(\kappa)^2}\exp(\kappa \cos(\phi-\phi_i)+\kappa \cos(\psi-\psi_i))
+\end{equation}
+In this case, <script type="math/tex">\sqrt{\frac{1}{\kappa}}</script> defines a radius of the two dimensional hump covering <script type="math/tex">60\%</script> of the kernel density, <script type="math/tex">I_0</script> is the Bessel function of the first kind of order <script type="math/tex">0</script>, normalizing the kernel to <script type="math/tex">1</script>.</p>
+
+<p><img src="../../../../../images/Rama_testALA.jpg" alt="Image" width="500px" /></p>
+
+<p><em>Figure  5:Amino acid Mises propensity distributions ALA</em></p>
+
+<p><img src="../../../../../images/Rama_testPHE.jpg" alt="Image" width="500px" /></p>
+
+<p><em>Figure  6:Amino acid Mises propensity distributions PHE</em></p>
+
+<p>To reduce the amount of computation involved on the protein kinematics analysis, the library of conformational propensities was completed with directional gradients, for each distribution. For that the central difference method was used.</p>
+
+<p>Amino acid dihedral angles cannot take any arbitrary values due to atomic clashes and orientations. It is also consensual  on the basis of the conformational enumeration of polypeptide chains and molecular dynamic simulations that the Ramachandran basin populations are affected by their nearest neighbours. The populations are affected, in particular, by the neighbour’s conformation and their identity. There are a strong correlations between a residue’s conformation  and that of its neighbours are responsible for cooperative effects. This works however uses only correlation defined by dihedral angles in the same amino acid and between two consecutive amino acid. On the presented extended mechanical model, the coupling band of springs, uses these potentials to find optimal conformations, by the generation of body torsions along each associated covalent bond.</p>
+
+<p>The dependence of an amino acid conformation on the conformations of its adjacent residues involves too many variables to be captured in a single probability density function for the available data. Instead, we divided the probability densities in individual terms involving pairs of angles. In particular, for dihedral angles <script type="math/tex">\phi_i</script>, <script type="math/tex">\psi_i</script>, <script type="math/tex">\phi_{i+1}</script>, and <script type="math/tex">\psi_{i+1}</script> in consecutive amino acids
+we looked at the density plots involving <script type="math/tex">(\phi_i,\psi_{i+1})</script>, <script type="math/tex">(\psi_i,\phi_{i+1})</script> and <script type="math/tex">(\phi_i,\phi_{i+1})</script>.  For those von Mises distribution evaluate for each pair of amino acids, and the correspondent directional gradient, where added to our propensity library.</p>
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Protein periodicity</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              Protein periodicity
+            
+            </li>
+            
+            <li><a href="mailto:melro-leandro@gmx.com">melro-leandro@gmx.com</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/MelroLeandro"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">MelroLeandro</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/MelroLeandro"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">MelroLeandro</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Statistical Potentials for internal forces to Packing Charged Multibody Systems
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
