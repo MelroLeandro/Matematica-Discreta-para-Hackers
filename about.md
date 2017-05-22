@@ -15,19 +15,18 @@ Devemos notar que os temas apresentados não são novos. Aliás a estrutura da a
 
 ## Capílulos do livro:
 
-1 Introdução Python
-2 Lógica proposicional
-3 Dedução Natural
-4 Lógica de predicados
-5 Teoria de Conjuntos
-6 Complementos de Python
-8 Estruturas Algébricas
-9 A biblioteca PyGame
-10 Teoria de grafos
+1. Introdução Python
+2. Lógica proposicional
+3. Dedução Natural
+4. Lógica de predicados
+5. Teoria de Conjuntos
+6. Complementos de Python
+8. Estruturas Algébricas
+9. A biblioteca PyGame
+10. Teoria de grafos
 
 # Requisitos de utilização
 
 ## Instalar o jupyter
 
 ## Download dos Notebooks
-

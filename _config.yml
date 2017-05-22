@@ -38,7 +38,7 @@ defaults:
 # Prose Settings
 prose:
   ignore: ['feed.xml', '/stl', '/js', '/plugin', '/lib', '/projectors', '_layouts', '/_includes','/images','/source', 'Gruntfile.js', 'package.json', 'proselinks.jsonp', 'ppanchor.matin', '.gitignore', '/search', '/css', '/img', 'favicon.png','_data/*.json','LICENSES.md','README.md','colorscheme.scss','members.html','mentions.html','index.html']
-  siteurl: 'https://melroleandro.github.io/FoldingWIthRotamerAndGA'
+  siteurl: 'https://melroleandro.github.io/Matematica-Discreta-para-Hackers
   ispp: true
   media: 'img'
   metadata:
