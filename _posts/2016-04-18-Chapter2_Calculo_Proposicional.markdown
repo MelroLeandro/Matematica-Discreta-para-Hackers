@@ -6,8 +6,8 @@ author:  Mellean
 tags:   python
 category:  python
 visualworkflow: false
-
 ---
+
 <!-- Start Writing Below in Markdown -->
 
 Capítulo 2: Lógica proposicional
