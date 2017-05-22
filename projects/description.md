@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  "Descrição"
-description: " atemática Discreta para Hackers"
+description: "Matemática Discreta para Hackers"
 header-img: "img/home-bg.jpg"
 category:  python
 ---
