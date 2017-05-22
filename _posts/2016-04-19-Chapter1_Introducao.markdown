@@ -16,9 +16,6 @@ Capítulo 1:  Introdução
 Python
 ------
 
-A linguagem de programação Python é constituida por diferenres construções sintácticas, uma grande variedade de funções em bibliotecas e estructuras de dados standard à linguagem. Formalmente podemos ignorar grande parte destes atributos, para o tipo de aplicações que temos em mente. Pretendemos implementar simples funções ou pequenos programas com o proposito de resolver problemas de matemática discreta e ensentivar o seu estudo mais aprefundado. A complexidade dos problemas seram incrementadas progrecivamente ao longo dos Capítulos. O que inicialmente são pequenos scripts, com meia duzia de linhas de programação, nos últimos Capítulos do livro vai exigir a utilização de vários módulos descitos em ficeiros separados. Nesse sentido, a parte inicial, ou nos capítulos iniciais, a execução das linhas de comando faz-se no Jupyter ou directamente no interpretagor. Na parte final deste Notebook, passa a ser esegida a utilização dum editor de texto ou de um ambiente de programação. Aqui usamos o IDLE que apesar das suas limitações é usado aqui como ambiente de desenvolvimento standard.
-
-Temos no entanto de aprender alguns conceitos de programação básicos antes de podermos resolver qualquer problema. Os exemplos de utilização seram apresentados após apresentação de um enquadramento teórico, nos Capítulos consecuentes.
 
 Em todos estes Capítulos encorajamos a que os exemplos apresentados sejam alterados e executados no Jupyter e se possivel reescritos directamente no interpretador ou ambiente de desenvolvimento. Neste ponto assumimos que tem o ambiente Jupyter a funcionar no seu computador.   
 
@@ -110,13 +107,13 @@ Sempre que pedimos ao Python para executar uma instrução desconhecida, ou cuja
 Acima são apresentados dois exemplos de expressões que não respeitam as regras gramaticais da linguagem de programação.
 
 ##### Constantes Literais
-Um exemplo de uma constante literal é um número como *5*, *1.23*, *9.25e-3* ou uma string (sequência de caracteres) como *'Isto é uma string'* ou *"É uma string!"*. Estas constantes são designadas literais porque devem ser interpretadas à letra (literalmente). O número *2* é entendido como dois, é uma constante porque o seu valor (significado) não pode ser alterado. 
+Um exemplo de uma constante literal é um número como *5*, *1.23*, *9.25e-3* ou uma string (sequência de caracteres) como *'Isto é uma string'* ou *"É uma string!"*. Estas constantes são designadas literais porque devem ser interpretadas à letra (literalmente). O número *2* é entendido como dois, é uma constante porque o seu valor (significado) não pode ser alterado.
 
 ##### Números
 
 Os números em Python são de três tipos: *inteiros*, *ponto flutuante* e *complexos*:
 
-1. *2* é um exemplo de inteiro, os inteiros são elementos do conjunto dos números inteiros. Existem no entanto limitações à magnitude dos inteiros que se podem usar. 
+1. *2* é um exemplo de inteiro, os inteiros são elementos do conjunto dos números inteiros. Existem no entanto limitações à magnitude dos inteiros que se podem usar.
 
     2. *3.23* e *52.3E-4* são exemplos de números no sistema de virgula flutuante (ou floats, para abreviar). A notação E indica as potências de *10*. Neste caso, *52.3E-4* significa *52.3*$\times$ *10*$^{-4}$.
 
@@ -126,7 +123,7 @@ Os números em Python são de três tipos: *inteiros*, *ponto flutuante* e *comp
 
 [caracteres]
 
-Uma string é uma sequência de caracteres. As strings são basicamente uma sequência de símbolos. As stings são usualmente usadas para representar palavras que podem ser da língua Inglesa ou de qualquer língua que seja suportada pelo padrão Unicode (permitindo codificar quase todas as línguas do mundo). 
+Uma string é uma sequência de caracteres. As strings são basicamente uma sequência de símbolos. As stings são usualmente usadas para representar palavras que podem ser da língua Inglesa ou de qualquer língua que seja suportada pelo padrão Unicode (permitindo codificar quase todas as línguas do mundo).
 
 ##### Aspas Unitárias
 Uma strings pode ser definida por uma sequência de caracteres delimitada por aspas unitárias (ou apóstrofes) tais como *'O estudo da lógica remonta à civilização helénica'*. Todos os espaços em branco, isto é, espaços e tabulações são preservados no estado em que se encontram.
@@ -137,18 +134,18 @@ As strings podem ser também definidas usando aspas duplas por exemplo : *"A art
 ##### Aspas Triplas
 Outra forma a definir strings que ocupam várias linhas é usar aspas triplas (""" ou '''). Um exemplo:
 
->    '''A palavra "trivial" tem uma etimologia interessante. 
+>    '''A palavra "trivial" tem uma etimologia interessante.
    É a conjugação de "tri" (significando '3') e "via" (significando caminho).
    Originalmente refere-se ao "trivium", as três áreas fundamentais do
    'curriculae': gramática, retórica e lógica.
    Assuntos que se tem de dominar para aceder ao "quadrivium", que
    consiste na aritmética, geometria, música e astronomia.      
     '''
-    
-##### Sequências de Escape
-Para definir uma string que contenha um apóstrofe ('), como em: 
 
->'Why was logic considered to be fundamental to one's education?' 
+##### Sequências de Escape
+Para definir uma string que contenha um apóstrofe ('), como em:
+
+>'Why was logic considered to be fundamental to one's education?'
 
 sem que a apóstrofe interna entre em conflito com os delimitadores, usa-se uma sequência de escape. Para evitar o conflito, o caracter apóstrofe é representado na string por $\setminus$'. A string deve assim ser definida como:
 
@@ -156,7 +153,7 @@ sem que a apóstrofe interna entre em conflito com os delimitadores, usa-se uma 
 
 Outra forma de definir a string anterior seria \emph{"Why was logic considered to be fundamental to one$\setminus$'s education?"}, através das aspas duplas. De forma idêntica, é usada uma sequência de escape para inserir aspas duplas numa string limitada por aspas duplas. A própria barra invertida pode ser inserida na string pela sequência de escape $\setminus\setminus$.
 
-Como apresentado para definir uma string com mais de duas linhas usa-se por limitador aspas triplas. Outro processo é usar uma sequência de escape $\setminus$n, para indicar o fim de uma linha e o início de outra linha na string. Por exemplo, 
+Como apresentado para definir uma string com mais de duas linhas usa-se por limitador aspas triplas. Outro processo é usar uma sequência de escape $\setminus$n, para indicar o fim de uma linha e o início de outra linha na string. Por exemplo,
 
 > 'A lógica centra-se na razão e na noção de verdade.$\setminus$n A retórica fundamenta-se em ideias feitas e populistas.'
 
@@ -170,11 +167,11 @@ H=   "\"Reciprocamente\", continuou Tweedledee, \
 \"Se é assim, ele pode ser, \n \
 e se não é, será; mas como não é não se preocupa. \
 Isto é lógica.\" "
-print(H) 
+print(H)
 ```
 
-    "Reciprocamente", continuou Tweedledee, "Se é assim, ele pode ser, 
-     e se não é, será; mas como não é não se preocupa. Isto é lógica." 
+    "Reciprocamente", continuou Tweedledee, "Se é assim, ele pode ser,
+     e se não é, será; mas como não é não se preocupa. Isto é lógica."
 
 
 Se por algum motivo tem necessidade que o interpretador não trate as sequências de escape, na definição da string deve usar como prefixo um r ou um R. Por exemplo, na string anterior:
@@ -188,14 +185,14 @@ Isto é lógica.\" "
 print(H)
 ```
 
-    \"Reciprocamente\", continuou Tweedledee, \"Se é assim, ele pode ser, \n e se não é, será; mas como não é não se preocupa. Isto é lógica.\" 
+    \"Reciprocamente\", continuou Tweedledee, \"Se é assim, ele pode ser, \n e se não é, será; mas como não é não se preocupa. Isto é lógica.\"
 
 
 #### As strings são Imutáveis
 [unicode: descrição e exemplos]
 
 [seria mais lógico iniciar o estudo com listas, tuplos diferença entre estruturas mutáveis e imotáveis]
-Isso significa que, como constantes literais, uma vez definida uma string, esta não pode sofrer alterações. 
+Isso significa que, como constantes literais, uma vez definida uma string, esta não pode sofrer alterações.
 
 #### Concatenação de Literais do Tipo String
 
@@ -242,7 +239,7 @@ As variáveis são entendidas como identificadores. Entendendo-se por identifica
 
 - O primeiro caracter do identificador tem de ser uma letra do alfabeto (maiúsculo ASCII ou minúsculo ASCII) ou um *'\_'*.
 -  O resto do nome do identificador pode consistir de letras (maiúsculo ASCII ou minúsculo ASCII), *'\_'* ou dígitos (0-9).
-- Nomes de identificadores são \textit{case-sensitive}. Por exemplo, myname e myName são identificadores diferentes. 
+- Nomes de identificadores são \textit{case-sensitive}. Por exemplo, myname e myName são identificadores diferentes.
 
 Exemplos de nomes de identificadores válidos são *i*, *\_\_my\_name*, *name\_23* e *a1b2\_c3*.  Exemplos de nomes de identificadores inválidos são *2things* e *my-name*.
 
@@ -251,7 +248,7 @@ Exemplos de nomes de identificadores válidos são *i*, *\_\_my\_name*, *name\_2
 ```python
 
 i = 5
-print(i) 
+print(i)
 
 i = i + 1
 print(i)
@@ -271,7 +268,7 @@ No programa começamos por atribuir o valor constante literal *5* à variável *
 
 Na instrução seguinte somamos *1* ao valor referenciado por *i*. A partir deste momento *i* passa a referenciar o objecto *6*. Em seguida, imprime-se o valor de *i*, agora *6*.
 
-Como já se tinha feito na secção anterior, de forma análoga referencia-se um objecto *string*  pela variável *s*, que depois se imprime. 
+Como já se tinha feito na secção anterior, de forma análoga referencia-se um objecto *string*  pela variável *s*, que depois se imprime.
 
 #### Linhas Lógicas e Físicas
 
@@ -281,7 +278,7 @@ Um exemplo de uma linha lógica é uma instrução como print('Sócrates é mort
 
 Implicitamente, Python incentiva o uso de uma única instrução por linha, com o propósito de tornar o código mais legível.
 
-Se pretende definir mais do que uma linha lógica numa única linha física, então deve separar as linhas lógicas através de um ponto-e-virgula (';') para indicar o fim de cada linha lógica ou instrução. Por exemplo, 
+Se pretende definir mais do que uma linha lógica numa única linha física, então deve separar as linhas lógicas através de um ponto-e-virgula (';') para indicar o fim de cada linha lógica ou instrução. Por exemplo,
 
 
 ```python
@@ -292,7 +289,7 @@ print(i)
     5
 
 
-é o mesmo que 
+é o mesmo que
 
 
 ```python
@@ -313,8 +310,8 @@ Isto é lógica.\" "
 print(H)
 ```
 
-    "Reciprocamente", continuou Tweedledee, "Se é assim, ele pode ser, 
-     e se não é, será; mas como não é não se preocupa. Isto é lógica." 
+    "Reciprocamente", continuou Tweedledee, "Se é assim, ele pode ser,
+     e se não é, será; mas como não é não se preocupa. Isto é lógica."
 
 
 O objecto string que passa a ser referenciado por *H* deve ser entendido como definido numa única linha lógica, apesar de ocupar diferentes linhas físicas.  
@@ -346,7 +343,7 @@ Note-se que, existe um espaço simples no início da segunda linha. O erro indic
 
 #### Como identar
 
-Não misturar tabulações com espaços a quando da identação, já que nem todas as plataformas a suportam. É recomendado o uso de uma tabulação, ou dois espaços ou quatro espaços para distinguir cada nível de identação. Escolha um destes estilos de identação. Mais importante que a escolha que faz, deve manter-se consistente a ela, ou seja, mantenha apenas um tipo de identação ao longo de todo o código. 
+Não misturar tabulações com espaços a quando da identação, já que nem todas as plataformas a suportam. É recomendado o uso de uma tabulação, ou dois espaços ou quatro espaços para distinguir cada nível de identação. Escolha um destes estilos de identação. Mais importante que a escolha que faz, deve manter-se consistente a ela, ou seja, mantenha apenas um tipo de identação ao longo de todo o código.
 
 ### Operadores e Expressões
 
@@ -396,7 +393,7 @@ Os programas que vimos até aqui, são descritos por uma série de declarações
 Isto é consumado usando as instruções de controle de fluxo no Python *if*, *for* e *while*, permitindo executar um ou mais blocos de instruções apenas ou enquanto uma condição for verdadeira.
 
 #### Blocos controlados por um *if*
-A instrução *if* é usada para avaliar uma condição e se a condição é verdadeira, é executado um bloco de instruções (a que chamamos de *bloco-if* (*if-block*)), senão é executado outro bloco de instruções (a que chamamos de *bloco-else* (*else-block*)). A cláusula *else* é opcional. 
+A instrução *if* é usada para avaliar uma condição e se a condição é verdadeira, é executado um bloco de instruções (a que chamamos de *bloco-if* (*if-block*)), senão é executado outro bloco de instruções (a que chamamos de *bloco-else* (*else-block*)). A cláusula *else* é opcional.
 
 
 ```python
@@ -415,16 +412,16 @@ elif guess < number:
 else:
     print('Não, é menor que isso.')
 
-print('Adeus.') 
-# Esta última instrução é sempre executada, depois da instrução if 
+print('Adeus.')
+# Esta última instrução é sempre executada, depois da instrução if
 # ser executada
 ```
 
-Neste programa, é inquirido o utilizador por um número inteiro e é verificado se este é igual a um número escondido. Usa-se uma variável *number* para referenciar o inteiro a adivinhar, neste caso *number = 23*. O utilizador tem apenas uma tentativa para adivinhar o número. A hipótese do utilizador é feita através da função *input()*. Uma função é entendida aqui como um módulo ou bloco de código reutilizável. 
+Neste programa, é inquirido o utilizador por um número inteiro e é verificado se este é igual a um número escondido. Usa-se uma variável *number* para referenciar o inteiro a adivinhar, neste caso *number = 23*. O utilizador tem apenas uma tentativa para adivinhar o número. A hipótese do utilizador é feita através da função *input()*. Uma função é entendida aqui como um módulo ou bloco de código reutilizável.
 
 A função *input()*, cria uma *prompt* com o argumento da função na shell, e espera que o utilizador escreva uma cadeia de caracteres (*string*).  A *string* que o utilizador fornece é usada como valor de saída da função. A função *int()*, converte essa *string* para um inteiro, passado a ser referenciado pela variável *guess*. Genericamente a função *int()* permite, sempre que possível, converter objectos para *string*. Neste caso é usada para converter uma cadeia de caracteres para um inteiro.
 
-Em seguida, é comparado o inteiro referenciado pela variável *guess* com o número referenciado por *number*. Se eles forem iguais, imprime-se uma mensagem a felicitar o utilizador. Note que são utilizados níveis de identação para informar o interpretador de Python que a sequência de instruções pertence a um bloco. 
+Em seguida, é comparado o inteiro referenciado pela variável *guess* com o número referenciado por *number*. Se eles forem iguais, imprime-se uma mensagem a felicitar o utilizador. Note que são utilizados níveis de identação para informar o interpretador de Python que a sequência de instruções pertence a um bloco.
 
 Note que a linha da instrução *if* termina com ``dois pontos'' indicando que a seguir há um bloco de instruções.
 
@@ -432,7 +429,7 @@ Caso a tentativa do utilizador seja menor que o número referenciado pela variá
 
 Note-se que as linhas das instruções *elif* e *else* também terminam com ``dois pontos'', sendo seguidas pelo seu bloco de instruções que controlam.
 
-Devemos realçar que as partes *elif* e *else* são opcionais. Uma instrução *if* mínima válida assume a forma: 
+Devemos realçar que as partes *elif* e *else* são opcionais. Uma instrução *if* mínima válida assume a forma:
 
 
 ```python
@@ -440,7 +437,7 @@ if True:
     print('Sim, é verdade')   
 ```
 
-Após ser executada a instrução *if*, *elif* e *else* que lhe estão associadas, a execução passa para o próximo bloco de instruções. Neste caso, volta ao  bloco principal onde encontra a instrução *print 'Adeus.'*. Após executar esta linha de código, o interpretador termina a execução do código. 
+Após ser executada a instrução *if*, *elif* e *else* que lhe estão associadas, a execução passa para o próximo bloco de instruções. Neste caso, volta ao  bloco principal onde encontra a instrução *print 'Adeus.'*. Após executar esta linha de código, o interpretador termina a execução do código.
 
 Na verdade, não é muito prático ter de executar o programa sempre que se quer fazer uma nova tentativa. Tentemos resolver o problema.
 
@@ -460,7 +457,7 @@ while running:
     guess = int(input('Qual é o número inteiro?')
 
     if guess == number:
-        print('Parabéns, você acertou.') 
+        print('Parabéns, você acertou.')
         running = False # Isto faz o loop while parar
     elif guess < number:
         print('Não, é maior que isso.')  
@@ -468,7 +465,7 @@ while running:
         print('Não, é menor que isso.')
 else:
     print('O loop while terminou.')
-    
+
 print('Adeus.')
 ```
 
@@ -486,7 +483,7 @@ Note-se que, um bloco else num ciclo *while* é redundante, já que se este bloc
 
 #### Ciclo *for*
 
-A instrução *for <var> in <objecto>* permite impor a execução cíclica de um conjunto de instruções, por exemplo, executa o bloco para cada item numa sequência. 
+A instrução *for <var> in <objecto>* permite impor a execução cíclica de um conjunto de instruções, por exemplo, executa o bloco para cada item numa sequência.
 
 
 ```python
@@ -758,4 +755,3 @@ No Python, *s[-1]* identifica a último caracter duma string *s* (ou o último e
 
 - [1] Al Sweigart, 2015 [Automate the Boring Stuff with Python: Practical Programming for Total Beginners](https://automatetheboringstuff.com/).
 - [2] Swaroop C. H. "A Byte of Python." <http://www.swaroopch.com/notes/python/>.
-
