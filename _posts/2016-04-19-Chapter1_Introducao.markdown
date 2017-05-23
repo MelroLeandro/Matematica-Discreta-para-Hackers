@@ -73,7 +73,7 @@ A ordem das operações (também designada de precedência) dos operadores aritm
 
 Na tentativa de avaliar uma expressão, como a anterir, o Python, guiado pela ordem de precedencia imposta pelos operadores ou pela parentização, avalia progrecivamente subfórmulas até opter um valor único.
 
-<img src="../../../../../../images/000056.png" width = 200/>
+<img src="../../../../images/000056.png" width = 200/>
 
 As regras usadas para formar expressões que podem ser avaliadas ( ou que o interpretador de Python perceba) são parte fundamental do Python como linguagem de programação. Estas regras podem ser entendidas como identicas às regras gramaticais que nos ajudam a comunicar.
 
