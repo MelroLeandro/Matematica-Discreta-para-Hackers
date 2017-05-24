@@ -8,7 +8,7 @@ category:  python
 visualworkflow: false
 ---
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 Capítulo 5: Teoria de Conjuntos
 ======
@@ -83,15 +83,15 @@ Com esta definição pode enunciar-se que para conjuntos $A$ e $B$:
 Propriedade que podemos demonstrar, recorrendo às propriedades da lógica proposicional:
 
 $$A\subseteq  B \wedge B \subseteq A$$
-$$\Leftrightarrow$$ 
-$$\forall x (x\in A \rightarrow x\in B)\wedge\forall x (x\in B \rightarrow x\in A)$$
-$$\Leftrightarrow$$ 
-$$\forall x ((x\in A \rightarrow x\in B)\wedge (x\in B \rightarrow x\in A))$$ 
-$$\Leftrightarrow$$ 
-$$\forall x (x\in A \leftrightarrow x\in B)$$ 
 $$\Leftrightarrow$$
-$$A = B$$ 
-   
+$$\forall x (x\in A \rightarrow x\in B)\wedge\forall x (x\in B \rightarrow x\in A)$$
+$$\Leftrightarrow$$
+$$\forall x ((x\in A \rightarrow x\in B)\wedge (x\in B \rightarrow x\in A))$$
+$$\Leftrightarrow$$
+$$\forall x (x\in A \leftrightarrow x\in B)$$
+$$\Leftrightarrow$$
+$$A = B$$
+
 De forma idêntica pode-se demonstrar a veracidade de cada uma das afirmações apresentadas na proposição abaixo:
 
 #### Proposição
@@ -185,16 +185,16 @@ Para a união e intersecção de conjuntos temos:
 #### Dem.:
 Apresentamos a demonstração de que $A\cup(B\cap C)=(A\cup B)\cap(A\cup C)$
 
-$A\cup(B\cap C)$ =  $\{x:x\in A \vee x\in B\cap C\}$ 
-=  $\{x:x\in A \vee (x\in B\wedge x\in C)\}$ 
-=  $\{x:(x\in A \vee x\in B) \wedge (x\in A\vee x\in C)\}$ 
-= $\{x:(x\in A \cup B) \wedge (x\in A\cup C)\}$ 
+$A\cup(B\cap C)$ =  $\{x:x\in A \vee x\in B\cap C\}$
+=  $\{x:x\in A \vee (x\in B\wedge x\in C)\}$
+=  $\{x:(x\in A \vee x\in B) \wedge (x\in A\vee x\in C)\}$
+= $\{x:(x\in A \cup B) \wedge (x\in A\cup C)\}$
 = $(A\cup B)\cap(A\cup C)$
 
 Para calcular $A\cup(A\cap B)$ e $A\cap(A\cup B)$ podemos usar diagramas de Venn:
 
-<img src="venn2.png" width = 300/>
-<img src="venn1.png" width = 300/>
+![Image](../../../../../images/venn2.png)
+![Image](../../../../../images/venn1.png)
 
 Temos assim $A\cup(A\cap B)=A$ e $A\cap(A\cup B)=A$.
 
@@ -211,7 +211,7 @@ $$A\backslash(A\cap B) = A\backslash B.$$
 
 Entendemos por \textbf{diferença simétrica} ou \textbf{soma booleana} entre dois conjuntos $A$ e $B$, ao conjunto $$A\oplus B=(A\setminus B)\cup(B\setminus A)=(A\cup B)\setminus (A\cap B).$$
 
-<img src="venn3.png" width = 300/>
+![Image](../../../../../images/venn3.png)
 
 As seguintes igualdades são valias:
 
@@ -250,8 +250,7 @@ Assim
 Para conjuntos finitos $A$ e $B$ tem-se
 $$|A\cup B|=|A|+|B|-|A\cap B|.$$
 
-<img src="daviel.png" width = 200/>
-
+![Image](../../../../../images/daviel.png)
 
 
 #### Proposição:
@@ -260,8 +259,7 @@ Se $A$ é um conjunto finito com $n$ elementos, então $|\mathcal{P}(A)|=2^n$.
 
 Procuremos ilustrar este resultado através da árvore de decisão representada pelo diagrama abaixo.
 
-<img src="tree.png" width = 500/>
-
+![Image](../../../../../images/tree.png)
 
 O diagrama tem a seguinte interpretação: Se seleccionar um subconjunto $S$ de $\{a,b,c\}$. O circulo do topo, chamado nó, pode ser interpretado como sendo a pergunta: Está $a$ em $S$? Os dois arcos que saem dele têm como rótulos as duas respostas possíveis (Sim ou Não). Se seguirmos o arco com a resposta apropriada chegamos a um novo nó. Este nó codifica a próxima questão: O $b$ é um elemento de $S$? Seguindo o arco com a resposta certa chegamos a um novo nó. Que codifica a questão: O $c$ é um elemento de $S$? Escolhendo o arco com a resposta certa alcançamos a lista de elementos do conjunto $S$ seleccionado.
 
@@ -284,8 +282,8 @@ Dados dois conjuntos $A$ e $B$, existe um conjunto cujos
 elementos são precisamente todos os pares ordenados $(a,b)$, com $a\in A$ e
 $b\in B$, designado de \textit{produto cartsiano} de $A$ por $B$ e que se denota por $$A\times B,$$ i.e. define-se
 $$A\times B=\{(a,b):a\in A\wedge b\in B\}.$$
-Adoptando-se as seguintes convenções 
-$$A^2=A\times A,$$ 
+Adoptando-se as seguintes convenções
+$$A^2=A\times A,$$
 $$A^3=A^2\times A,$$
 $$\ldots$$
 $$A^n=A^{n-1}\times A.$$
@@ -335,25 +333,25 @@ Neste sentido, para todo o conjunto $A$,
 $$\emptyset\subseteq A \text{ já que } \forall x(x\in \emptyset \rightarrow x\in A)\text{ é uma proposição verdadeira.}$$
 
 #### Definição:
-Seja $E$ um conjunto universal. Para todo o conjunto $A$, o complemento de $A$ em $E$, $E-A$ é designado de \textbf{complemento do conjunto} $A$ e é denotado por $\overline{A}$. Neste sentido 
+Seja $E$ um conjunto universal. Para todo o conjunto $A$, o complemento de $A$ em $E$, $E-A$ é designado de \textbf{complemento do conjunto} $A$ e é denotado por $\overline{A}$. Neste sentido
 $$\overline{A}=\{x\in E:\sim x\in A\}=\{x:x\notin A\}.$$
 
 
-#### Proposição [Leis de De Morgan] 
+#### Proposição [Leis de De Morgan]
 Para um conjunto universo valem as seguintes igualdades:
 1. $\overline{A\cup B}=\overline{A}\cap \overline{B}$
-- $\overline{A\cap B}=\overline{A}\cup \overline{B}$
+1. $\overline{A\cap B}=\overline{A}\cup \overline{B}$
 
 
 #### Dem.:
 A igualdade $\overline{A\cup B}=\overline{A}\cap \overline{B}$ pode ser demonstrada através
 
-$\overline{A\cup B}$ = $\{x:\sim (x\in A\cup B)\}$ 
-= $\{x:\sim (x\in A \vee x\in B)\}$ 
+$\overline{A\cup B}$ = $\{x:\sim (x\in A\cup B)\}$
+= $\{x:\sim (x\in A \vee x\in B)\}$
 = $\{x:\sim (x\in A) \wedge \sim (x\in B)\}$
-= $\{x:x\notin A \wedge x\notin B\}$ 
-= $\{x:x\notin A\} \cap \{x:x\notin B\}$ 
-= $\overline{A}\cap \overline{B}$ 
+= $\{x:x\notin A \wedge x\notin B\}$
+= $\{x:x\notin A\} \cap \{x:x\notin B\}$
+= $\overline{A}\cap \overline{B}$
 
 Assim definido tem-se $$A\setminus B=A\cap \overline{B}.$$
 
@@ -363,17 +361,16 @@ conjunto $$A\oplus B=(A\setminus B)\cup(B\setminus A)=(A\cup B)\setminus (A\cap 
 
 ## Relação binária
 
-Chama-se \textbf{relação binária} definida de $A$ para $B$ a qualquer subconjunto de $A\times B$. 
+Chama-se \textbf{relação binária} definida de $A$ para $B$ a qualquer subconjunto de $A\times B$.
 Diz-se \textbf{relação binária definida em} $A$ a qualquer subconjunto de $A^2=A\times A$.
 
-<img src="imagesWeb.png" width = 150/>
-<img src="theweb.png" width = 150/>
-<img src="linkgrammar.png" width = 150/>
-
+![Image](../../../../../images/imagesWeb.png)
+![Image](../../../../../images/theweb.png)
+![Image](../../../../../images/linkgrammar.png)
 
 Dada uma relação binária $R$
 1. se $(a,b)\in R$ escrevemos $aRb$;
-- se $(a,b)\notin R$ escrevemos $aR\!\!\!\!/b$;
+1. se $(a,b)\notin R$ escrevemos $aR\!\!\!\!/b$;
 
 Se $R$ é uma relação,  existe o conjunto, chamado \textbf{domínio} de $R$ e denotado
 por $D(R)$, cujos elementos são os conjuntos $x$ para os quais
@@ -384,9 +381,9 @@ $$Im(R)=\{y:\exists x(xRy)\}.$$
 
 #### Exemplos:
 Qualquer gráfico no plano define uma relação em $\mathbb{R}$. Em particular o gráfico que descreve o conjunto dos pares de reais $(x,y)$ solução da equação $x^2+y^2=1$, define a relação $$R=\{(x,y):x^2+y^2=1\}$$ em $\mathbb{R}$. Neste caso $0R1$, $1R0$, $-1R0$, mas $1R\!\!\!\!/1$. Temos ainda $D(R)=\{x:-1\leq x\leq 1\}$ e $Im(R)=\{y:-1\leq y\leq 1\}$.
-\begin{center}
-\includegraphics[width=100pt]{circle}
-\end{center}
+
+
+![Image](../../../../../images/circle.png)
 
 
 Caso o conjunto $A$ onde uma relação $R$ está definida, não tenha muitos elementos, a relação binária $R$ pode ser definida por:
@@ -594,13 +591,13 @@ Uma matriz $M_R$ representa uma relação simétrica se é simétrica.
 
 ## Exercícios
 
-Mostre que sempre que $f:A\rightarrow B$ e $g:B\rightarrow C$ são sobrejectivas, $g\circ f$ é sobrejectiva. 
+Mostre que sempre que $f:A\rightarrow B$ e $g:B\rightarrow C$ são sobrejectivas, $g\circ f$ é sobrejectiva.
 
 Os conjuntos abaixo definem funções no conjunto $\{(2,3),(2,4),(3,2),(3,4),(1,4)\}$? Nesse caso, determine o seu domínio e classifique se são injectivas ou sobrejectivas.
-  1. $\{(1,(2,3)),(2,(3,4)),(3,(1,4)),(4,(1,4))\}$
-  - $\{(1,(2,3)),(2,(3,4)),(3,(3,2))\}$
-  - $\{(1,(2,3)),(2,(3,4)),(1,(2,4))\}$
-  - $\{(1,(2,3)),(2,(2,3)),(3,(2,3))\}$
+1. $\{(1,(2,3)),(2,(3,4)),(3,(1,4)),(4,(1,4))\}$
+1. $\{(1,(2,3)),(2,(3,4)),(3,(3,2))\}$
+1. $\{(1,(2,3)),(2,(3,4)),(1,(2,4))\}$
+1. $\{(1,(2,3)),(2,(2,3)),(3,(2,3))\}$
 
 Para duas relações de equivalência, no conjunto $A=\{0,1,2\}$, $R$ e $S$ definidas pelas matrizes
 $M_S=\left[
@@ -610,7 +607,7 @@ $M_S=\left[
          0 & 0 & 1 \\
        \end{array}
      \right]$
- e 
+ e
 $M_R=\left[
        \begin{array}{ccc}
          1 & 1 & 0 \\
@@ -622,9 +619,9 @@ As relações $M_S\times M_R$ e $\{(a,b)\in A\times B: (b,a)\in S\}$ são també
 
 Por $R$ representa-se a relação em $A=\{1,2,3,4,5,6\}$ tal que, $a R b$ se e só se, no autómato da Figura \ref{fig1} se pode transitar do estado $a$ para o estado $b$. Num autómato podemos transitar do estado $a$ para o estado $b$, sempre que existe um arco de $a$ para $b$. Por exemplo, no autómato da Figura \ref{fig1}, são verdade $2R2$,$2R4$,$2R6$ e $2R5$, mas é falso $2R3$ e $2R1$.
 1. Justifique porque é que $(A,R)$ é um conjunto parcialmente ordenado.
-- Apresente o diagrama de Hasse do conjunto parcialmente ordenado $(A,R)$.
-- Determine os majorantes do conjunto $\{2,3,4\}$ relativamente à ordem parcial $R$ definida em $A$.
-- O conjunto $\{2,3,4\}$ tem elemento mínimo? Justifique a resposta.
+1. Apresente o diagrama de Hasse do conjunto parcialmente ordenado $(A,R)$.
+1. Determine os majorantes do conjunto $\{2,3,4\}$ relativamente à ordem parcial $R$ definida em $A$.
+1. O conjunto $\{2,3,4\}$ tem elemento mínimo? Justifique a resposta.
 
 Considere o código em Python abaixo, que implementa uma função $$R(set,set)->set,$$ tal que $R(A,D)$ devolve uma relação em $A$, onde $D$ é também uma relação em $A$.
     def R(A,D):
@@ -642,15 +639,17 @@ Considere o código em Python abaixo, que implementa uma função $$R(set,set)->
 1. Para $A=\{1,2,3,4\}$ e $D=\{(1,2),(1,3),(3,4)\}$. Determine os pares que definem a relação que resulta da execução de:
 
     \>\>\> R(A,D)
-    
-- Como interpreta o resultado da função, quando aplicada à relação $D$ entre estados definida pelos arcos do autómato da Figura \ref{fig1}.
 
-<img src="autoEXA.jpg" width = 400/>
+2. Como interpreta o resultado da função, quando aplicada à relação $D$ entre estados definida pelos arcos do autómato da Figura \ref{fig1}.
+
+
+![Image](../../../../../images/autoEXA.jpg)
+
 \caption{Diagrama de estados}\label{fig1}
 
 Considere o conjunto $X=\{1,2,3,4,5,6,7,8\}$ parcialmente ordenado de acordo com o seguinte diagrama de Hasse.
 
-<img src="hasse2.jpg" width = 250/> 
+![Image](../../../../../images/hasse2.jpg)
 
 Considere ainda os subconjuntos $A=\{3,4,7\}$ e $B=\{2,3,4,5\}$. Determine caso existam:
 1. Os elementos maximais, minimais, máximo e mínimo de $X$.
@@ -685,7 +684,7 @@ Considere a seguinte função definida por recorrência:
             return 1
         else:
             return f(n-1)+f(n-2)
-            
+
 1. Calcule o valor devolvido pela função, para $f(4)$, justificando a resposta.
 - Mostre por indução que $f(1)+f(3)+\cdots+f(2n-1)=f(2n)$, para todo o inteiro $n>0$.
 
@@ -704,7 +703,7 @@ As chaves de $G$ definem os rótulos dos vértices da árvore. Por 'B':['A',\{'E
 
 A árvore descrita pelo dicionário $G$ pode assumir a representação abaixo.
 
-<img src="grafoT2-3.jpg" width = 150/> 
+![Image](../../../../../images/grafoT2-3.jpg)
 
 Considere a função c(dict,str)-> set definida por:
 
@@ -744,7 +743,7 @@ representa o diagrama de Hasse, de uma ordem parcial no conjunto $\{1,2,3,4,5,6,
 - Qual é o resultado de executar \emph{sup(D,3)}, onde \emph{D} é o dicionário anterior?
 
 Dada uma relação $R$, no conjunto $A=\{0,1,\ldots,n-1\}$, escreva em Python três funções:
-1. L(set)->set que devolve o conjunto $L(R)=\{a:aRa\}.$ 
+1. L(set)->set que devolve o conjunto $L(R)=\{a:aRa\}.$
 - S(set,int)->set que devolve o conjunto $S(R,b)=\{a: aRb\}.$
 - T(set,int,int)->set que devolve o conjunto $$T(R,a,b)=\{c: aRc \vee bRc\}.$$
 - e(set)->bool tal que $e(R)$, se a relação $R$ representa um grafo $G$, não orientado conexo, devolve True se e só se $G$ tem um caminho de Euler.

@@ -94,7 +94,7 @@ onde as proposições $P_1, P_2,\ldots\, P_n$ são designadas de *premissas* (ou
 
 ou
 
-$$P_1,\ldots, P_n\therefore Q\;$$ 
+$$P_1,\ldots, P_n\therefore Q\;$$
 
 
 Interessa distinguir entre argumentos correctos  e argumentos inválidos.
@@ -115,7 +115,7 @@ As regras que permitem passar de hipóteses feitas e resultados já demonstrados
 
 Se a implicação $P\rightarrow Q$ é verdadeira e também a proposição $P$, então $Q$ tem de ser necessariamente verdadeira. A validade desta regra pode ser comprovada recorrendo a uma tabela de verdade.
 
-<img src="ttabmodus.gif" width = 350/>
+![Image](../../../../../images/ttabmodus.gif)
 
 neste caso dizemos que $P\rightarrow Q,P\therefore Q$ é um argumento válido.
 
@@ -168,10 +168,11 @@ Formalização:
 
 Inspector de circunstâncias:
 
-<img src="InspCir1.gif" width = 350/>
 
-O argumento é válido um vez que a formalização é um sequente tautológico, ou seja, a proposição 
-$$((Q\rightarrow P)\wedge (\neg Q\rightarrow \neg R))\rightarrow (P\vee\neg R)$$ 
+![Image](../../../../../images/InspCir1.gif)
+
+O argumento é válido um vez que a formalização é um sequente tautológico, ou seja, a proposição
+$$((Q\rightarrow P)\wedge (\neg Q\rightarrow \neg R))\rightarrow (P\vee\neg R)$$
 é uma tautologia.
 
 ### Exemplo
@@ -189,7 +190,8 @@ Formalização:
 
 Inspector de circunstâncias:
 
-<img src="InspCir2.gif" width = 350/>
+![Image](../../../../../images/InspCir2.gif)
+
 
 O argumento não é válido,  pois há pelo menos uma circunstância que torna as premissas verdadeiras e a conclusão falsa o que faz com que a proposição
 $$((P \vee Q)\wedge ( P\rightarrow R))\rightarrow (Q\rightarrow\neg R)$$
@@ -205,19 +207,19 @@ para provar argumentos e definir regras de inferência.
 
 Usando tautologias deste tipo ou inspectores de circunstância podemos mostrar serem válidas as relações de inferência da tabela que se segue.
 
-  Name | Tautologia | Regra de inferência 
+  Name | Tautologia | Regra de inferência
 -------|------------|---------------------
-Modus Ponens | $_{(p\wedge (p\rightarrow q))\rightarrow q}$ | $_{p, p\rightarrow q \therefore q}$ 
-Modus Tollens| $_{(\neg q\wedge (p\rightarrow q))\rightarrow \neg p}$ | $_{\neg q,p\rightarrow q\therefore  \neg p}$ 
-Silogismo Hipotético | $_{((p\rightarrow q)\wedge(q\rightarrow r))\rightarrow(p\rightarrow r)}$ | $_{p\rightarrow q,q\rightarrow r\therefore p\rightarrow r}$ 
+Modus Ponens | $_{(p\wedge (p\rightarrow q))\rightarrow q}$ | $_{p, p\rightarrow q \therefore q}$
+Modus Tollens| $_{(\neg q\wedge (p\rightarrow q))\rightarrow \neg p}$ | $_{\neg q,p\rightarrow q\therefore  \neg p}$
+Silogismo Hipotético | $_{((p\rightarrow q)\wedge(q\rightarrow r))\rightarrow(p\rightarrow r)}$ | $_{p\rightarrow q,q\rightarrow r\therefore p\rightarrow r}$
 Silogismo Disjuntivo | $_{((p\vee q)\wedge\neg p)\rightarrow q}$ | $_{p\vee q,\neg p\therefore q}$
 Simplificação | $_{(p \wedge q)\rightarrow p}$ | $_{p \wedge q\therefore p}$
 Adição | $_{p\rightarrow (p\vee q)}$ | $_{p\therefore p\vee q}$
-Lei da resolução | $_{((p\vee q)\wedge (\neg p\vee r))\rightarrow(q\vee r)}$ | $_{p\vee q,\neg p\vee r\therefore q\vee r}$ 
-Eliminação | $_{((p\rightarrow(q\vee r))\wedge \neg q)\rightarrow (p\rightarrow r)}$ | $_{p\rightarrow(q\vee r)), \neg q\therefore p\rightarrow r}$ 
-Prova por Casos | $_{((p\rightarrow r)\wedge (q \rightarrow r))\rightarrow ((p\vee q)\rightarrow r)}$ | $_{p\rightarrow r,q \rightarrow r\therefore (p\vee q)\rightarrow r}$ 
-Lei da combinação | $_{(p\wedge q)\rightarrow (p\wedge q)}$ | $_{p,q\therefore p\wedge q}$ 
-Redução ao absurdo | $_{(\neg p\rightarrow q \wedge \neg p \rightarrow \neg q)\rightarrow p}$ | $_{\neg p\rightarrow q, \neg p \rightarrow \neg q\therefore p}$ 
+Lei da resolução | $_{((p\vee q)\wedge (\neg p\vee r))\rightarrow(q\vee r)}$ | $_{p\vee q,\neg p\vee r\therefore q\vee r}$
+Eliminação | $_{((p\rightarrow(q\vee r))\wedge \neg q)\rightarrow (p\rightarrow r)}$ | $_{p\rightarrow(q\vee r)), \neg q\therefore p\rightarrow r}$
+Prova por Casos | $_{((p\rightarrow r)\wedge (q \rightarrow r))\rightarrow ((p\vee q)\rightarrow r)}$ | $_{p\rightarrow r,q \rightarrow r\therefore (p\vee q)\rightarrow r}$
+Lei da combinação | $_{(p\wedge q)\rightarrow (p\wedge q)}$ | $_{p,q\therefore p\wedge q}$
+Redução ao absurdo | $_{(\neg p\rightarrow q \wedge \neg p \rightarrow \neg q)\rightarrow p}$ | $_{\neg p\rightarrow q, \neg p \rightarrow \neg q\therefore p}$
 
 #### Exercício
 Demonstre as seguintes regras de inferência:
@@ -245,9 +247,9 @@ $C_1,C_2,\ldots,C_m$.
 A definição de demonstração válida assenta nos seguintes factos:
 
 #### Terorema [Substituição por equivalência]
-1. Se $C_m\Leftrightarrow D$ e $C_1,C_2,\ldots,C_m\therefore B$, então $C_1,C_2,\ldots,C_{m-1},D\therefore B$. 
+1. Se $C_m\Leftrightarrow D$ e $C_1,C_2,\ldots,C_m\therefore B$, então $C_1,C_2,\ldots,C_{m-1},D\therefore B$.
  \]
-+ Se $B\Leftrightarrow D$ e $C_1,C_2,\ldots,C_m\therefore B$, então $C_1,C_2,\ldots,C_m\therefore D$. 
++ Se $B\Leftrightarrow D$ e $C_1,C_2,\ldots,C_m\therefore B$, então $C_1,C_2,\ldots,C_m\therefore D$.
 
 Como exemplo de demonstração, seja $\Gamma=\{p,p\rightarrow q, q\rightarrow r\}$. Mostremos que $\Gamma\therefore r$. Com efeito, temos (1) $p$ é hipótese (está em $\Gamma$); (2) $p\rightarrow q$ é hipótese (idem); (3) $q$ (de 1 e 2, por Modus Ponens); (4) $q\rightarrow r$ é hipótese (está em $\Gamma$); (5) $r$ (de 2 e 4, por Modus Ponens). Logo, como por hipótese $p,p\rightarrow q, q\rightarrow r$ são proposições verdadeiras temos de ter $r$ verdadeira.
 
@@ -313,17 +315,17 @@ Temos:
 ### Exercícios:
 Sendo $p,q,r$ e $s$ quatro proposições, classifique os argumentos abaixo se são ou não  válidos.
 1. $(\neg p)\vee q,p\therefore q$
-+ $p,p\rightarrow q, q\rightarrow r \therefore r$
-+ $p\rightarrow q, r\rightarrow (\neg q)\therefore p\rightarrow (\neg r)$
-+ $(\neg p)\vee q, (\neg r)\rightarrow (\neg q)\therefore p\rightarrow (\neg r)$
+1. $p,p\rightarrow q, q\rightarrow r \therefore r$
+1. $p\rightarrow q, r\rightarrow (\neg q)\therefore p\rightarrow (\neg r)$
+1. $(\neg p)\vee q, (\neg r)\rightarrow (\neg q)\therefore p\rightarrow (\neg r)$
 
 
 ### Propriedades do operador $\therefore$
 De forma simples podemos mostrar que o operador $\therefore$ satisfaz as seguintes propriedades:
 1. (*Inclusão*) Para todo $p\in \Gamma$, tem-se que $\Gamma\therefore p$.
-+ (*Monotonia*) Se $\Gamma\subseteq\Delta$ e se $\Gamma\therefore p$, então $\Delta\therefore p$. Informalmente, se algo é dedutível a partir dum dado conjunto de premissas $\Gamma$, continua a ser dedutível em qualquer conjunto de premissas contendo $\Gamma$.
-+ (*Corte*) Se $\Delta\therefore p$ e de $\Gamma\therefore q$ para cada $q\in\Delta$, então $\Gamma\therefore p$.
-+ (*Teorema da Dedução*) Se $\Gamma,p\therefore q$ então $\Gamma\therefore p\rightarrow q$.
+1. (*Monotonia*) Se $\Gamma\subseteq\Delta$ e se $\Gamma\therefore p$, então $\Delta\therefore p$. Informalmente, se algo é dedutível a partir dum dado conjunto de premissas $\Gamma$, continua a ser dedutível em qualquer conjunto de premissas contendo $\Gamma$.
+1. (*Corte*) Se $\Delta\therefore p$ e de $\Gamma\therefore q$ para cada $q\in\Delta$, então $\Gamma\therefore p$.
+1. (*Teorema da Dedução*) Se $\Gamma,p\therefore q$ então $\Gamma\therefore p\rightarrow q$.
 
 Assim, por exemplo, como $p,p\rightarrow q\therefore q$, pelo Teorema da Dedução, temos que  $p\therefore (p\rightarrow q) \rightarrow q$, ou seja $\therefore p \rightarrow((p\rightarrow q) \rightarrow q)$. Donde podemos concluir que $p \rightarrow((p\rightarrow q) \rightarrow q)$ é uma tautologia, já que é ''sempre verdadeira'' o seu valor de verdade não depende de nenhuma hipótese. Assim, sempre que a proposição $P$ é uma tautologia escrevemos que $\therefore P$ já que o seu valor de verdade não depende de nenhuma hipótese.
 
@@ -332,13 +334,13 @@ Assim, por exemplo, como $p,p\rightarrow q\therefore q$, pelo Teorema da Deduç�
 ### Exercícios:
 Mostre que:
 1. $\therefore (\neg p\rightarrow p)\rightarrow p$ (outra forma de redução ao absurdo)
-+ $\therefore (p\rightarrow q)\rightarrow ((p\rightarrow \neg q)\rightarrow \neg p)$ (redução ao absurdo intuicionista)
-+ $\therefore p\rightarrow p\vee q$ (regra da adição)
-+ $\therefore \neg p \rightarrow (p\rightarrow q)$
-+ $\therefore (p\rightarrow \neg q)\rightarrow (q \rightarrow \neg p)$
-+ $\therefore (p\wedge q)\leftrightarrow \neg (\neg p \wedge \neg q)$ (regra de De Morgan)
-+ $\therefore \neg (p\wedge \neg p)$ (lei da contradição)
-+ $\therefore (p \wedge \neg p)\rightarrow q$ (Lei de Duns Scotus)
+1. $\therefore (p\rightarrow q)\rightarrow ((p\rightarrow \neg q)\rightarrow \neg p)$ (redução ao absurdo intuicionista)
+1. $\therefore p\rightarrow p\vee q$ (regra da adição)
+1. $\therefore \neg p \rightarrow (p\rightarrow q)$
+1. $\therefore (p\rightarrow \neg q)\rightarrow (q \rightarrow \neg p)$
+1. $\therefore (p\wedge q)\leftrightarrow \neg (\neg p \wedge \neg q)$ (regra de De Morgan)
+1. $\therefore \neg (p\wedge \neg p)$ (lei da contradição)
+1. $\therefore (p \wedge \neg p)\rightarrow q$ (Lei de Duns Scotus)
 
 
 ## Exercícios de revisão:
@@ -351,86 +353,86 @@ H: O Nuno é feliz
 
 escreva as seguintes afirmações na forma simbólica
 1. O Nuno é pobre mas feliz.
-+ O Nuno é rico ou feliz.
-+ O Nuno não é nem rico nem feliz.
-+ O Nuno é pobre ou ele é simultaneamente rico e feliz.
+1. O Nuno é rico ou feliz.
+1. O Nuno não é nem rico nem feliz.
+1. O Nuno é pobre ou ele é simultaneamente rico e feliz.
 
 ### Exercício:
 Quatro indivíduos são suspeitos de terem cometido um crime. É sabido que um e só um deles cometeu o crime. Quando interrogados pela polícia fizeram as seguintes afirmações:
 1. [Artur]: Foi o José que cometeu o crime.
-+ [José]: Foi o Tiago que cometeu o crime,
-+ [Gabriel]: Eu não o fiz.
-+ [Tiago]: José mente quando diz que fui eu.
+1. [José]: Foi o Tiago que cometeu o crime,
+1. [Gabriel]: Eu não o fiz.
+1. [Tiago]: José mente quando diz que fui eu.
 
 Se exactamente uma destas afirmações é falsa, quem foi o criminoso?
 
 ### Exercício:
 Quais das seguintes expressões são proposições bem formadas?
 1. $\neg((A\rightarrow B)\rightarrow \neg(B\rightarrow A)$
-+ $(S\wedge (((P\rightarrow Q)\wedge (\neg Q\rightarrow R))\rightarrow (Q\vee \neg Q)))$
-+ $((((A\wedge \neg B)\vee (\neg A \wedge B))\leftrightarrow \neg\neg\neg\neg C))$
-+ $(((A\rightarrow B)\rightarrow C)\rightarrow \neg ((A\vee B)\leftrightarrow \neg\neg(C\wedge A)))$
+1. $(S\wedge (((P\rightarrow Q)\wedge (\neg Q\rightarrow R))\rightarrow (Q\vee \neg Q)))$
+1. $((((A\wedge \neg B)\vee (\neg A \wedge B))\leftrightarrow \neg\neg\neg\neg C))$
+1. $(((A\rightarrow B)\rightarrow C)\rightarrow \neg ((A\vee B)\leftrightarrow \neg\neg(C\wedge A)))$
 
 ### Exercício:
 Construa a tabela de verdade para as seguintes fórmulas:
-1 $\neg(\neg P \vee \neg Q)$
-+ $\neg(\neg P \wedge \neg Q)$
-+ $P\wedge(P\vee Q)$
-+ $P\wedge(Q\wedge P)$
-+ $(\neg P\wedge(\neg Q \wedge R))\vee (Q\wedge R)\vee (P\wedge R)$
-+ $(P\wedge Q)\vee (\neg P \wedge Q)\vee (P\wedge\neg Q)\vee (\neg P\wedge\neg Q)$
+1. $\neg(\neg P \vee \neg Q)$
+1. $\neg(\neg P \wedge \neg Q)$
+1. $P\wedge(P\vee Q)$
+1. $P\wedge(Q\wedge P)$
+1. $(\neg P\wedge(\neg Q \wedge R))\vee (Q\wedge R)\vee (P\wedge R)$
+1. $(P\wedge Q)\vee (\neg P \wedge Q)\vee (P\wedge\neg Q)\vee (\neg P\wedge\neg Q)$
 
 ### Exercício:
 Assumindo que as variáveis proposicionais $P$ e $Q$ são verdadeiras e que $R$ e $S$ são falsas, determine o valor de verdade das afirmações:
-1 $P\wedge(Q\vee R)$
-+ $(P\wedge (Q\wedge R))\vee\neg((P\vee Q)\wedge(R\vee S))$
-+ $(\neg(P\wedge Q)\vee\neg R)\vee(((\neg P\wedge Q)\vee \neg R)\wedge S)$
+1. $P\wedge(Q\vee R)$
+1. $(P\wedge (Q\wedge R))\vee\neg((P\vee Q)\wedge(R\vee S))$
+1. $(\neg(P\wedge Q)\vee\neg R)\vee(((\neg P\wedge Q)\vee \neg R)\wedge S)$
 
 ### Exercício:
 Mostre que o valor lógico das fórmulas apresentadas abaixo é independente das suas componentes:
 1. $(P\wedge (P\rightarrow Q))\rightarrow Q$
-+ $(P\rightarrow Q)\leftrightarrow (\neg P \vee Q)$
-+ $((P\rightarrow Q)\wedge (Q\rightarrow R))\rightarrow (P\rightarrow R)$
-+ $(P\leftrightarrow Q)\leftrightarrow((P\wedge Q)\vee (\neg P\wedge \neg Q))$
+1. $(P\rightarrow Q)\leftrightarrow (\neg P \vee Q)$
+1. $((P\rightarrow Q)\wedge (Q\rightarrow R))\rightarrow (P\rightarrow R)$
+1. $(P\leftrightarrow Q)\leftrightarrow((P\wedge Q)\vee (\neg P\wedge \neg Q))$
 
 ### Exercício:
 Construa a tabela de verdade das seguintes fórmulas:
 1. $(Q\wedge(P\rightarrow Q))\rightarrow P$
-+ $\neg(P\vee (Q\wedge R))\leftrightarrow ((P\vee Q)\wedge (P\vee R))$
+1. $\neg(P\vee (Q\wedge R))\leftrightarrow ((P\vee Q)\wedge (P\vee R))$
 
 ### Exercício:
 Assumindo que as variáveis proposicionais $P$ e $Q$ são verdadeiras e que $R$ e $S$ são falsas, determine os valores de verdade das seguintes fórmulas.
 1. $(\neg(P\wedge Q)\vee \neg R)\vee ((Q\leftrightarrow \neg P)\rightarrow (R\vee \neg S))$
-+ $(P\leftrightarrow Q)\wedge (\neg Q\rightarrow S)$
-+ $(P\vee (Q\rightarrow(R\wedge \neg P)))\leftrightarrow (Q\vee \neg S)$
+1. $(P\leftrightarrow Q)\wedge (\neg Q\rightarrow S)$
+1. $(P\vee (Q\rightarrow(R\wedge \neg P)))\leftrightarrow (Q\vee \neg S)$
 
 ### Exercício:
 Suponha-se que se define uma nova conectiva, denotada por $\ast$, tal que $p\ast q$ é verdadeira quando $q$ é verdadeira e $p$ falsa, e é falsa em todos os outros casos. Construa as tabelas de verdade para
 1. $p\ast q$
-+ $q\ast p$
-+ $(p\ast q)\ast p$
+1. $q\ast p$
+1. $(p\ast q)\ast p$
 
 ### Exercício:
 Elimine o maior número de parêntesis possível sem alterar o significado das expressões:
 1. $((p\rightarrow (\neg q))\wedge r)$
-+ $(p\vee (q \vee r))$
-+ $(((p\wedge (\neg q))\wedge r)\vee s)$
-+ $((p\vee(\neg q))\vee (p\wedge q))$
-+ $((p\leftrightarrow q)\leftrightarrow(\neg(r\vee s)))$
+1. $(p\vee (q \vee r))$
+1. $(((p\wedge (\neg q))\wedge r)\vee s)$
+1. $((p\vee(\neg q))\vee (p\wedge q))$
+1. $((p\leftrightarrow q)\leftrightarrow(\neg(r\vee s)))$
 
 ### Exercício:
 Reponha os parêntesis:
 1. $s\vee \neg q\wedge r$
-+ $s\rightarrow \neg\neg\neg\neg q \wedge r$
-+ $s\rightarrow \neg(q\wedge r \rightarrow s)\wedge\wedge q \leftrightarrow r$
-+ $s\rightarrow r\rightarrow r\leftrightarrow \neg r \vee t$
+1. $s\rightarrow \neg\neg\neg\neg q \wedge r$
+1. $s\rightarrow \neg(q\wedge r \rightarrow s)\wedge\wedge q \leftrightarrow r$
+1. $s\rightarrow r\rightarrow r\leftrightarrow \neg r \vee t$
 
 ### Exercício:
 Mostre as seguintes equivalências
 1. $P\rightarrow (Q\rightarrow P)\Leftrightarrow \neg P\rightarrow (P\rightarrow Q)$
-+ $P\rightarrow (Q\vee R)\Leftrightarrow (P\rightarrow Q)\vee (P\rightarrow R)$
-+ $(P\rightarrow Q)\wedge (R\rightarrow Q)\Leftrightarrow (P\rightarrow Q)\vee (P\rightarrow R)$
-+ $\neg(P\leftrightarrow Q)\Leftrightarrow (P\vee Q)\wedge \neg(P\vee Q)$
+1. $P\rightarrow (Q\vee R)\Leftrightarrow (P\rightarrow Q)\vee (P\rightarrow R)$
+1. $(P\rightarrow Q)\wedge (R\rightarrow Q)\Leftrightarrow (P\rightarrow Q)\vee (P\rightarrow R)$
+1. $\neg(P\leftrightarrow Q)\Leftrightarrow (P\vee Q)\wedge \neg(P\vee Q)$
 
 ### Exercício:
 Mostre que $P$ é equivalente às seguintes fórmulas
@@ -440,78 +442,78 @@ $(P\wedge Q)\vee (P\wedge \neg Q)$, e $(P\vee Q)\wedge (P\vee \neg Q)$.
 ### Exercício:
 Mostre as seguintes equivalências
 1. $\neg(P\wedge Q)\Leftrightarrow \neg P \vee \neg Q$
-+ $\neg(P\wedge Q)\Leftrightarrow \neg P \wedge \neg Q$
-+ $\neg(P\rightarrow Q)\Leftrightarrow P \wedge \neg Q$
-+ $\neg(P\leftrightarrow Q)\Leftrightarrow (P \wedge \neg Q) \vee (\neg P\wedge Q)$
+1. $\neg(P\wedge Q)\Leftrightarrow \neg P \wedge \neg Q$
+1. $\neg(P\rightarrow Q)\Leftrightarrow P \wedge \neg Q$
+1. $\neg(P\leftrightarrow Q)\Leftrightarrow (P \wedge \neg Q) \vee (\neg P\wedge Q)$
 
 ### Exercício:
 Mostre as seguintes equivalências:
 1. $A\rightarrow (P\vee C)\Leftrightarrow (A\wedge \neg P)\rightarrow C$
-+ $(P\rightarrow C)\wedge (Q\rightarrow C)\Leftrightarrow (P\vee Q)\rightarrow C$
-+ $((Q\wedge A)\rightarrow C)\wedge (A\rightarrow (P\vee C))\Leftrightarrow (A\wedge (P\rightarrow Q))\rightarrow C$
-+ $((P\wedge Q \wedge A)\rightarrow C)\wedge (A\rightarrow (P\vee Q\vee C))\Leftrightarrow (A\wedge (P\leftrightarrow Q))\rightarrow C$
+1. $(P\rightarrow C)\wedge (Q\rightarrow C)\Leftrightarrow (P\vee Q)\rightarrow C$
+1. $((Q\wedge A)\rightarrow C)\wedge (A\rightarrow (P\vee C))\Leftrightarrow (A\wedge (P\rightarrow Q))\rightarrow C$
+1. $((P\wedge Q \wedge A)\rightarrow C)\wedge (A\rightarrow (P\vee Q\vee C))\Leftrightarrow (A\wedge (P\leftrightarrow Q))\rightarrow C$
 
 ### Exercício:
 Simplifique as fórmulas abaixo:
 1. $((P\rightarrow Q)\leftrightarrow (\neg Q\rightarrow \neg P))\wedge R$
-+ $P\vee (\neg P \vee (Q \wedge \neg Q))$
-+ $(P\wedge (Q\wedge S))\vee (\neg P \wedge (Q \wedge S))$
+1. $P\vee (\neg P \vee (Q \wedge \neg Q))$
+1. $(P\wedge (Q\wedge S))\vee (\neg P \wedge (Q \wedge S))$
 
 ### Exercício:
 Mostre as seguintes implicações lógicas
 1. $(P\wedge Q)\Rightarrow(P\rightarrow Q)$
-+ $P\Rightarrow (Q\rightarrow P)$
-+ $(P\rightarrow(Q\rightarrow R)\Rightarrow (P\rightarrow Q)\rightarrow (P\rightarrow R)$
+1. $P\Rightarrow (Q\rightarrow P)$
+1. $(P\rightarrow(Q\rightarrow R)\Rightarrow (P\rightarrow Q)\rightarrow (P\rightarrow R)$
 
 ### Exercício:
 Escreva as fórmulas abaixo de forma equivalente, mas onde a negação seja aplicada apenas a variáveis.
 1. $\neg(P\vee Q)$
-+ $\neg(P\wedge Q)$
-+ $\neg(P\rightarrow Q)$
-+ $\neg(P\leftrightarrow Q)$
+1. $\neg(P\wedge Q)$
+1. $\neg(P\rightarrow Q)$
+1. $\neg(P\leftrightarrow Q)$
 
 ### Exercício:
 Mostre que a conclusão $C$ segue das premissas $H_1,H_2,H_3$ nos seguintes casos:
 1. $H_1:P\rightarrow Q$, $\therefore C:P\rightarrow (P\wedge Q)$
-+ $H_1:\neg P\vee Q, H_2:\neg(Q\wedge \neg R), H_3:\neg R$, $\therefore C:\neg P$
-+ $H_1:\neg P, H_2:P\vee Q$ $\therefore C:Q$
-+ $H_1:\neg Q, H_2:P\rightarrow Q$ $\therefore C:\neg P$
-+ $H_1:P\rightarrow Q, H_2:Q\rightarrow R$ $\therefore C:P\rightarrow R$
-+ $H_1:R, H_2:P\vee \neg P$ $\therefore C:R$
+1. $H_1:\neg P\vee Q, H_2:\neg(Q\wedge \neg R), H_3:\neg R$, $\therefore C:\neg P$
+1. $H_1:\neg P, H_2:P\vee Q$ $\therefore C:Q$
+1. $H_1:\neg Q, H_2:P\rightarrow Q$ $\therefore C:\neg P$
+1. $H_1:P\rightarrow Q, H_2:Q\rightarrow R$ $\therefore C:P\rightarrow R$
+1. $H_1:R, H_2:P\vee \neg P$ $\therefore C:R$
 
 ### Exercício:
 Mostre a validade dos seguintes argumentos, onde as premissas aparecem à esquerda e as conclusões à direita:
-1. $\neg(P\wedge \neg Q),\neg Q\vee R,\neg R \therefore\neg P$ 
-+ $(A\rightarrow B)\wedge (A\rightarrow C), \neg(B\wedge C), D\vee A \therefore D$ 
-+ $\neg J\rightarrow (M\vee N), (H\vee G)\rightarrow \neg J, H\vee G \therefore M\vee N$ 
-+ $P\rightarrow Q, (\neg Q\vee R)\wedge \neg R, \neg(\neg P\wedge S \therefore \neg S$
-+ $(P \wedge Q)\rightarrow R, \neg R\vee S, \neg S \therefore \neg P \vee \neg Q$
-+ $P\rightarrow Q, Q\rightarrow \neg R, R, P\vee (J\wedge S) \therefore J\wedge S$
+1. $\neg(P\wedge \neg Q),\neg Q\vee R,\neg R \therefore\neg P$
+1. $(A\rightarrow B)\wedge (A\rightarrow C), \neg(B\wedge C), D\vee A \therefore D$
+1. $\neg J\rightarrow (M\vee N), (H\vee G)\rightarrow \neg J, H\vee G \therefore M\vee N$
+1. $P\rightarrow Q, (\neg Q\vee R)\wedge \neg R, \neg(\neg P\wedge S \therefore \neg S$
+1. $(P \wedge Q)\rightarrow R, \neg R\vee S, \neg S \therefore \neg P \vee \neg Q$
+1. $P\rightarrow Q, Q\rightarrow \neg R, R, P\vee (J\wedge S) \therefore J\wedge S$
 
 ### Exercício:
 Sendo $p,q,r$ e $s$ quatro proposições, classifique os argumentos abaixo se são ou não válidos.
 1. $p\vee (\neg q),\neg q\therefore p$
-+ $\neg p\therefore p\rightarrow q $
-+ $(p\wedge q)\rightarrow (r\wedge s),\neg r\therefore (\neg p)\vee(\neg q)$
-+ $p\rightarrow q, (\neg q)\rightarrow(\neg r), s\rightarrow(p\vee r),s\therefore q$
-+ $p\vee q, q \rightarrow (\neg r),(\neg r)\rightarrow (\neg p)\therefore \neg(p\wedge q)$
-+ $p\rightarrow q, (\neg r)\rightarrow (\neg q), r \rightarrow (\neg p)\therefore \neg p$
-+ $p\rightarrow (\neg p)\therefore \neg p$
-+ $p\vee q,p\rightarrow r, \neg r \therefore q$
-+ $p,q\rightarrow(\neg p),(\neg q)\rightarrow(r\vee (\neg s)),\neg r\therefore \neg s$
-+ $p\rightarrow(q\vee s),q\rightarrow r\therefore p\rightarrow(r\vee s)$
-+ $p\rightarrow(\neg q), q\rightarrow p, r\rightarrow p\therefore \neg q$
-+ $p\rightarrow q, r\rightarrow s, \neg(p\rightarrow s)\therefore q\wedge (\neg r)$
+1. $\neg p\therefore p\rightarrow q $
+1. $(p\wedge q)\rightarrow (r\wedge s),\neg r\therefore (\neg p)\vee(\neg q)$
+1. $p\rightarrow q, (\neg q)\rightarrow(\neg r), s\rightarrow(p\vee r),s\therefore q$
+1. $p\vee q, q \rightarrow (\neg r),(\neg r)\rightarrow (\neg p)\therefore \neg(p\wedge q)$
+1. $p\rightarrow q, (\neg r)\rightarrow (\neg q), r \rightarrow (\neg p)\therefore \neg p$
+1. $p\rightarrow (\neg p)\therefore \neg p$
+1. $p\vee q,p\rightarrow r, \neg r \therefore q$
+1. $p,q\rightarrow(\neg p),(\neg q)\rightarrow(r\vee (\neg s)),\neg r\therefore \neg s$
+1. $p\rightarrow(q\vee s),q\rightarrow r\therefore p\rightarrow(r\vee s)$
+1. $p\rightarrow(\neg q), q\rightarrow p, r\rightarrow p\therefore \neg q$
+1. $p\rightarrow q, r\rightarrow s, \neg(p\rightarrow s)\therefore q\wedge (\neg r)$
 
 ### Exercício:
 Quais dos seguintes argumentos são válidos?
 1. $P\rightarrow Q, \neg Q\rightarrow R, \neg R, \therefore P$
-+ $A\rightarrow (A\rightarrow (B\rightarrow C)),B, \therefore A\rightarrow C$
-+ Se a Rute comprou um carro de luxo, foi porque ou assaltou um banco ou o seu tio rico morreu. Rute não assaltou um banco ou o seu tio rico não morreu. Consequentemente, o seu tio rico não morreu.
-+ Hoje é domingo. Amanhã não é domingo. Consequentemente a Lua é feita de queijo verde.
-+ O livro está na secretária ou na estante. Não está na estante. Consequentemente, está na secretária.
-+ Se a função $f$ não é contínua, então não é diferenciável. A função $f$ é diferenciável. Consequentemente, a função $f$ é contínua.
-+ Se existe vida em Marte, então os especialistas estão enganados e o governo está a mentir. Se o governo está a mentir, então os especialistas estão certos ou não existe vida em Marte. O governo está a mentir. Consequentemente, existe vida em Marte.
-+ (Lewis Carroll) Os bebés são ilógicos. Ninguém que consiga domar um crocodilo deve ser menosprezado. Pessoas ilógicas são  menosprezadas. Consequentemente, os bebés não conseguem domar crocodilos.
-+ (Lewis Carroll) Nenhum cão de caça vagueia pelo Zodíaco. Apenas os cometas vagueiam pelo Zodiaco. Só os cães de caça tem a cauda encaracolada. Consequentemente, nenhum cometa tem a cauda enrolada.
-+ As frutas verdes não são saudáveis. Todas estas maçãs não são saudáveis. Nenhum fruto, que tenha crescido na escuridão é saudável. Estas maçãs não cresceram ao sol. Consequentemente, toda a fruta madura é saudável.
+1. $A\rightarrow (A\rightarrow (B\rightarrow C)),B, \therefore A\rightarrow C$
+1. Se a Rute comprou um carro de luxo, foi porque ou assaltou um banco ou o seu tio rico morreu. Rute não assaltou um banco ou o seu tio rico não morreu. Consequentemente, o seu tio rico não morreu.
+1. Hoje é domingo. Amanhã não é domingo. Consequentemente a Lua é feita de queijo verde.
+1. O livro está na secretária ou na estante. Não está na estante. Consequentemente, está na secretária.
+1. Se a função $f$ não é contínua, então não é diferenciável. A função $f$ é diferenciável. Consequentemente, a função $f$ é contínua.
+1. Se existe vida em Marte, então os especialistas estão enganados e o governo está a mentir. Se o governo está a mentir, então os especialistas estão certos ou não existe vida em Marte. O governo está a mentir. Consequentemente, existe vida em Marte.
+1. (Lewis Carroll) Os bebés são ilógicos. Ninguém que consiga domar um crocodilo deve ser menosprezado. Pessoas ilógicas são  menosprezadas. Consequentemente, os bebés não conseguem domar crocodilos.
+1. (Lewis Carroll) Nenhum cão de caça vagueia pelo Zodíaco. Apenas os cometas vagueiam pelo Zodiaco. Só os cães de caça tem a cauda encaracolada. Consequentemente, nenhum cometa tem a cauda enrolada.
+1. As frutas verdes não são saudáveis. Todas estas maçãs não são saudáveis. Nenhum fruto, que tenha crescido na escuridão é saudável. Estas maçãs não cresceram ao sol. Consequentemente, toda a fruta madura é saudável.

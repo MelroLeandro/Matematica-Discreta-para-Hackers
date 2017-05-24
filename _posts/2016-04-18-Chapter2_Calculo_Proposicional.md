@@ -14,24 +14,24 @@ visualworkflow: false
 ## Lógica proposicional
 
 > "Poder-se-á definir a Lógica como a ciência das regras que legitimam
-a utilização da palavra portanto." B. Ruyer in Logique. 
+a utilização da palavra portanto." B. Ruyer in Logique.
 
 ### Proposição
 
 No caso das instruções *if* e *while*, a execução dum bloco de código está dependente da avaliação duma função proposicional (condição). Com o objectivo de estudar estas instruções e formalizar a noção de função proposicional começa-se por rever algumas noções de lógica proposicional e do cálculo de predicados.
 
-<img src="py5.gif" width = 400/>
+![Image](../../../../../images/py5.gif)
 
 Os elementos básicos da lógica são as *proposições* ou *sentenças* que se entendem como afirmações precisas. Na lógica clássica, que abordamos, a avaliação duma proposição é regida por dois princípios fundamentais:
 * **Princípio da não contradição** - Uma proposição não pode ser simultaneamente verdadeira e falsa;
 * **Princípio do terceiro excluído** - Uma proposição ou é verdadeira ou é falsa;
 
 Por exemplo "1 é maior que 3" é uma proposição cujo valor lógico é o de
-"falsidade" enquanto que "todos os triângulos têm três lados e três ângulos" é uma proposição cujo valor lógico é o de "verdade". 
+"falsidade" enquanto que "todos os triângulos têm três lados e três ângulos" é uma proposição cujo valor lógico é o de "verdade".
 
-Por outro lado "*x < 3*" não é uma proposição (depende do valor que venha a ser atribuído à variável *x*) sendo denominada *função proposicional*. 
+Por outro lado "*x < 3*" não é uma proposição (depende do valor que venha a ser atribuído à variável *x*) sendo denominada *função proposicional*.
 
-Representam-se por letras (geralmente minúsculas) as proposições genéricas (ou variáveis proposicionais) e por 1 (ou V) e 0 (ou F) os valores lógicos de "*verdade*" e "*falsidade*", respectivamente. 
+Representam-se por letras (geralmente minúsculas) as proposições genéricas (ou variáveis proposicionais) e por 1 (ou V) e 0 (ou F) os valores lógicos de "*verdade*" e "*falsidade*", respectivamente.
 
 A área da lógica que trata as proposições neste contexto é designada por *cálculo proposicional* ou *lógica proposicional*.
 
@@ -40,7 +40,7 @@ Por vezes combinam-se várias proposições para obter proposições mais expres
 **composta** (também denominada molecular).
 
 As proposições simples apresentam apenas uma afirmação:
-      
+
 > $p:$ $\sqrt{2}$ não é um número racional.
 
 > $q:$ existem mais números reais que inteiros.
@@ -77,9 +77,9 @@ Operações Lógicas | Símbolos | Notação | Significado
 ------------------|----------|---------|------------
 Negação | $\neg$ ou $\sim$ | $\neg p$ | não *p*
 Conjunção | $\wedge$ | $p \wedge q$ | *p* e *q*
-Disjunção | $\vee$ | $p \vee q$ | *p* ou *q* 
-Disjunção exclusiva | $\oplus$ ou $\dot{\vee}$ | $p\oplus q$ |  ou *p* ou (exclusivo) *q* 
-Implicação | $\rightarrow$ | $p\rightarrow q$ | se *p* então *q* 
+Disjunção | $\vee$ | $p \vee q$ | *p* ou *q*
+Disjunção exclusiva | $\oplus$ ou $\dot{\vee}$ | $p\oplus q$ |  ou *p* ou (exclusivo) *q*
+Implicação | $\rightarrow$ | $p\rightarrow q$ | se *p* então *q*
 Bi-implicação | $\leftrightarrow$ | $p\leftrightarrow q$ | *p* se só se *q*
 
 #### Negação
@@ -146,7 +146,7 @@ diz-se a \textbf{conjunção} de $p$ e $q$.
 
 Assim, os valores lógicos das três proposições $p$, $q$, e $p\wedge
 q$ estão relacionados pela tabela de verdade:
-    
+
 \begin{array}{c|c|c}
 \hline
   p & q & p\wedge q \\
@@ -259,9 +259,9 @@ $(p\wedge (\neg q))\oplus (r\vee p)$.
 
 ##### Exercício:
   Indique os valores (de verdade ou falsidade) das seguintes afirmações:
-* $3\leq 7$ e 4 é um número inteiro ímpar.
-* $3\leq 7$ ou 4 é um número inteiro ímpar.
-* 5 é ímpar ou divisível por 4.
+1. $3\leq 7$ e 4 é um número inteiro ímpar.
+1. $3\leq 7$ ou 4 é um número inteiro ímpar.
+1. 5 é ímpar ou divisível por 4.
 
 #### Implicação
 Sejam *p* e *q* proposições. A implicação *p$\rightarrow$q* é
@@ -374,27 +374,27 @@ Suponhamos que *p,q,r* representam as seguintes sentenças:
 1. Escreva em linguagem simbólica as proposições
 
     1. $3+1\neq 4$ e 24 é divisível por 8
-    
-    + não é verdade que 7 seja ímpar ou 3+1=4
-    
-    + se 3+1=4 então 24 não é divisível por 8
-    
-* Escreva por palavras as sentenças
+
+    1. não é verdade que 7 seja ímpar ou 3+1=4
+
+    1. se 3+1=4 então 24 não é divisível por 8
+
+2. Escreva por palavras as sentenças
 
     1. $p\vee(\neg q)$
-    
-    + $\neg(p\wedge q)$
-    
-    + $(\neg r)\vee (\neg q)$
-    
+
+    2. $\neg(p\wedge q)$
+
+    2. $(\neg r)\vee (\neg q)$
+
 
 ##### Exercício:
 Construir as tabelas de verdade das seguintes proposições:
 1. $((p\rightarrow q)\wedge p)\rightarrow q$
-+ $p\leftrightarrow(q\rightarrow r)$
-+ $(p\wedge(\neg p))\rightarrow q$
-+ $((p\vee r)\wedge(q\vee r))\wedge((\neg p)\vee (\neg r))$
-+ $(p\wedge(q\vee r))\wedge (q\wedge (p\vee r))$
+1. $p\leftrightarrow(q\rightarrow r)$
+1. $(p\wedge(\neg p))\rightarrow q$
+1. $((p\vee r)\wedge(q\vee r))\wedge((\neg p)\vee (\neg r))$
+1. $(p\wedge(q\vee r))\wedge (q\wedge (p\vee r))$
 
 ##### Exercício:
 Quantas linhas tem a tabela de verdade de uma proposição com $n$ variáveis proposicionais?
@@ -404,37 +404,37 @@ Até aqui, temos usado parêntesis para definir a ordem de
 aplicação dos operadores lógicos numa proposição composta. Por forma
 a reduzir o número de parêntesis adoptamos a seguinte convenção: Sempre que numa expressão estiverem presentes várias operações lógicas, **convenciona-se**, na ausência de parêntesis, que as operações se efectuem na ordem seguinte:
 1. a negação;
-+ a conjunção e a disjunção;
-+ a implicação e a bi-implicação.
+1. a conjunção e a disjunção;
+1. a implicação e a bi-implicação.
 
 Assim,
 1. $p\rightarrow ((\neg p)\vee r)$ pode escrever-se $p\rightarrow \neg p\vee r$;
-+ $(p\wedge (\neg q))\leftrightarrow c$ pode escrever-se $p\wedge \neg q\leftrightarrow c$;
-+ $p\vee q\wedge \neg r \rightarrow p \rightarrow\neg q$ deve ser entendida como
+1. $(p\wedge (\neg q))\leftrightarrow c$ pode escrever-se $p\wedge \neg q\leftrightarrow c$;
+1. $p\vee q\wedge \neg r \rightarrow p \rightarrow\neg q$ deve ser entendida como
 $(((p\vee q)\wedge(\neg r))\rightarrow p) \rightarrow(\neg q)$.
 
 ### Tautologia
 Chama-se **tautologia** (ou fórmula logicamente
 verdadeira) a uma proposição que é verdadeira, para quaisquer que sejam os valores lógicos atribuídos às variáveis proposicionais que a compõem. Dito de outra forma, chama-se tautologia a uma proposição cuja coluna correspondente na tabela de verdade possui apenas Vs ou 1s. Exemplo duma tautologia é a proposição $p\vee(\neg p)$, designada de "Princípio do terceiro excluído",
 
-<img src="tabela3-1.gif" width = 150/>
+![Image](../../../../../images/tabela3-1.gif)
 
 A negação duma tautologia, ou seja uma proposição que é sempre falsa, diz-se uma **contra-tautologia** ou **contradição**. Se uma proposição não é nem uma tautologia nem uma contradição denomina-se por **contingência**.
 
 Não deve confundir-se contradição com proposição falsa, assim como não deve confundir-se tautologia com proposição verdadeira. O facto de uma tautologia ser sempre verdadeira e uma contradição ser sempre falsa deve-se à sua forma lógica (sintaxe) e não ao significado que se lhes pode atribuir (semântica).
 
 A tabela de verdade
-<img src="tabela1.gif" width = 500/>
+![Image](../../../../../images/tabela1.gif)
 mostra que $p\rightarrow(p\vee q)$ é uma tautologia, enquanto que $(p\rightarrow q)\wedge (p\wedge (\neg q))$ é uma contradição.
 
 
 #### Exercício
 Mostre que são tautologias:
 1. $(\neg q\rightarrow \neg p)\leftrightarrow(p\rightarrow q)$
-+ $(p\leftrightarrow  q)\leftrightarrow ((p\rightarrow q)\wedge(q\rightarrow p))$
+1. $(p\leftrightarrow  q)\leftrightarrow ((p\rightarrow q)\wedge(q\rightarrow p))$
 
 Exemplos de outras tautologias são apresentadas abaixo:
-<img src="tabela2.gif"/>
+![Image](../../../../../images/tabela2.gif)
 
 ### Equivalências proposicionais
 
@@ -475,7 +475,7 @@ Diz-se que a proposição $p$ **implica logicamente** a proposição $q$ se a ve
 \end{array}
 \end{align}
 
-* $p\leftrightarrow  q\Leftrightarrow (p\rightarrow q)\wedge(q\rightarrow p)$
+2. $p\leftrightarrow  q\Leftrightarrow (p\rightarrow q)\wedge(q\rightarrow p)$
 
   \begin{array}{|c|c|c||c||c|c|c|c|c|c|c|}
 \hline
@@ -496,53 +496,53 @@ Deste modo,  a equivalência proposicional pode ser sempre verificada através d
 #### Exercício
 Mostre que são exemplos de equivalências proposicionais:
 1. $\neg(p\vee \neg p) \Leftrightarrow p \wedge \neg p$
-+ $\neg (p\vee q)\Leftrightarrow \neg p \wedge \neg q$
-+ $\neg p\vee q \Leftrightarrow p \rightarrow q$
-+ $p\vee(q\wedge r)\Leftrightarrow(p\vee q)\wedge(p\vee r)$
+1. $\neg (p\vee q)\Leftrightarrow \neg p \wedge \neg q$
+1. $\neg p\vee q \Leftrightarrow p \rightarrow q$
+1. $p\vee(q\wedge r)\Leftrightarrow(p\vee q)\wedge(p\vee r)$
 
 #### Exercício
 Indique quais das sentenças seguintes são equivalentes:
 1. $p\wedge(\neg q)$
-+ $p\rightarrow q$
-+ $\neg((\neg p)\vee q)$
-+ $q\rightarrow(\neg q)$
-+ $(\neg p)\vee q$
-+ $\neg(p\rightarrow q)$
-+ $p\rightarrow(\neg q)$
-+ $(\neg p)\rightarrow (\neg q)$
+1. $p\rightarrow q$
+1. $\neg((\neg p)\vee q)$
+1. $q\rightarrow(\neg q)$
+1. $(\neg p)\vee q$
+1. $\neg(p\rightarrow q)$
+1. $p\rightarrow(\neg q)$
+1. $(\neg p)\rightarrow (\neg q)$
 
 #### Exercício
 Mostre que cada uma das proposições que se seguem:
 1. $(\neg p)\vee q$
-+ $(\neg q)\rightarrow (\neg p)$
-+ $\neg(p\wedge (\neg q))$
+1. $(\neg q)\rightarrow (\neg p)$
+1. $\neg(p\wedge (\neg q))$
 é equivalente a $p\rightarrow q$.
 
 
 #### Exercício
 Mostre que:
 1. $p\vee(q\wedge r)$ não é logicamente equivalente a $(p\vee q)\wedge r$.
-+ $p\vee (q\wedge r)$ é logicamente equivalente a $(p\vee q)\wedge (p\vee r)$.
-+ $p\vee(\neg (q  \vee r))$ é logicamente equivalente a $(p\vee(\neg q))\vee(\neg r)$
+1. $p\vee (q\wedge r)$ é logicamente equivalente a $(p\vee q)\wedge (p\vee r)$.
+1. $p\vee(\neg (q  \vee r))$ é logicamente equivalente a $(p\vee(\neg q))\vee(\neg r)$
 
 De seguida apresentamos exemplos de equivalências úteis para o que se segue (que podem ser verificadas através de tabelas de verdade):
 
-   Nome      |      Propriedade     |    Propriedade 
+   Nome      |      Propriedade     |    Propriedade
 -------------|----------------------|-------------------
-Comutatividade | $p \wedge q \Leftrightarrow q \wedge p$ | $p \vee q \Leftrightarrow q \vee p$ 
-Associativa| $(p\wedge q)\wedge r \Leftrightarrow p \wedge (q \wedge r)$ | $(p\vee q)\vee r \Leftrightarrow p \vee (q \vee r)$ 
-Idempotência | $p\wedge p \Leftrightarrow p$ | $p\vee p \Leftrightarrow p$ 
-Identidade | $p\wedge V\Leftrightarrow p$ | $p\vee F\Leftrightarrow p$ 
-Dominância | $p\wedge F\Leftrightarrow F$ | $p\vee V\Leftrightarrow V$ 
+Comutatividade | $p \wedge q \Leftrightarrow q \wedge p$ | $p \vee q \Leftrightarrow q \vee p$
+Associativa| $(p\wedge q)\wedge r \Leftrightarrow p \wedge (q \wedge r)$ | $(p\vee q)\vee r \Leftrightarrow p \vee (q \vee r)$
+Idempotência | $p\wedge p \Leftrightarrow p$ | $p\vee p \Leftrightarrow p$
+Identidade | $p\wedge V\Leftrightarrow p$ | $p\vee F\Leftrightarrow p$
+Dominância | $p\wedge F\Leftrightarrow F$ | $p\vee V\Leftrightarrow V$
 Absorção | $p\wedge(p\vee r)\Leftrightarrow p$ |$p\vee(p\wedge r)\Leftrightarrow p$
-Distributivas | $p\wedge(q\vee r)\Leftrightarrow(p\wedge q)\vee(p\wedge r)$ | $p\vee(q\wedge r)\Leftrightarrow(p\vee q)\wedge(p\vee r)$ 
-Distributivas | $p\rightarrow(q\vee r)\Leftrightarrow(p\rightarrow q)\vee(p\rightarrow r)$ | $p\rightarrow(q\wedge r)\Leftrightarrow (p\rightarrow q)\wedge(p\rightarrow r)$ 
+Distributivas | $p\wedge(q\vee r)\Leftrightarrow(p\wedge q)\vee(p\wedge r)$ | $p\vee(q\wedge r)\Leftrightarrow(p\vee q)\wedge(p\vee r)$
+Distributivas | $p\rightarrow(q\vee r)\Leftrightarrow(p\rightarrow q)\vee(p\rightarrow r)$ | $p\rightarrow(q\wedge r)\Leftrightarrow (p\rightarrow q)\wedge(p\rightarrow r)$
 Leis de De Morgan | $\neg (p\wedge q)\Leftrightarrow \neg p \vee \neg q$ |  $\neg (p\vee q)\Leftrightarrow \neg p \wedge \neg q$
-Def. Implicação | $p\rightarrow q \Leftrightarrow \neg p \vee q$ | $p\rightarrow q\Leftrightarrow \neg(p\wedge\neg q)$ 
-Def. Bi-condicional | $p\leftrightarrow q \Leftrightarrow (p\rightarrow q) \wedge (q \rightarrow p)$ | $p\leftrightarrow q \Leftrightarrow (\neg p \vee q) \wedge (\neg q \vee p)$ 
-Negação | $\neg(\neg p)\Leftrightarrow p$ | 
-Contraposição | $p\rightarrow q \Leftrightarrow \neg q \rightarrow \neg p$| 
-Troca de premissas | $p\rightarrow (q\rightarrow r)\Leftrightarrow q\rightarrow (p\rightarrow r)$ | 
+Def. Implicação | $p\rightarrow q \Leftrightarrow \neg p \vee q$ | $p\rightarrow q\Leftrightarrow \neg(p\wedge\neg q)$
+Def. Bi-condicional | $p\leftrightarrow q \Leftrightarrow (p\rightarrow q) \wedge (q \rightarrow p)$ | $p\leftrightarrow q \Leftrightarrow (\neg p \vee q) \wedge (\neg q \vee p)$
+Negação | $\neg(\neg p)\Leftrightarrow p$ |
+Contraposição | $p\rightarrow q \Leftrightarrow \neg q \rightarrow \neg p$|
+Troca de premissas | $p\rightarrow (q\rightarrow r)\Leftrightarrow q\rightarrow (p\rightarrow r)$ |
 
 As equivalências lógicas apresentadas na tabela anterior, podem ser usadas na determinação de equivalências lógicas adicionais. Isso porque, podemos numa proposição composta, substituir
 proposições por proposições que lhes sejam equivalentes
@@ -571,18 +571,18 @@ $$
 #### Exercício
 Simplifique as seguintes proposições:
 1. $p\vee(q\wedge (\neg p))$
-+ $\neg(p\vee(q\wedge(\neg r)))\wedge q$
-+ $\neg((\neg p)\wedge(\neg q))$
-+ $\neg((\neg p)\vee q)\vee(p\wedge(\neg r))$
-+ $(p\wedge q)\vee (p\wedge (\neg q))$
-+ $(p\wedge r)\vee((\neg r)\wedge (p\vee q))$
+1. $\neg(p\vee(q\wedge(\neg r)))\wedge q$
+1. $\neg((\neg p)\wedge(\neg q))$
+1. $\neg((\neg p)\vee q)\vee(p\wedge(\neg r))$
+1. $(p\wedge q)\vee (p\wedge (\neg q))$
+1. $(p\wedge r)\vee((\neg r)\wedge (p\vee q))$
 
 
 #### Exercício
 Por vezes usa-se o símbolo $\downarrow$ para construir proposições compostas $p\downarrow q$ definidas por duas proposições $p$ e $q$, que é verdadeira quando e só quando $p$ e $q$ são simultaneamente falsas, e é falsa em todos os outros casos. A proposição $p\downarrow q$ lê-se "nem $p$ nem $q$".
 1. Apresente a tabela de verdade de $p\downarrow q$.
-+ Expresse $p\downarrow q$ em termos das conectivas $\wedge,\vee$ e $\neg$.
-+ Determine proposições apenas definidas pela conectiva $\downarrow$ que sejam equivalentes a $\neg p$, $p\wedge q$ e $p\vee q$.
+1. Expresse $p\downarrow q$ em termos das conectivas $\wedge,\vee$ e $\neg$.
+1. Determine proposições apenas definidas pela conectiva $\downarrow$ que sejam equivalentes a $\neg p$, $p\wedge q$ e $p\vee q$.
 
 #### Exercício
 Expresse a proposição $p\leftrightarrow q$ usando apenas os símbolos $\wedge,\vee$ e $\neg$.
@@ -603,8 +603,8 @@ As duas primeiras linhas da tabela da implicação
 não apresentam qualquer problema sob o ponto de vista intuitivo do senso comum. Quanto às duas últimas, qualquer outra escolha possível apresenta desvantagens sob o ponto de vista lógico, o que levou à escolha das soluções apresentadas, já que:
 
 1. fazendo F na 3º linha e F na 4º linha, obtém-se a tabela da conjunção
-+ fazendo F na 3º linha e V na 4º linha, obtém-se a tabela da bi-implicação
-+ resta a possibilidade de fazer V na 3º linha e F na 4º linha que também não é, pois isso equivaleria a recusar a equivalência
+1. fazendo F na 3º linha e V na 4º linha, obtém-se a tabela da bi-implicação
+1. resta a possibilidade de fazer V na 3º linha e F na 4º linha que também não é, pois isso equivaleria a recusar a equivalência
 $$
 (p\rightarrow q)\Leftrightarrow(\neg q\rightarrow\neg p)
 $$
@@ -623,7 +623,7 @@ V & F & V & V & F \\
 2 & 1 & 3 & 2 & 1 \\
 \hline
 \end{array}
-e 
+e
 \begin{array}{|c||c||c|}
 \hline
 p & \rightarrow & q \\
@@ -641,14 +641,14 @@ F & V & F \\
 A partir duma implicação $r$ dada por $p\rightarrow q$ define-se as
 proposições:
 1. $q\rightarrow p$, designada de *recíproca* da implicação $r$;
-+ $\neg q\rightarrow \neg p$, designada por *contra-recíproca* de $r$;
-+ $\neg p\rightarrow \neg q$, designada por *inversa* de $r$.
+1. $\neg q\rightarrow \neg p$, designada por *contra-recíproca* de $r$;
+1. $\neg p\rightarrow \neg q$, designada por *inversa* de $r$.
 Observe-se que, embora a contra-recíproca seja equivalente à proposição original, o mesmo não acontece com a recíproca (e a inversa, que lhe é equivalente) o que se pode verificar através das respectivas tabelas de verdade.
 
 
 #### Exercício
 Determine:
 1. a contra-recíproca de $(\neg p)\rightarrow q$
-+ a inversa de $(\neg q)\rightarrow p$
-+ a recíproca da inversa de $q\rightarrow (\neg p)$
-+ a negação de $p\rightarrow (\neg q)$
+1. a inversa de $(\neg q)\rightarrow p$
+1. a recíproca da inversa de $q\rightarrow (\neg p)$
+1. a negação de $p\rightarrow (\neg q)$

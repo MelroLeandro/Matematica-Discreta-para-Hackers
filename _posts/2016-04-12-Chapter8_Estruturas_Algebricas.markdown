@@ -8,7 +8,7 @@ category:  python
 visualworkflow: false
 ---
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 Capítulo 8:  Estruturas Algébricas
 =====
@@ -55,10 +55,10 @@ Justifique que não são grupóides:
 + $(\mathbb{R},:)$, onde $:$ é a operação de divisão de reais
 + $(B,\oplus)$, em que $B=\{0,1\}$ e a operação $\oplus$ está definida pela tabela
 
-$\oplus$ | 0 | 1 
+$\oplus$ | 0 | 1
 ---------|---|---
-**0** | 0 | 1 
-**1** | 1 | 2 
+**0** | 0 | 1
+**1** | 1 | 2
 
 
 
@@ -165,11 +165,11 @@ Se o semi-grupo $(A,\oplus)$ tem elemento neutro, este é único.
 ### Exemplo:
 No semi-grupo $(\{0,1,2\},\oplus)$, a operação $\oplus$ está definida pela tabela:
 
-$\oplus$ | 0 | 1 | 2 
+$\oplus$ | 0 | 1 | 2
 ---------|---|---|---
-**0** | 2 | 0 | 1 
-**1** | 0 | 1 | 2 
-**2** | 1 | 2 | 0 
+**0** | 2 | 0 | 1
+**1** | 0 | 1 | 2
+**2** | 1 | 2 | 0
 
 O elemento neutro será o elemento a que corresponde uma linha e uma coluna iguais e pela mesma ordem dos elementos de suporte $A$. Logo o elemento neutro é 1.
 
@@ -185,19 +185,19 @@ O semi-grupo $(\mathbb{Z},-)$ tem elemento neutro? Justifique.
 ### Exercício:
 Indique os elementos neutros, se existem, das operações definidas pelas tabelas:
 
-$\oplus$ | 1 | 2 | 3 
+$\oplus$ | 1 | 2 | 3
 ---------|---|---|---
-**1** | 2 | 3 | 1 
-**2** | 3 | 1 | 2 
-**3** | 1 | 2 | 3 
-         
+**1** | 2 | 3 | 1
+**2** | 3 | 1 | 2
+**3** | 1 | 2 | 3
+
 
 $\oplus$ | 1 | 2 | 3 | 4
 ---------|---|---|---|---
-**1** | 2 | 3 | 1 | 4 
-**2** | 4 | 1 | 2 | 3 
-**3** | 1 | 2 | 3 | 4 
-**4** | 1 | 4 | 4 | 2 
+**1** | 2 | 3 | 1 | 4
+**2** | 4 | 1 | 2 | 3
+**3** | 1 | 2 | 3 | 4
+**4** | 1 | 4 | 4 | 2
 
 ### Definição: Monóide
 A estrutura $(A,\oplus,e)$ diz-se um **monóide** se
@@ -492,7 +492,7 @@ S\Rightarrow_{1} ABc\Rightarrow_{4} AaAcc\Rightarrow_{3} BcaAcc\Rightarrow_{5}bc
 $$
 pode ser representada pela seguinte **árvore de derivação**.
 
-<img src="derivationTree.gif" width = 200/>
+![Image](../../../../../images/derivationTree.gif)
 
 ### Exercício:
 Considere uma gramática, de símbolo inicial $S$, com as seguintes produções:
