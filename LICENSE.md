@@ -1,4 +1,4 @@
-# Copyright 2015 Ahmet Cecen and MINED Group @ Gatech
+# Copyright 2015 Carlos Leandro, Ahmet Cecen and MINED Group @ Gatech
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ datacratic/data-projector @ Commit SHA: e7061f15857d252966aae0a95d22dd8006a8b301
 ---
 
 The MIT License (MIT)
-    
+
 Copyright (c) 2014 Datacratic
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -65,11 +65,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-	
+
 ---
 IronSummitMedia/startbootstrap-clean-blog @ Commit SHA: db72e00153c5f3cc7af5b9a6cb92acb03703507c
 ---
-  
+
 The MIT License (MIT)
 
 Copyright (c) 2013-2016 Blackrock Digital LLC.
@@ -92,10 +92,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-	
+
 ---
 three.js and misc_controls_transform @ Commit SHA: 03d73a64eb44d0101836a048bcd691b3465fcf90
----	
+---
 
 The MIT License (MIT)
 
@@ -121,7 +121,7 @@ THE SOFTWARE.
 
 ---
 mermaid.js @ Commit SHA:5302ca38da572aaaf623b986ccf6f646a6b6f773
----	
+---
 
 The MIT License (MIT)
 
