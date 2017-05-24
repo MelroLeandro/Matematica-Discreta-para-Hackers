@@ -20,23 +20,23 @@ This chapter introduces more
 Estamos a descrever um sistema formal, denominado de cálculo proposicional clássico, que formaliza a chamada lógica clássica, ou lógica proposicional clássica. O vocabulário desse sistema tem os seguintes símbolos primitivos:
 
 1. uma colecção de símbolos, $A,B,C,\ldots$ ou $P_1,P_2,\ldots$ ou $p,q,r,\ldots$, chamados de símbolos proposicionais,
-+ símbolos lógicos $\neg,\wedge,\vee,\rightarrow,\leftrightarrow,\oplus$, e
-+ símbolos de pontuação $($ e $)$.
+1. símbolos lógicos $\neg,\wedge,\vee,\rightarrow,\leftrightarrow,\oplus$, e
+1. símbolos de pontuação $($ e $)$.
 
 As expressões da linguagem do cálculo proposicional são sequências finitas destes símbolos (\emph{strings}), como $\neg)\vee A))(\vee B$. Convém distinguir entre as expressões ou fórmulas bem formadas (fbf) das demais. Isso é feito impondo um conjunto de regras gramaticais para a linguagem.
 
 
 As regras gramaticais, para esta linguagem formal, definem por fbf (expressões gramaticalmente bem formadas na linguagem) unicamente aquelas expressões $\alpha$ obtidas por alguma das seguintes cláusulas:
 1. $\alpha$ é igual a um símbolo proposicional $A,B,C,\ldots$ ou $P_1,P_2,\ldots$ ou $p,q,r,\ldots$, ou
-+ $\alpha$ é igual a $(\neg \beta)$ ou $(\beta\wedge\gamma)$ ou  $(\beta\vee\gamma)$ ou $(\beta\rightarrow\gamma)$ ou  $(\beta\leftrightarrow\gamma)$ ou $(\beta\oplus\gamma)$, onde onde $\beta$ e $\gamma$,
-+ nada mais é uma fbf.
+1. $\alpha$ é igual a $(\neg \beta)$ ou $(\beta\wedge\gamma)$ ou  $(\beta\vee\gamma)$ ou $(\beta\rightarrow\gamma)$ ou  $(\beta\leftrightarrow\gamma)$ ou $(\beta\oplus\gamma)$, onde onde $\beta$ e $\gamma$,
+1. nada mais é uma fbf.
 Note que, os parêntesis são usados para evitar ambiguidade. Por exemplo, $(\neg p\vee q)$ deve ser distinguida de $\neg(p \vee q)$. No segundo caso, o operador $\neg$ aplica-se à fórmula $(p\vee q)$, ao passo que no primeiro ele é aplicado apenas a $p$.
 
 Na escrita das fbf do cálculo proposicional adoptámos a convenção de eliminar  parêntesis externos e impondo uma ordem de precedência aos operadores. Num sistema formal é frequente a definição de novos símbolos com base em símbolos lógicos primitivos. Na literatura é frequente usar como únicos símbolos primitivos, para o cálculo proposicional,  $\neg$ e $\vee$, a partir dos quais se pode definir os outros fazendo por exemplo:
 
 1. $p\wedge q =_{def}\neg(\neg p\vee\neg q)$
-+ $p\rightarrow q =_{def}\neg p\vee q$
-+ $p\leftrightarrow q =_{def}(p\rightarrow q)\wedge (q\rightarrow p)$
+1. $p\rightarrow q =_{def}\neg p\vee q$
+1. $p\leftrightarrow q =_{def}(p\rightarrow q)\wedge (q\rightarrow p)$
 
 Note que neste contexto os novos símbolos $\wedge,\rightarrow,\leftrightarrow$ não fazem parte do vocabulário básico da linguagem.
 
@@ -44,28 +44,28 @@ Note que neste contexto os novos símbolos $\wedge,\rightarrow,\leftrightarrow$ 
 ##### Exercício:
 Quais das seguintes expressões são proposições bem formadas?
 1. $\neg((A\rightarrow B)\rightarrow \neg(B\rightarrow A)$
-+ $(S\wedge (((P\rightarrow Q)\wedge (\neg Q\rightarrow R))\rightarrow (Q\vee \neg Q)))$
-+ $((((A\wedge \neg B)\vee (\neg A \wedge B))\leftrightarrow \neg\neg\neg\neg C))$
-+ $(((A\rightarrow B)\rightarrow C)\rightarrow \neg ((A\vee B)\leftrightarrow \neg\neg(C\wedge A)))$
+1. $(S\wedge (((P\rightarrow Q)\wedge (\neg Q\rightarrow R))\rightarrow (Q\vee \neg Q)))$
+1. $((((A\wedge \neg B)\vee (\neg A \wedge B))\leftrightarrow \neg\neg\neg\neg C))$
+1. $(((A\rightarrow B)\rightarrow C)\rightarrow \neg ((A\vee B)\leftrightarrow \neg\neg(C\wedge A)))$
 
 ### Semântica
 
 Seja $V$ um conjunto de variáveis proposicionais. A atribuição de valores às variáveis proposicionais é descrita por uma aplicação $v$ de $V$ no conjunto $\{0,1\}$. Por $P(p_1,p_2,\ldots,p_n)$ representamos uma fbf do cálculo proposicional que dependa dos símbolos proposicionais $p_1,p_2,\ldots,p_n$. Entendendo os símbolos como variáveis proposicionais $p_1,p_2,\ldots,p_n$ no conjunto $V$, a atribuição $v$ pode ser estendida a $P$, definindo a avaliação da fórmula $v(P)$. A avaliação de $P$ reflecte a sua estrutura sintáctica, sendo definida em função da avaliação das suas partes (definição indutiva):
 1. Se $P$ é definida apenas pelo símbolo $p_i$, define-se $v(P)=v(p_i)$.
-+ Se $P=(\neg Q)$, define-se  $v(P)=\neg v(Q)$.
-+ Se $P=(Q\wedge R)$, define-se $v(P)=v(Q)\wedge v(R)$.
-+ Se $P=(Q\vee R)$, define-se  $v(P)=v(Q)\vee v(R)$.
-+ Se $P=(Q\rightarrow R)$, define-se $v(P)=v(Q)\rightarrow v(R)$.
-+ Se $P=(Q\leftrightarrow R)$, define-se $v(P)=v(Q)\leftrightarrow v(R)$.
-+ Se $P=(Q\oplus R)$, define-se $v(P)=v(Q)\oplus v(R)$.
+1. Se $P=(\neg Q)$, define-se  $v(P)=\neg v(Q)$.
+1. Se $P=(Q\wedge R)$, define-se $v(P)=v(Q)\wedge v(R)$.
+1. Se $P=(Q\vee R)$, define-se  $v(P)=v(Q)\vee v(R)$.
+1. Se $P=(Q\rightarrow R)$, define-se $v(P)=v(Q)\rightarrow v(R)$.
+1. Se $P=(Q\leftrightarrow R)$, define-se $v(P)=v(Q)\leftrightarrow v(R)$.
+1. Se $P=(Q\oplus R)$, define-se $v(P)=v(Q)\oplus v(R)$.
 onde por $Q$ e $R$ se entende uma parte de $P$ que é uma $fbf$, os operadores envolvidos devem ser interpretados pela correspondente tabela de verdade.
 
 
 ##### Exercício:
 Assumindo que as variáveis proposicionais $p$ e $q$ são verdadeiras e que $r$ e $s$ são falsas, avalie as fórmulas:
 1. $(\neg(P\wedge Q)\wedge \neg R)\rightarrow ((Q\leftrightarrow \neg P)\rightarrow (R\rightarrow \neg S))$
-+ $(P\vee Q)\rightarrow (\neg Q\rightarrow S)$
-+ $(P\vee (Q\vee(R\rightarrow \neg P)))\leftrightarrow (Q\vee \neg S)$
+1. $(P\vee Q)\rightarrow (\neg Q\rightarrow S)$
+1. $(P\vee (Q\vee(R\rightarrow \neg P)))\leftrightarrow (Q\vee \neg S)$
 
 Seja $P(p_1,p_2,\ldots,p_n)$ uma fórmula proposicional nas variáveis proposicionais $p_1,p_2,$ $\ldots,p_n$. Se considerarmos todas as atribuições de valores de verdade possíveis a $p_1,p_2,\ldots,p_n$, o valor de verdade de $P(p_1,p_2,\ldots,p_n)$ define a tabela de verdade para $P$. Tal tabela com já vimos contem $2^n$ linhas.
 
@@ -159,8 +159,8 @@ Mostremos que o argumento abaixo é válido:
 
 Interpretação:
 1. P: Eclipse ganha a corrida.
-+ Q: Pago as minhas dívidas.
-+ R: Os meus credores ficarão satisfeitos.
+1. Q: Pago as minhas dívidas.
+1. R: Os meus credores ficarão satisfeitos.
 
 Formalização:
 
@@ -181,8 +181,8 @@ Verifiquemos se o argumento abaixo é válido:
 
 Interpretação:
 1. Eclipse ganha a corrida.
-+ O Estrela da Manhã ganha a corrida.
-+ Icabod fica satisfeito.
+1. O Estrela da Manhã ganha a corrida.
+1. Icabod fica satisfeito.
 
 Formalização:
 
@@ -200,7 +200,7 @@ não seja uma tautologia.
 #### Exercício
 Formalize os seguintes argumentos e teste a sua validade usando inspectores de circunstância para determinar se a formalização é um sequente tautológico:
 1. "Não existe tempo se não existe mudança. Não há mudança a não ser que existam objectos que possam mudar. Logo, ou existem alguns objectos que possam mudar ou o tempo não existe."
-+ "A vaca não existe a não ser que eu a veja. Se a vaca não existe, os campos e até a Terra não existem. Se os campos e a Terra não existem, eu não posso existir. Mas eu só posso ver a vaca se eu existir. É por isso óbvio que eu não existo."
+1. "A vaca não existe a não ser que eu a veja. Se a vaca não existe, os campos e até a Terra não existem. Se os campos e a Terra não existem, eu não posso existir. Mas eu só posso ver a vaca se eu existir. É por isso óbvio que eu não existo."
 
 Podemos assim usar tautologias do tipo $$(A_1\wedge A_2\wedge \ldots\wedge A_n)\rightarrow B$$
 para provar argumentos e definir regras de inferência.
@@ -224,17 +224,17 @@ Redução ao absurdo | $_{(\neg p\rightarrow q \wedge \neg p \rightarrow \neg q)
 #### Exercício
 Demonstre as seguintes regras de inferência:
 1. Modus Tollens
-+ Silogismo Hipotético
-+ Redução ao absurdo
+1 Silogismo Hipotético
+1 Redução ao absurdo
 
 ### Demonstração válida
 A sequência
 $$A_1,A_2,\ldots,A_n,B$$
 é uma *demonstração válida* se e só se cada fórmula na sequência:
 1. ou é uma hipótese,
-+ ou é uma tautologia,
-+ ou é derivada por uma regra de inferência tendo por premissas fórmulas que a antecedem na sequência,
-+ ou é equivalente a uma fórmula que a antecede na sequência.
+1. ou é uma tautologia,
+1. ou é derivada por uma regra de inferência tendo por premissas fórmulas que a antecedem na sequência,
+1. ou é equivalente a uma fórmula que a antecede na sequência.
 
 Neste caso a proposição $A_1\wedge A_2\wedge \ldots\wedge A_n \rightarrow B$, e dizemos que a sequência
 $$A_1,A_2,\ldots,A_n,B$$
@@ -249,7 +249,7 @@ A definição de demonstração válida assenta nos seguintes factos:
 #### Terorema [Substituição por equivalência]
 1. Se $C_m\Leftrightarrow D$ e $C_1,C_2,\ldots,C_m\therefore B$, então $C_1,C_2,\ldots,C_{m-1},D\therefore B$.
  \]
-+ Se $B\Leftrightarrow D$ e $C_1,C_2,\ldots,C_m\therefore B$, então $C_1,C_2,\ldots,C_m\therefore D$.
+1. Se $B\Leftrightarrow D$ e $C_1,C_2,\ldots,C_m\therefore B$, então $C_1,C_2,\ldots,C_m\therefore D$.
 
 Como exemplo de demonstração, seja $\Gamma=\{p,p\rightarrow q, q\rightarrow r\}$. Mostremos que $\Gamma\therefore r$. Com efeito, temos (1) $p$ é hipótese (está em $\Gamma$); (2) $p\rightarrow q$ é hipótese (idem); (3) $q$ (de 1 e 2, por Modus Ponens); (4) $q\rightarrow r$ é hipótese (está em $\Gamma$); (5) $r$ (de 2 e 4, por Modus Ponens). Logo, como por hipótese $p,p\rightarrow q, q\rightarrow r$ são proposições verdadeiras temos de ter $r$ verdadeira.
 
