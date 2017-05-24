@@ -101,20 +101,20 @@ Para a execução de um script não é obrigatório que este termine com pygame.
 O Pygame tem os seguintes módulos dos quais vamos usar um número muito restrito das suas funções:
 
 1. cdrom - Controla o acesso à unidade de cdrom devices, permitindo a reprodução de  audio.
-+ cursors - Carrega imagens para o cursor do rato.
-+ display - Controlo da janela gráfica.
-+ draw - Permite desenhar elementos gráficos (linhas, círculos,...).
-+ event - Gestão de eventos e controlo da lista de eventos.
-+ font - Cria e faz o render de fontes para texto.
-+ image - Carrega e grava imagens.
-+ joystick - Controlo pelo joystick.
-+ key - Controlo pelo teclado.
-+ mouse - Controlo pelo rato.
-+ movie - Reproduz ficheiro multimédia mpeg.
-+ sndarray - Manipula sons com o módulo Numeric.
-+ surfarray - Manipula imagens com o  módulo Numeric.
-+ time - Controlo do tempo.
-+ transform - Transformações gráficas de mudança de escala, rotação, e flip.    
+1. cursors - Carrega imagens para o cursor do rato.
+1. display - Controlo da janela gráfica.
+1. draw - Permite desenhar elementos gráficos (linhas, círculos,...).
+1. event - Gestão de eventos e controlo da lista de eventos.
+1. font - Cria e faz o render de fontes para texto.
+1. image - Carrega e grava imagens.
+1. joystick - Controlo pelo joystick.
+1. key - Controlo pelo teclado.
+1. mouse - Controlo pelo rato.
+1. movie - Reproduz ficheiro multimédia mpeg.
+1. sndarray - Manipula sons com o módulo Numeric.
+1. surfarray - Manipula imagens com o  módulo Numeric.
+1. time - Controlo do tempo.
+1. transform - Transformações gráficas de mudança de escala, rotação, e flip.    
 
 ### pygame.draw
 

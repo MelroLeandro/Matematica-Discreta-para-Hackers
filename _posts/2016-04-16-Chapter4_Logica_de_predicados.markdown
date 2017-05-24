@@ -134,7 +134,7 @@ Podemos assim avaliar as proposições abaixo:
 1. $\forall x(x=x)$ é verdade em $\mathbb{R}$;
 1. $\forall x\in \mathbb{R}\forall y\in \mathbb{R}:x^2+y^2>-4$ é verdadeira;
 1. $\forall n\in \mathbb{N}:2n+1>0$ é verdadeira;
-1. $\forall x\forall y(|x|+|y|>0)$, é falsa no universo dos reais, pois não é satisfeita com $x=0$ e $y=0$;
+1. $\forall x \forall y(\|x\|+\|y\|>0)$, é falsa no universo dos reais, pois não é satisfeita com $x=0$ e $y=0$;
 1. $\forall n\in \mathbb{N}:n^2>5$ é falsa.
 
 Note que, caso $D$ seja um conjunto finito, por exemplo
@@ -147,18 +147,18 @@ o que mostra que a proposição não tem variáveis livres, tratando-se, portant
 
 #### Exemplo:
 Note-se que a proposição
-$\forall x\in \{2,6,12,34\}:\;x\;$é um número par,
+$$\forall x\in \{2,6,12,34\}:\;x\;$$é um número par,
 é uma proposição verdadeira e equivalente a escrever
 (2 é um número par)$\wedge$(6 é um número par)$\wedge$(12 é um número par)$\wedge$(34 é um número par)
 
 ### O quantificador existencial
 Por outro lado, escreve-se
 $$\exists x\; P(x)$$
-para significar que existe (no universo do discurso) pelo menos um elemento $x$ para o qual $P(x)$ se verifica, i.e. $\{x\in U:P(x)\}\neq\emptyset$, o que se pode ler:
+para significar que existe (no universo do discurso) pelo menos um elemento $x$ para o qual $P(x)$ se verifica, i.e. $$\{x\in U:P(x)\}\neq\emptyset$$, o que se pode ler:
 
 ''existe pelo menos um $x$ tal que $P(x)$''.
 
-A fórmula $\exists x\; P(x)$ é uma abreviatura (usada normalmente) para a expressão
+A fórmula $$\exists x\; P(x)$$ é uma abreviatura (usada normalmente) para a expressão
 $$\exists x\;[x\in U \wedge P(x)],$$
 onde $U$ designa o universo do discurso. O símbolo $\exists$ é chamado de \textbf{quantificador existencial}.
 
@@ -176,12 +176,12 @@ Assim, as fórmulas abaixo são proposições
 1.  $\exists x(x^2=4)$ é verdade em $\mathbb{R}$;
 1. $\exists x\in \mathbb{R}\exists y\in \mathbb{R}:x^2+y^2=0$ é verdadeira;
 1. $\exists n\in \mathbb{N}:2n+1>0$ é verdadeira;
-1. $\exists y\forall x(|x|+|y|>0)$, é verdadeira em $\mathbb{R}$;
+1. $$\exists y\forall x(\|x\|+\|y\|>0)$, é verdadeira em $\mathbb{R}$$;
 1. $\exists x\in \mathbb{R}:x^2=-4$ é falsa.
 
 #### Exemplo
 Note-se que a proposição:
-$\exists x\in \{2,6,11,34\}:\;x\;$é ímpar,
+$$\exists x\in \{2,6,11,34\}:\;x\;$$é ímpar,
 é uma proposição verdadeira e equivalente a escrever:
 (2 é ímpar)$\vee$(6 é ímpar)$\vee$(11 é ímpar)$\vee$(34 é ímpar).
 

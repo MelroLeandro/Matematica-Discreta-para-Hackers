@@ -25,7 +25,7 @@ $a$ como elemento''. Um conjunto designa-se geralmente por uma letra maiúscula,
 Um conjunto pode ser descrito em **extensão** (quando o número dos seus elementos for finito e suficientemente pequeno) enumerando explicitamente todos os seus elementos e colocados entre chavetas e separados por vírgulas ou em **compreensão**, enunciando uma propriedade caracterizadora dos seus elementos (isto é, uma propriedade que os seus e só os seus elementos possuem).
 
 #### Exemplo:
-Conjunto das vogais $V$ é descrito em extensão $V=\{a,e,i,o,u\}$;
+Conjunto das vogais $V$ é descrito em extensão $$V=\{a,e,i,o,u\}$$;
 
 
 #### Exemplo:
@@ -36,10 +36,10 @@ Conjunto $L$ das palavras da lingua portuguesa escritas com 5 letras vogais, est
 Conjunto dos números naturais pares pode ser descrito, em compreensão, como sendo definido por naturais $n$ para os quais existe um natural $q$ tal que $n=2q$.
 
 #### Exemplo:
-$1\in \{1,2,3\},\;\; 2 \in \{4,2,5\},\;\;7\not\in\{1,2,3\},\;\;\{1\}\not\in \{1,2,3\}$
+$$1\in \{1,2,3\},\;\; 2 \in \{4,2,5\},\;\;7\not\in\{1,2,3\},\;\;\{1\}\not\in \{1,2,3\}$$
 
 #### Exemplo:
-$1\in\{n:\; n \text{ é um natural ímpar}\}\;\;2\not\in\{n:\; n \text{ é um natural ímpar}\}$
+$$1\in\{n:\; n \text{ é um natural ímpar}\}\;\;2\not\in\{n:\; n \text{ é um natural ímpar}\}$$
 
 ### Axioma da extensão
 Dois conjuntos $A$ e $B$ são iguais se e só se têm os mesmos
@@ -51,34 +51,34 @@ que tem por elementos os $x$ que satisfazem $P(x)$, tal conjunto
 será denotado por $$\{x:P(x)\}.$$
 
 #### Exemplo:
-1. $\{1,2,3,4,5\} = \{5,4,1,2,3\}$ e $\{5,5,5,5\}=\{5\}$ porque os conjuntos envolvidos têm os mesmos elementos.
-+ $\{1,2,3,4,5\} \neq \{5,4,2,3\}$ e $\{5,5,5,5\}\neq\{5,6\}$ porque os conjuntos envolvidos são definidos por elementos diferentes.
+1. $$\{1,2,3,4,5\} = \{5,4,1,2,3\}$ e $\{5,5,5,5\}=\{5\}$$ porque os conjuntos envolvidos têm os mesmos elementos.
+1. $$\{1,2,3,4,5\} \neq \{5,4,2,3\}$ e $\{5,5,5,5\}\neq\{5,6\}$$ porque os conjuntos envolvidos são definidos por elementos diferentes.
 
 
 #### Proposição:
 No domínio $U$ dos conjuntos temos a relação de igualdade de conjuntos satisfaz:
-1. $\forall x(x=x)$ (reflexiva)
-+ $\forall x\forall y(x=y\rightarrow y=x)$ (simétrica)
-+ $\forall x\forall y\forall z(x=y \wedge y=z\rightarrow x=z)$
+1. $$\forall x(x=x)$$ (reflexiva)
+1. $$\forall x\forall y(x=y\rightarrow y=x)$$ (simétrica)
+1. $$\forall x\forall y\forall z(x=y \wedge y=z\rightarrow x=z)$$
 
 Quando não se quer ser tão formal, escrevemos de forma equivalente;
 
 #### Proposição:
 A relação de igualdade de conjuntos satisfaz, para todos os conjuntos $A$, $B$ e $C$:
 1. $A=A$ (reflexiva)
-+ $A=B \Rightarrow B=A$ (simétrica)
-+ $A=B \wedge B=C\Rightarrow A=C$ (transitiva)
+1. $A=B \Rightarrow B=A$ (simétrica)
+1. $A=B \wedge B=C\Rightarrow A=C$ (transitiva)
 
 Enfraquecendo a relação de igualdade, diremos que $A$ é subconjunto de $B$ se todo o elemento de $A$ é um elemento de $B$, que podemos traduzir simbolicamente escrevendo:
 
 $$A\subseteq B \Leftrightarrow \forall x (x\in A \rightarrow x\in B)$$
 
 #### Exemplo
-Se $A=\{\{1\},2,3\}$, então $\{1\}\in A$, $\{\{1\},2\}\subseteq A$, $2\in A$, $\{2,3\}\subseteq A$.
+Se $$A=\{\{1\},2,3\}$$, então $$\{1\}\in A$$, $$\{\{1\},2\}\subseteq A$$, $$2\in A$$, $$\{2,3\}\subseteq A$$.
 
 Com esta definição pode enunciar-se que para conjuntos $A$ e $B$:
 
-"$A\subseteq  B$ e $B \subseteq A$ se e só se  $A = B$."
+"$$A\subseteq  B$$ e $$B \subseteq A$$ se e só se  $$A = B$$."
 
 Propriedade que podemos demonstrar, recorrendo às propriedades da lógica proposicional:
 
@@ -97,21 +97,21 @@ De forma idêntica pode-se demonstrar a veracidade de cada uma das afirmações 
 #### Proposição
 No domínio $U$ dos conjuntos valem para a relação de inclusão:
 
-1. $\forall x(x\subseteq x)$ (reflexiva)
-- $\forall x\forall y(x\subseteq y\wedge y\subseteq x \rightarrow y=x)$ (anti-simétrica)
-- $\forall x\forall y\forall z(x\subseteq y \wedge y\subseteq z\rightarrow x\subseteq z)$(transitiva)
+1. $$\forall x(x\subseteq x)$$ (reflexiva)
+1. $$\forall x\forall y(x\subseteq y\wedge y\subseteq x \rightarrow y=x)$$ (anti-simétrica)
+1. $$\forall x\forall y\forall z(x\subseteq y \wedge y\subseteq z\rightarrow x\subseteq z)$$(transitiva)
 
 Para conjuntos $A$, $B$ e $C$ valem:
 
-1. $A\subseteq A$ (reflexiva)
-- $(A\subseteq B\wedge B\subseteq A) \Rightarrow A=B$ (anti-simétrica)
-- $(A\subseteq B \wedge B\subseteq C) \Rightarrow A\subseteq C$ (transitiva)
+1. $$A\subseteq A$$ (reflexiva)
+1. $$(A\subseteq B\wedge B\subseteq A) \Rightarrow A=B$$ (anti-simétrica)
+1. $$(A\subseteq B \wedge B\subseteq C) \Rightarrow A\subseteq C$$ (transitiva)
 
 
 ## Axioma dos conjuntos elementares
 
 Assumimos que no universo dos conjuntos existe um conjunto que não contém qualquer elemento, que denotamos por $\emptyset$, e que designamos de conjunto vazio. Se $a$ é um
-conjunto, existe um conjunto que contém apenas o elemento $a$, que representamos em extensão por $\{a\}$, e que designamos de \textbf{conjunto singular}. Se $a$ e $b$ são conjuntos existe um conjunto que contém $a$ e $b$, e apenas $a$ e $b$ como elementos, que representamos em extensão por $\{a,b\}$, que designamos de par não ordenado.
+conjunto, existe um conjunto que contém apenas o elemento $a$, que representamos em extensão por $$\{a\}$$, e que designamos de \textbf{conjunto singular}. Se $a$ e $b$ são conjuntos existe um conjunto que contém $a$ e $b$, e apenas $a$ e $b$ como elementos, que representamos em extensão por $$\{a,b\}$$, que designamos de par não ordenado.
 
 ## Esquema da separação
 
@@ -126,18 +126,18 @@ Assegurando-se assim a existência da intersecção de dois conjuntos $A$ e $B$,
 
 #### Proposição:
 Para conjuntos $A,B$ e $C$ valem
-1. $A\cap A=A$ (idempotência)
-- $A\cap \emptyset = \emptyset$
-- $A\cap B=B \cap A$ (comutatividade)
-- $(A\cap B)\cap C=A \cap( B\cap C)$ (transitividade)
-- $(C\subseteq A\wedge C\subseteq B)\Rightarrow C\subseteq A\cap B$
-- $A\subseteq B \Leftrightarrow A\cap B= A$
+1. $$A\cap A=A$$ (idempotência)
+1. $$A\cap \emptyset = \emptyset$$
+1. $$A\cap B=B \cap A$$ (comutatividade)
+1. $$(A\cap B)\cap C=A \cap( B\cap C)$$ (transitividade)
+1. $$(C\subseteq A\wedge C\subseteq B)\Rightarrow C\subseteq A\cap B$$
+1. $$A\subseteq B \Leftrightarrow A\cap B= A$$
 
 #### Definição: [Conjuntos Disjuntos]
-Dois conjuntos $A$ e $B$ são disjuntos se e só se $A\cap B = \emptyset$, ou seja se não têm elementos em comum.
+Dois conjuntos $A$ e $B$ são disjuntos se e só se $$A\cap B = \emptyset$$, ou seja se não têm elementos em comum.
 
 #### Exemplo:
-Se $A_1=\{\{1,2\},\{3\}\}$, $A_2=\{\{1\},\{2,3\}\}$ e $A_3=\{\{1,2,3\}\}$, os conjuntos $A_1,A_2,A_3$ são disjuntos dois a dois, já que $A_1\cap A_2=\emptyset$, $A_1\cap A_3=\emptyset$ e $A_1\cap A_3=\emptyset$.
+Se $$A_1=\{\{1,2\},\{3\}\}$$, $$A_2=\{\{1\},\{2,3\}\}$$ e $$A_3=\{\{1,2,3\}\}$$, os conjuntos $$A_1,A_2,A_3$$ são disjuntos dois a dois, já que $$A_1\cap A_2=\emptyset$$, $$A_1\cap A_3=\emptyset$$ e $$A_1\cap A_3=\emptyset$$.
 
 
 
@@ -158,40 +158,38 @@ $$\bigcup_{A\in F}A=\{a,b\}\bigcup \{a,b,c\}\bigcup \{d\}=\{a,b,c,d\}.$$
 
 
 #### Exemplo:
-Para $S=\{a,b,c,d\}$ e $Q=\{c,d,g,h\}$, temos $S\cup Q=\{a,b,c,d,g,h\}$ e $S\cap Q=\{c,d\}$.
+Para $$S=\{a,b,c,d\}$$ e $$Q=\{c,d,g,h\}$$, temos $$S\cup Q=\{a,b,c,d,g,h\}$$ e $$S\cap Q=\{c,d\}$$.
 
 
 #### Proposição:
 Para conjuntos $A,B$ e $C$ temos:
-1. $A\cup A= A$ (idempotência)
-- $A\cup \emptyset = A$
-- $A\cup B=B \cup A$ (comutatividade)
-- $(A\cup B)\cup C=A \cup( B\cup C))$ (transitividade)
-- $(A\subseteq C\wedge B\subseteq C) \Rightarrow A\cup B\subseteq C$
-- $A\subseteq B \Leftrightarrow A\cup B= B$
+1. $$A\cup A= A$$ (idempotência)
+1. $$A\cup \emptyset = A$$
+1. $$A\cup B=B \cup A$$ (comutatividade)
+1. $$(A\cup B)\cup C=A \cup( B\cup C))$$ (transitividade)
+1. $$(A\subseteq C\wedge B\subseteq C) \Rightarrow A\cup B\subseteq C$$
+1. $$A\subseteq B \Leftrightarrow A\cup B= B$$
 
 
 Podemos ainda acrescentar as propriedades:
 
 #### Proposição:
 Para a união e intersecção de conjuntos temos:
-\begin{enumerate}
-1. $A\cup(B\cap C)=(A\cup B)\cap(A\cup C)$
-- $A\cap(B\cup C)=(A\cap B)\cup(A\cap C)$
-- $A\cup(A\cap B)=A$
-- $A\cap(A\cup B)=A$
-}
+1. $$A\cup(B\cap C)=(A\cup B)\cap(A\cup C)$$
+1. $$A\cap(B\cup C)=(A\cap B)\cup(A\cap C)$$
+1. $$A\cup(A\cap B)=A$$
+1. $$A\cap(A\cup B)=A$$
 
 #### Dem.:
 Apresentamos a demonstração de que $A\cup(B\cap C)=(A\cup B)\cap(A\cup C)$
 
-$A\cup(B\cap C)$ =  $\{x:x\in A \vee x\in B\cap C\}$
-=  $\{x:x\in A \vee (x\in B\wedge x\in C)\}$
-=  $\{x:(x\in A \vee x\in B) \wedge (x\in A\vee x\in C)\}$
-= $\{x:(x\in A \cup B) \wedge (x\in A\cup C)\}$
-= $(A\cup B)\cap(A\cup C)$
+$$A\cup(B\cap C)$ =  $\{x:x\in A \vee x\in B\cap C\}$$
+=  $$\{x:x\in A \vee (x\in B\wedge x\in C)\}$$
+=  $$\{x:(x\in A \vee x\in B) \wedge (x\in A\vee x\in C)\}$$
+= $$\{x:(x\in A \cup B) \wedge (x\in A\cup C)\}$$
+= $$(A\cup B)\cap(A\cup C)$$
 
-Para calcular $A\cup(A\cap B)$ e $A\cap(A\cup B)$ podemos usar diagramas de Venn:
+Para calcular $$A\cup(A\cap B)$$ e $$A\cap(A\cup B)$$ podemos usar diagramas de Venn:
 
 ![Image](../../../../../images/venn2.png)
 ![Image](../../../../../images/venn1.png)
@@ -202,7 +200,7 @@ Temos assim $A\cup(A\cap B)=A$ e $A\cap(A\cup B)=A$.
 A diferença entre dois conjuntos $A$ e $B$ ou o complementar de $B$ em $A$, $A-B$ ou $A\setminus B$, está definida e é o conjunto $$A\setminus B=\{x:x\in A \wedge x\notin B\}.$$
 
 #### Exemplo:
-Dados $A=\{2,5,6\}$, $B=\{3,4,2\}$ e $C=\{1,3,4\}$, temos $A\setminus B = \{5,6\}$, $B\setminus A = \{3,4\}$, e $A\setminus C = \{2,5,6\}$.
+Dados $$A=\{2,5,6\}$$, $$B=\{3,4,2\}$$ e $$C=\{1,3,4\}$$, temos $$A\setminus B = \{5,6\}$$, $$B\setminus A = \{3,4\}$$, e $$A\setminus C = \{2,5,6\}$$.
 
 
 #### Exercício:
@@ -227,12 +225,11 @@ Dado um conjunto $A$, existe um conjunto cujos elementos são os subconjuntos de
 
 #### Exemplo:
 Temos assim:
-1. $\mathcal{P}(\emptyset)=\{\emptyset\}$;
-- $\mathcal{P}(\{\emptyset\})=\{\emptyset,\{\emptyset\}\}$;
-- $\mathcal{P}(\{\emptyset,\{\emptyset\}\})=\{\emptyset,\{\emptyset\},\{\{\emptyset\}\},\{\emptyset,\{\emptyset\}\}\}$;
-- $\mathcal{P}(\{0,1\})=\{\emptyset,\{0\},\{1\},\{0,1\}\}$.
-- $\mathcal{P}(\{a,b,c\})=\{\emptyset,\{a\},\{b\},\{c\},\{a,b\},\{b,c\},\{a,c\},\{a,b,c\}\}$
-
+1. $$\mathcal{P}(\emptyset)=\{\emptyset\}$$;
+1. $$\mathcal{P}(\{\emptyset\})=\{\emptyset,\{\emptyset\}\}$$;
+1. $$\mathcal{P}(\{\emptyset,\{\emptyset\}\})=\{\emptyset,\{\emptyset\},\{\{\emptyset\}\},\{\emptyset,\{\emptyset\}\}\}$$;
+1. $$\mathcal{P}(\{0,1\})=\{\emptyset,\{0\},\{1\},\{0,1\}\}$$.
+1. $$\mathcal{P}(\{a,b,c\})=\{\emptyset,\{a\},\{b\},\{c\},\{a,b\},\{b,c\},\{a,c\},\{a,b,c\}\}$$
 
 
 ## Cardinal dum conjunto
@@ -242,9 +239,9 @@ Um conjunto $A$ diz-se \textbf{infinito} se não é finito.
 
 #### Exemplo:
 Assim
-1. $|\emptyset|=0$;
-- $|\{\emptyset\}|=1$;
-- $|\{\emptyset,\{\emptyset\}\}|=2$.
+1. $$|\emptyset|=0$$;
+1. $$|\{\emptyset\}|=1$$;
+1. $$|\{\emptyset,\{\emptyset\}\}|=2$$.
 
 #### Proposição: [Fórmula de Daniel da Silva]
 Para conjuntos finitos $A$ e $B$ tem-se
@@ -254,16 +251,16 @@ $$|A\cup B|=|A|+|B|-|A\cap B|.$$
 
 
 #### Proposição:
-Se $A$ é um conjunto finito com $n$ elementos, então $|\mathcal{P}(A)|=2^n$.
+Se $A$ é um conjunto finito com $n$ elementos, então $$|\mathcal{P}(A)|=2^n$$.
 
 
 Procuremos ilustrar este resultado através da árvore de decisão representada pelo diagrama abaixo.
 
 ![Image](../../../../../images/tree.png)
 
-O diagrama tem a seguinte interpretação: Se seleccionar um subconjunto $S$ de $\{a,b,c\}$. O circulo do topo, chamado nó, pode ser interpretado como sendo a pergunta: Está $a$ em $S$? Os dois arcos que saem dele têm como rótulos as duas respostas possíveis (Sim ou Não). Se seguirmos o arco com a resposta apropriada chegamos a um novo nó. Este nó codifica a próxima questão: O $b$ é um elemento de $S$? Seguindo o arco com a resposta certa chegamos a um novo nó. Que codifica a questão: O $c$ é um elemento de $S$? Escolhendo o arco com a resposta certa alcançamos a lista de elementos do conjunto $S$ seleccionado.
+O diagrama tem a seguinte interpretação: Se seleccionar um subconjunto $S$ de $$\{a,b,c\}$$. O circulo do topo, chamado nó, pode ser interpretado como sendo a pergunta: Está $a$ em $S$? Os dois arcos que saem dele têm como rótulos as duas respostas possíveis (Sim ou Não). Se seguirmos o arco com a resposta apropriada chegamos a um novo nó. Este nó codifica a próxima questão: O $b$ é um elemento de $S$? Seguindo o arco com a resposta certa chegamos a um novo nó. Que codifica a questão: O $c$ é um elemento de $S$? Escolhendo o arco com a resposta certa alcançamos a lista de elementos do conjunto $S$ seleccionado.
 
-Assim, a construção dum subconjunto de $\{a,b,c\}$ corresponde a um percurso no diagrama partido do topo até à base. Existem assim tantos subconjuntos quanto o número de folhas no último nível (a base). Como o número de nós duplica de nível para nível, existem $2^3=8$ nós no último nível (caso a selecção seja feita num conjunto com $n$ elementos teríamos $2^n$ nós na árvore ou seja $2^n$ subconjuntos diferentes).
+Assim, a construção dum subconjunto de $$\{a,b,c\}$$ corresponde a um percurso no diagrama partido do topo até à base. Existem assim tantos subconjuntos quanto o número de folhas no último nível (a base). Como o número de nós duplica de nível para nível, existem $2^3=8$ nós no último nível (caso a selecção seja feita num conjunto com $n$ elementos teríamos $2^n$ nós na árvore ou seja $2^n$ subconjuntos diferentes).
 
 ## Par ordenado
 
@@ -290,33 +287,33 @@ $$A^n=A^{n-1}\times A.$$
 Naturalmente, que se tem:
 
 #### Proposição:
-Se $A$ e $B$ são conjuntos finitos com $|A|=n$ e $|B|=m$, então $$|A\times
+Se $A$ e $B$ são conjuntos finitos com $$|A|=n$ e $|B|=m$$, então $$|A\times
 B|=n\times m.$$
 
 
 #### Exemplo:
-Se $A=\{\alpha,\beta\}$ e $B=\{1,2,3\}$ tem-se
+Se $$A=\{\alpha,\beta\}$$ e $$B=\{1,2,3\}$$ tem-se
 
-1. $A\times B = \{(\alpha,1),(\alpha,2),(\alpha,3),(\beta,1),(\beta,2),(\beta,3)\}$
-- $B\times A = \{(1,\alpha),(2,\alpha),(3,\alpha),(1,\beta),(2,\beta),(3,\beta)\}$
-- $A\times A = \{(\alpha,\alpha),(\alpha,\beta),(\beta,\alpha),(\beta,\beta)\}$
-- $B\times B = \{(1,1),(1,2),(1,3),(2,1),(2,2),(2,3),(3,1),(3,2),(3,3)\}$
+1. $$A\times B = \{(\alpha,1),(\alpha,2),(\alpha,3),(\beta,1),(\beta,2),(\beta,3)\}$$
+1. $$B\times A = \{(1,\alpha),(2,\alpha),(3,\alpha),(1,\beta),(2,\beta),(3,\beta)\}$$
+1. $$A\times A = \{(\alpha,\alpha),(\alpha,\beta),(\beta,\alpha),(\beta,\beta)\}$$
+1. $$B\times B = \{(1,1),(1,2),(1,3),(2,1),(2,2),(2,3),(3,1),(3,2),(3,3)\}$$
 
-Para três conjuntos $A,B,C$ temos
+Para três conjuntos $$A,B,C$$ temos
 $$A\times(B\cup C)=(A\times B)\cup (A\times C)$$
 $$A\times(B\cap C)=(A\times B)\cap (A\times C)$$
 
 #### Exercício:
-Mostre que, para conjuntos $A,B,C$, $A\times(B\cup C)=(A\times B)\cup (A\times C)$
+Mostre que, para conjuntos $A,B,C$, $$A\times(B\cup C)=(A\times B)\cup (A\times C)$$
 
 
 #### Definição:
-Dois conjuntos $A$ e $B$ são disjuntos se e só se $A\cap B = \emptyset$. Um conjunto de conjuntos é definido por conjuntos disjuntos, se os conjuntos no conjunto são disjuntos dois a dois.
+Dois conjuntos $A$ e $B$ são disjuntos se e só se $$A\cap B = \emptyset$$. Um conjunto de conjuntos é definido por conjuntos disjuntos, se os conjuntos no conjunto são disjuntos dois a dois.
 
 
 #### Exemplo:
-O conjunto de conjuntos $F=\{\{1,3\},\{2,4,5\},\{0,6,7\}\}$, é definida por conjuntos disjuntos dois a dois, já que
-$\{1,3\}\cap\{2,4,5\}=\emptyset$, $\{1,3\}\cap\{2,4,5\}=\emptyset$ e $\{2,4,5\}\cap\{0,6,7\}=\emptyset$. Neste caso dizemos que $F$ é uma partição $\{0,1,2,3,4,5,6,7\}$
+O conjunto de conjuntos $$F=\{\{1,3\},\{2,4,5\},\{0,6,7\}\}$$, é definida por conjuntos disjuntos dois a dois, já que
+$$\{1,3\}\cap\{2,4,5\}=\emptyset$$, $$\{1,3\}\cap\{2,4,5\}=\emptyset$$ e $$\{2,4,5\}\cap\{0,6,7\}=\emptyset$$. Neste caso dizemos que $F$ é uma partição $$\{0,1,2,3,4,5,6,7\}$$
 
 
 #### Definição:
@@ -339,19 +336,19 @@ $$\overline{A}=\{x\in E:\sim x\in A\}=\{x:x\notin A\}.$$
 
 #### Proposição [Leis de De Morgan]
 Para um conjunto universo valem as seguintes igualdades:
-1. $\overline{A\cup B}=\overline{A}\cap \overline{B}$
-1. $\overline{A\cap B}=\overline{A}\cup \overline{B}$
+1. $$\overline{A\cup B}=\overline{A}\cap \overline{B}$$
+1. $$\overline{A\cap B}=\overline{A}\cup \overline{B}$$
 
 
 #### Dem.:
-A igualdade $\overline{A\cup B}=\overline{A}\cap \overline{B}$ pode ser demonstrada através
+A igualdade $$\overline{A\cup B}=\overline{A}\cap \overline{B}$$ pode ser demonstrada através
 
-$\overline{A\cup B}$ = $\{x:\sim (x\in A\cup B)\}$
-= $\{x:\sim (x\in A \vee x\in B)\}$
-= $\{x:\sim (x\in A) \wedge \sim (x\in B)\}$
-= $\{x:x\notin A \wedge x\notin B\}$
-= $\{x:x\notin A\} \cap \{x:x\notin B\}$
-= $\overline{A}\cap \overline{B}$
+$$\overline{A\cup B}$$ = $$\{x:\sim (x\in A\cup B)\}$$
+= $$\{x:\sim (x\in A \vee x\in B)\}$$
+= $$\{x:\sim (x\in A) \wedge \sim (x\in B)\}$$
+= $$\{x:x\notin A \wedge x\notin B\}$$
+= $$\{x:x\notin A\} \cap \{x:x\notin B\}$$
+= $$\overline{A}\cap \overline{B}$$
 
 Assim definido tem-se $$A\setminus B=A\cap \overline{B}.$$
 
@@ -374,13 +371,13 @@ Dada uma relação binária $R$
 
 Se $R$ é uma relação,  existe o conjunto, chamado \textbf{domínio} de $R$ e denotado
 por $D(R)$, cujos elementos são os conjuntos $x$ para os quais
-existe $y$ tal que $(x,y)\in R$, i.e.
+existe $y$ tal que $$(x,y)\in R$$, i.e.
 $$D(R)=\{x:\exists y(xRy)\}.$$
 De modo análogo, existe o \textbf{conjunto imagem} de $R$ dado por
 $$Im(R)=\{y:\exists x(xRy)\}.$$
 
 #### Exemplos:
-Qualquer gráfico no plano define uma relação em $\mathbb{R}$. Em particular o gráfico que descreve o conjunto dos pares de reais $(x,y)$ solução da equação $x^2+y^2=1$, define a relação $$R=\{(x,y):x^2+y^2=1\}$$ em $\mathbb{R}$. Neste caso $0R1$, $1R0$, $-1R0$, mas $1R\!\!\!\!/1$. Temos ainda $D(R)=\{x:-1\leq x\leq 1\}$ e $Im(R)=\{y:-1\leq y\leq 1\}$.
+Qualquer gráfico no plano define uma relação em $$\mathbb{R}$$. Em particular o gráfico que descreve o conjunto dos pares de reais $(x,y)$ solução da equação $$x^2+y^2=1$$, define a relação $$R=\{(x,y):x^2+y^2=1\}$$ em $\mathbb{R}$. Neste caso $0R1$, $1R0$, $-1R0$, mas $1R\!\!\!\!/1$. Temos ainda $$D(R)=\{x:-1\leq x\leq 1\}$$ e $$Im(R)=\{y:-1\leq y\leq 1\}$$.
 
 
 ![Image](../../../../../images/circle.png)
@@ -388,15 +385,15 @@ Qualquer gráfico no plano define uma relação em $\mathbb{R}$. Em particular o
 
 Caso o conjunto $A$ onde uma relação $R$ está definida, não tenha muitos elementos, a relação binária $R$ pode ser definida por:
 1. Extensão enumerando os seus elementos;
-- Um diagrama sagital (grafo orientado ou digrafo) representado por um diagrama de Venn do conjunto e traçando
+1. Um diagrama sagital (grafo orientado ou digrafo) representado por um diagrama de Venn do conjunto e traçando
   setas de $a$ para $b$ para todos os pares $aRb$;
-- Uma tabela de dupla entrada (ou matriz da relação)
+1. Uma tabela de dupla entrada (ou matriz da relação)
   colocando $V$, ou um $F$, no cruzamento da linha $a$ com a
   coluna $b$, respectivamente, se $aRb$ ou $aR\!\!\!\!/b$.
 
 \begin{exam}
-A relação $R$ definida no conjunto  $A=\{1,2,3,4\}$ em extensão por
-  $R=\{(1,2),(1,3),(1,4),$ $(2,3),(2,4),(3,4)\}$
+A relação $R$ definida no conjunto  $$A=\{1,2,3,4\}$$ em extensão por
+  $$R=\{(1,2),(1,3),(1,4),$ $(2,3),(2,4),(3,4)\}$$
 pode ser representada pelo diagrama sagital,
 \begin{center}
 \includegraphics[width=100pt]{fig1}
@@ -428,7 +425,7 @@ ou pela matriz
 \end{exam}
 
 \begin{exam}
-Considere o conjunto $A=\{1,2,3\}$ a relação binária  $R$, definida por
+Considere o conjunto $$A=\{1,2,3\}$$ a relação binária  $R$, definida por
 \[xRy\Leftrightarrow x\leq y,\forall a,b\in A\]
 pode ser definida:
 \begin{enumerate}
