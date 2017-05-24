@@ -8,7 +8,7 @@ category:  python
 visualworkflow: false
 ---
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 Capítulo 4: Lógica de Predicados
 ======
@@ -56,7 +56,7 @@ R=\{x:x\not\in x\}.
 $$
 Os problemas surgem quando nos questionamos se $R$ é elemento ou não de $R$. Porque:
 1. Supondo que $R\in R$ temos por definição de $R$ que $R\not \in R$,
-+ Supondo que $R\not \in R$ temos por definição de $R$ que $R \in R$.
+1. Supondo que $R\not \in R$ temos por definição de $R$ que $R \in R$.
 Assim, a proposição $R \in R$ não tem valor lógico definido na Lógica Clássica contradizendo o *Princípio do terceiro excluído*.
 
 Para evitar este tipo de problema vamos supor que todos os conjuntos considerados são constituídos por elementos de um conjunto $ U$ suficientemente grande, chamado **conjunto universal** ou **universo de discurso**. Neste sentido, um conjunto é uma entidade do tipo
@@ -75,22 +75,22 @@ esta atribuição é limitada a um conjunto de valores do **universo de discurso
 #### Exemplo:
 Temos por exemplo:
 1. $x=x$ tem por exemplos de universo de discurso: $\mathbb{R},\mathbb{N},\mathbb{Q}$ ou $\mathbb{C}$.
-+ $\sqrt{y}\geq 4$ tem por exemplos de universo de discurso: $\mathbb{Q}^+,\mathbb{R}^+$
-+ $\frac{1}{x}>3$ tem como possível universo de discurso por exemplo o conjunto dos reais diferentes de zero.
+1. $\sqrt{y}\geq 4$ tem por exemplos de universo de discurso: $\mathbb{Q}^+,\mathbb{R}^+$
+1. $\frac{1}{x}>3$ tem como possível universo de discurso por exemplo o conjunto dos reais diferentes de zero.
 
 ### Predicados impossíveis, possíveis e universais
 Podemos assim classificar as expressões proposicionais em
 1. \textbf{Impossíveis}, se não existem valores da variável, ou variáveis, no universo, ou universos, que a transformam numa proposição verdadeira.
-+ \textbf{Possíveis}, se existem valores das variáveis no universo de discurso que a transformam numa proposição verdadeira. Podemos assim distinguir entre proposições:
-     1. **Universais**, se são predicados verificados para todos os valores que as variáveis podem assumir no universo,
-     +  **Contingentes (ou não universais)**, se não são predicados verificadas para todos os valores das variáveis.
+1. \textbf{Possíveis}, se existem valores das variáveis no universo de discurso que a transformam numa proposição verdadeira. Podemos assim distinguir entre proposições:
+     a. **Universais**, se são predicados verificados para todos os valores que as variáveis podem assumir no universo,
+     a.  **Contingentes (ou não universais)**, se não são predicados verificadas para todos os valores das variáveis.
 
 #### Exemplo
 Temos por exemplo:
 1. $x^2+y^2>-4$, com $x\in \mathbb{R}$ e $y\in \mathbb{R}$, é condição universal;
-+ $2n+1>0$ é condição universal em $\mathbb{N}$;
-+ $|x|+|y|>0$, com $x$ e $y$ reais, é condição contingente, pois não é satisfeita com $x=0$ e $y=0$;
-+ $n^2>5$ é condição contingente em $\mathbb{N}$, pois é condição possível não universal.
+1. $2n+1>0$ é condição universal em $\mathbb{N}$;
+1. $|x|+|y|>0$, com $x$ e $y$ reais, é condição contingente, pois não é satisfeita com $x=0$ e $y=0$;
+1. $n^2>5$ é condição contingente em $\mathbb{N}$, pois é condição possível não universal.
 
 ### Conjuntos de verdade e conectivas lógicas
 uponha-se que $A$ é o conjunto de verdade da expressão proposicional $P(x)$ e $B$ é o conjunto de verdade da expressão proposicional $Q(x)$ no universo de discurso $U$. Então
@@ -109,10 +109,10 @@ $$
 Sendo $A=\{x\in U:P(x)\}$ e $B=\{x\in U:Q(x)\}$.
 Determine os conjuntos de verdade das expressões proposicionais:
 1. $\neg P(x)$
-+ $\neg Q(x)$
-+ $P(x)\wedge (\neg Q(x))$
-+ $P(x)\rightarrow Q(x)$
-+ $P(x)\leftrightarrow Q(x)$
+1. $\neg Q(x)$
+1. $P(x)\wedge (\neg Q(x))$
+1. $P(x)\rightarrow Q(x)$
+1. $P(x)\leftrightarrow Q(x)$
 
 
 ### O quantificador universal
@@ -131,12 +131,12 @@ afirma que $P(x)$ se verifica para todo o $x\in D$.
 
 #### Exemplo:
 Podemos assim avaliar as proposições abaixo:
- - $\forall x(x=x)$ é verdade em $\mathbb{R}$;
- - $\forall x\in \mathbb{R}\forall y\in \mathbb{R}:x^2+y^2>-4$ é verdadeira;
- - $\forall n\in \mathbb{N}:2n+1>0$ é verdadeira;
- - $\forall x\forall y(|x|+|y|>0)$, é falsa no universo dos reais, pois não é satisfeita com $x=0$ e $y=0$;
- - $\forall n\in \mathbb{N}:n^2>5$ é falsa.
-  
+1. $\forall x(x=x)$ é verdade em $\mathbb{R}$;
+1. $\forall x\in \mathbb{R}\forall y\in \mathbb{R}:x^2+y^2>-4$ é verdadeira;
+1. $\forall n\in \mathbb{N}:2n+1>0$ é verdadeira;
+1. $\forall x\forall y(|x|+|y|>0)$, é falsa no universo dos reais, pois não é satisfeita com $x=0$ e $y=0$;
+1. $\forall n\in \mathbb{N}:n^2>5$ é falsa.
+
 Note que, caso $D$ seja um conjunto finito, por exemplo
 $$D=\{a_1,a_2,\ldots,a_n\}$$
 escrever
@@ -146,7 +146,7 @@ $$P(a_1)\wedge P(a_2)\wedge\ldots\wedge P(a_n)$$
 o que mostra que a proposição não tem variáveis livres, tratando-se, portanto duma proposição. O mesmo significado pode ser dado no caso em que $D$ é um conjunto infinito correspondendo, neste caso, a um número infinito de conjunções.
 
 #### Exemplo:
-Note-se que a proposição 
+Note-se que a proposição
 $\forall x\in \{2,6,12,34\}:\;x\;$é um número par,
 é uma proposição verdadeira e equivalente a escrever
 (2 é um número par)$\wedge$(6 é um número par)$\wedge$(12 é um número par)$\wedge$(34 é um número par)
@@ -174,10 +174,10 @@ o que mostra que tal fórmula não tem variáveis livres, sendo, portanto, uma p
 #### Exemplo
 Assim, as fórmulas abaixo são proposições
 1.  $\exists x(x^2=4)$ é verdade em $\mathbb{R}$;
-+ $\exists x\in \mathbb{R}\exists y\in \mathbb{R}:x^2+y^2=0$ é verdadeira;
-+ $\exists n\in \mathbb{N}:2n+1>0$ é verdadeira;
-+ $\exists y\forall x(|x|+|y|>0)$, é verdadeira em $\mathbb{R}$;
-+ $\exists x\in \mathbb{R}:x^2=-4$ é falsa.
+1. $\exists x\in \mathbb{R}\exists y\in \mathbb{R}:x^2+y^2=0$ é verdadeira;
+1. $\exists n\in \mathbb{N}:2n+1>0$ é verdadeira;
+1. $\exists y\forall x(|x|+|y|>0)$, é verdadeira em $\mathbb{R}$;
+1. $\exists x\in \mathbb{R}:x^2=-4$ é falsa.
 
 #### Exemplo
 Note-se que a proposição:
@@ -198,7 +198,7 @@ $$\exists x\;[x\in \emptyset\wedge P(x)]$$
 #### Exemplo
 Note-se que assim a proposição
 $$\exists x\in \{\}:\;x\;\text{é ímpar},$$
-é uma proposição falsa, e 
+é uma proposição falsa, e
 $$\forall x\in \{\}:\;x\;\text{é ímpar},$$
 é uma proposição verdadeira.
 
@@ -220,7 +220,7 @@ que significa
 #### Exemplo:
 Assim
 1. $\exists^1x\in \mathbb{N}:x^2=4$ é uma proposição verdadeira;
-+ $\exists^1x\in \mathbb{Z}:x^2=4$ é uma proposição falsa;
+1. $\exists^1x\in \mathbb{Z}:x^2=4$ é uma proposição falsa;
 
 #### Exemplo:
 Assim a proposição
@@ -235,15 +235,15 @@ Observe-se que enquanto a fórmula $P(x)$ tem uma variável livre, $x$, as fórm
 #### Exemplo:
 Seja $\mathbb{N}=\{1,2,3,4,\ldots\}$, $P(x)$ a afirmação ''$x$ é par'', $Q(x)$ a afirmação ''$x$ é divisível por 3'' e $R(x)$ a afirmação ''$x$ é divisível por 4''. Expressar em linguagem corrente cada uma das proposições que se seguem e determinar o seu valor lógico.
 1. $\forall x\in \mathbb{N}:P(x)$
-+ $\forall x\in \mathbb{N}:P(x)\vee Q(x)$
-+ $\forall x\in \mathbb{N}:P(x)\rightarrow Q(x)$
-+ $\forall x\in \mathbb{N}:P(x)\vee R(x)$
+1. $\forall x\in \mathbb{N}:P(x)\vee Q(x)$
+1. $\forall x\in \mathbb{N}:P(x)\rightarrow Q(x)$
+1. $\forall x\in \mathbb{N}:P(x)\vee R(x)$
 
 #### Exemplo:
 Indicar se as proposições são sempre, às vezes ou nunca verdadeiras.
 1. $(\forall x\in D:P(x))\Rightarrow (\exists x\in D:P(x))$
-+ $(\exists x\in D:P(x))\Rightarrow (\forall x\in D:P(x))$
-+ $(\forall x\in D:\neg P(x))\Rightarrow \neg(\forall x\in D:P(x))$
+1. $(\exists x\in D:P(x))\Rightarrow (\forall x\in D:P(x))$
+1. $(\forall x\in D:\neg P(x))\Rightarrow \neg(\forall x\in D:P(x))$
 
 ### Quantificadores múltiplos
 
@@ -275,9 +275,9 @@ Estes exemplos ilustram a *não comutatividade* dos quantificadores universal, $
 relevante:
 
 
- Proposição | É verdadeira se: | É falsa se: 
+ Proposição | É verdadeira se: | É falsa se:
  -----------|------------------|-------------
-$\forall x\forall yP(x,y)$ | $P(x,y)$ é verdadeira para  todo o par $x,y$.| Existe um par $x,y$ para o qual $P(x,y)$ é falso. 
+$\forall x\forall yP(x,y)$ | $P(x,y)$ é verdadeira para  todo o par $x,y$.| Existe um par $x,y$ para o qual $P(x,y)$ é falso.
 $\forall x\exists yP(x,y)$ | Para todo $x$ existe um $y$ para o qual $P(x,y)$ é verdadeira. | Existe um $x$ tal que $P(x,y)$ é falso para todo $y$.
 $\exists x\forall yP(x,y)$ | Existe um $x$ para o qual $P(x,y)$ é verdadeira para todo $y$.| Para todo $x$ existe um $y$ tal que $P(x,y)$ é falso.
 $\exists x\exists yP(x,y)$ | Existe um par $x,y$ para o qual $P(x,y)$ | $P(x,y)$ é falso para todo o par $x,y$.
@@ -292,7 +292,7 @@ $$Qx_1Qx_2\ldots Qx_nP(x_1,x_2,\ldots,x_n)$$
 Seja $Q(x,y,z)$ a expressão "$x+y=z$". Determine o valor de verdade
 das proposições no conjunto dos números inteiros:
 1. $\forall x\forall y \exists zQ(x,y,z)$
-+ $\exists z\forall x\forall yQ(x,y,z)$
+1. $\exists z\forall x\forall yQ(x,y,z)$
 
 
 ### Negação de proposições Quantificadas (Segundas Leis de De Morgan)
@@ -300,8 +300,8 @@ Resumindo:
 
 Proposição | Quando é verdadeira? | Quando é falsa?
 ------------|-------------  -------|-----------------
-$\forall xP(x)$ | $P(x)$ é verdadeiro para todo o $x$ | Existe um $x$ para o qual $P(x)$ é falso 
-$\exists xP(x)$ | Existe um $x$ para o qual $P(x)$ é verdadeiro | $P(x)$ é falso para todo o $x$ 
+$\forall xP(x)$ | $P(x)$ é verdadeiro para todo o $x$ | Existe um $x$ para o qual $P(x)$ é falso
+$\exists xP(x)$ | Existe um $x$ para o qual $P(x)$ é verdadeiro | $P(x)$ é falso para todo o $x$
 
 Dadas as proposições com quantificadores
 $$\forall x[x\in U\rightarrow P(x)]\text{ e } \exists x [x\in U\wedge P(x)]$$
@@ -321,9 +321,9 @@ conhecidas por **Segundas Leis De Morgan**.
 #### Exemplo:
 Usando estas propriedades temos por exemplo:
 1. $\neg\neg \forall x P(x)\Leftrightarrow \neg \exists x (\neg P(x))\Leftrightarrow \forall x (\neg\neg P(x)) \Leftrightarrow \forall x P(x)$;
-+ $\neg\neg \exists x P(x)\Leftrightarrow \neg \forall x (\neg P(x))\Leftrightarrow \exists x (\neg\neg P(x)) \Leftrightarrow \exists x P(x)$;
-+ $\neg\forall x\forall y P(x,y)\Leftrightarrow \exists x\neg\forall y P(x,y)\Leftrightarrow \exists x\exists y (\neg P(x,y))$;
-+ $\neg\exists x\forall y P(x,y)\Leftrightarrow \forall x\neg\forall y P(x,y)\Leftrightarrow \forall x\exists y (\neg P(x,y))$.
+1. $\neg\neg \exists x P(x)\Leftrightarrow \neg \forall x (\neg P(x))\Leftrightarrow \exists x (\neg\neg P(x)) \Leftrightarrow \exists x P(x)$;
+1. $\neg\forall x\forall y P(x,y)\Leftrightarrow \exists x\neg\forall y P(x,y)\Leftrightarrow \exists x\exists y (\neg P(x,y))$;
+1. $\neg\exists x\forall y P(x,y)\Leftrightarrow \forall x\neg\forall y P(x,y)\Leftrightarrow \forall x\exists y (\neg P(x,y))$.
 
 
 
