@@ -359,10 +359,10 @@ escreva as seguintes afirmações na forma simbólica
 
 ### Exercício:
 Quatro indivíduos são suspeitos de terem cometido um crime. É sabido que um e só um deles cometeu o crime. Quando interrogados pela polícia fizeram as seguintes afirmações:
-1. [Artur]: Foi o José que cometeu o crime.
-1. [José]: Foi o Tiago que cometeu o crime,
-1. [Gabriel]: Eu não o fiz.
-1. [Tiago]: José mente quando diz que fui eu.
+1. (Artur): Foi o José que cometeu o crime.
+1. (José): Foi o Tiago que cometeu o crime,
+1. (Gabriel): Eu não o fiz.
+1. (Tiago): José mente quando diz que fui eu.
 
 Se exactamente uma destas afirmações é falsa, quem foi o criminoso?
 
