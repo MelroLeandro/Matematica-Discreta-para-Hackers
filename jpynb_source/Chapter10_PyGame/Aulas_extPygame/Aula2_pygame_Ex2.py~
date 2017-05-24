@@ -1,0 +1,33 @@
+# -*- coding: cp1252 -*-
+import pygame
+
+black = [  0,  0,  0]
+white = [255,255,255]
+blue =  [  0,  0,255]
+green = [  0,255,  0]
+red =   [255,  0,  0]
+
+pygame.init()
+  
+screen=pygame.display.set_mode([400,500]) 
+pygame.display.set_caption("MDP Game - OVNI -2012/13")
+ 
+done=False
+
+clock = pygame.time.Clock()
+
+
+ 
+while done==False:
+      
+    for event in pygame.event.get(): 
+        if event.type == pygame.QUIT: 
+            done=True 
+ 
+    screen.fill(blue)
+
+
+    pygame.display.flip()
+    clock.tick(10)
+
+pygame.quit ()
