@@ -1,14 +1,6 @@
----
-layout: post
-title: "Capítulo 2 Lógica proposicional"
-subtitle: "Matemática Discreta para Hackers"
-author:  Mellean
-tags:   python
-category:  python
-visualworkflow: false
----
 
-# Capítulo 2: Lógica proposicional
+Chapter 2
+======
 
 
 ## Lógica proposicional
@@ -23,8 +15,8 @@ No caso das instruções *if* e *while*, a execução dum bloco de código está
 ![Image](../../../../../images/py5.gif)
 
 Os elementos básicos da lógica são as *proposições* ou *sentenças* que se entendem como afirmações precisas. Na lógica clássica, que abordamos, a avaliação duma proposição é regida por dois princípios fundamentais:
-* **Princípio da não contradição** - Uma proposição não pode ser simultaneamente verdadeira e falsa;
-* **Princípio do terceiro excluído** - Uma proposição ou é verdadeira ou é falsa;
+- **Princípio da não contradição** - Uma proposição não pode ser simultaneamente verdadeira e falsa;
+- **Princípio do terceiro excluído** - Uma proposição ou é verdadeira ou é falsa;
 
 Por exemplo "1 é maior que 3" é uma proposição cujo valor lógico é o de
 "falsidade" enquanto que "todos os triângulos têm três lados e três ângulos" é uma proposição cujo valor lógico é o de "verdade".
@@ -41,35 +33,35 @@ Por vezes combinam-se várias proposições para obter proposições mais expres
 
 As proposições simples apresentam apenas uma afirmação:
 
-> $p:$ $\sqrt{2}$ não é um número racional.
+- $p:$ $\sqrt{2}$ não é um número racional.
 
-> $q:$ existem mais números reais que inteiros.
+- $q:$ existem mais números reais que inteiros.
 
-> $v:$ $1=2$.
+- $v:$ $1=2$.
 
-> $r:2+3>4$.
+- $r:2+3>4$.
 
 As proposições compostas são definidas por uma ou por mais do que uma
 proposição, usando na sua formação **operadores lógicos**
 (também designados de **conectivas lógicas** ou operadores para formação de proposições):
 
-> $x = 2$ e $y = 1$.
+- $x = 2$ e $y = 1$.
 
-> se $x > y$ então $y < x$.
+- se $x > y$ então $y < x$.
 
-> não é verdade que $2+3>4$.
+- não é verdade que $2+3>4$.
 
 
 
 #### Conectivas lógicas
 Em cálculo proposicional as proposições são geradas a partir de proposições simples, usando operadores para formação de proposições. Vamos tomar como sintacticamente válidas proposições compostas da forma:
 
-* *não* $p$,
-* $p$ *e* $q$,
-* $p$ *ou* $q$,
-* *ou* $p$ *ou* (exclusivo) $q$,
-* *se* $p$ *então* $q$,
-* $p$ *se e só se* $q$.
+- *não* $p$,
+- $p$ *e* $q$,
+- $p$ *ou* $q$,
+- *ou* $p$ *ou* (exclusivo) $q$,
+- *se* $p$ *então* $q$,
+- $p$ *se e só se* $q$.
 
 onde $p$ e $q$ são proposições (simples ou compostas). Neste casos, em geral, pretende-se obter os valores lógicos das proposições compostas em função dos valores lógicos conhecidos das proposições mais simples que as compõem. Por forma a podermos formalizar a lógica e a avaliação de proposições, convencionamos a seguinte representação para os operadores sintácticos usados na formação de proposições:
 
@@ -259,9 +251,9 @@ $(p\wedge (\neg q))\oplus (r\vee p)$.
 
 ##### Exercício:
   Indique os valores (de verdade ou falsidade) das seguintes afirmações:
-1. $3\leq 7$ e 4 é um número inteiro ímpar.
-1. $3\leq 7$ ou 4 é um número inteiro ímpar.
-1. 5 é ímpar ou divisível por 4.
+- $3\leq 7$ e 4 é um número inteiro ímpar.
+- $3\leq 7$ ou 4 é um número inteiro ímpar.
+- 5 é ímpar ou divisível por 4.
 
 #### Implicação
 Sejam *p* e *q* proposições. A implicação *p$\rightarrow$q* é
@@ -379,13 +371,13 @@ Suponhamos que *p,q,r* representam as seguintes sentenças:
 
     1. se 3+1=4 então 24 não é divisível por 8
 
-2. Escreva por palavras as sentenças
+1. Escreva por palavras as sentenças
 
     1. $p\vee(\neg q)$
 
-    2. $\neg(p\wedge q)$
+    1. $\neg(p\wedge q)$
 
-    2. $(\neg r)\vee (\neg q)$
+    1. $(\neg r)\vee (\neg q)$
 
 
 ##### Exercício:
@@ -419,12 +411,15 @@ verdadeira) a uma proposição que é verdadeira, para quaisquer que sejam os va
 
 ![Image](../../../../../images/tabela3-1.gif)
 
+
 A negação duma tautologia, ou seja uma proposição que é sempre falsa, diz-se uma **contra-tautologia** ou **contradição**. Se uma proposição não é nem uma tautologia nem uma contradição denomina-se por **contingência**.
 
 Não deve confundir-se contradição com proposição falsa, assim como não deve confundir-se tautologia com proposição verdadeira. O facto de uma tautologia ser sempre verdadeira e uma contradição ser sempre falsa deve-se à sua forma lógica (sintaxe) e não ao significado que se lhes pode atribuir (semântica).
 
 A tabela de verdade
+
 ![Image](../../../../../images/tabela1.gif)
+
 mostra que $p\rightarrow(p\vee q)$ é uma tautologia, enquanto que $(p\rightarrow q)\wedge (p\wedge (\neg q))$ é uma contradição.
 
 
@@ -434,6 +429,7 @@ Mostre que são tautologias:
 1. $(p\leftrightarrow  q)\leftrightarrow ((p\rightarrow q)\wedge(q\rightarrow p))$
 
 Exemplos de outras tautologias são apresentadas abaixo:
+
 ![Image](../../../../../images/tabela2.gif)
 
 ### Equivalências proposicionais
@@ -475,7 +471,7 @@ Diz-se que a proposição $p$ **implica logicamente** a proposição $q$ se a ve
 \end{array}
 \end{align}
 
-2. $p\leftrightarrow  q\Leftrightarrow (p\rightarrow q)\wedge(q\rightarrow p)$
+1. $p\leftrightarrow  q\Leftrightarrow (p\rightarrow q)\wedge(q\rightarrow p)$
 
   \begin{array}{|c|c|c||c||c|c|c|c|c|c|c|}
 \hline
@@ -652,3 +648,387 @@ Determine:
 1. a inversa de $(\neg q)\rightarrow p$
 1. a recíproca da inversa de $q\rightarrow (\neg p)$
 1. a negação de $p\rightarrow (\neg q)$
+
+## Exercícios de python
+
+##### Exercício:
+
+Implemente os operadores de implicação e bi-implicação, através de funções
+
+    imp(bool,bool)->bool e biimp(bool,bool)->bool.
+
+
+
+```python
+def imp(p,q):
+    u''' imp(bool,bool)->bool
+         Operador de implicação '''
+    return not p or q
+```
+
+
+```python
+def biimp(p,q):
+    u''' biimp(bool,bool)->bool
+         Operador de bi-implicação'''
+    return imp(p,q) and imp(q,p)
+```
+
+
+```python
+imp(False,True)
+```
+
+
+
+
+    True
+
+
+
+
+```python
+biimp(False,True)
+```
+
+
+
+
+    False
+
+
+
+##### Exercício:
+Apresente as tabelas de verdade  da implicação da bi-implicação e da proposição $P4:(p\rightarrow q)\vee h$. Por exemplo, tal que
+
+      >>> TabelaP4()
+      -----------------------------
+        p  |  q  |  h  | (p->q)|h
+      -----------------------------
+      False|False|False|   True
+      False|False| True|   True
+      False| True|False|   True
+      False| True| True|   True
+       True|False|False|  False
+       True|False| True|   True
+       True| True|False|   True
+       True| True| True|   True
+
+
+```python
+def TabelaP4():
+    u''' TabelaP4()->
+
+       tabela de (p->q)|h'''
+    print('p'.center(5)+'|'+'q'.center(5)+'|'+'h'.center(5)+'| (p->q)|h')
+    print('-'*27)
+    for p in [False,True]:
+        for q in [False,True]:
+            for h in [False,True]:
+                aval = imp(p,q) or h
+                print(str(p).center(5)+'|'+str(q).center(5)+'|'+str(h).center(5)+'|'+str(aval).center(10))
+```
+
+
+```python
+TabelaP4()
+```
+
+      p  |  q  |  h  | (p->q)|h
+    ---------------------------
+    False|False|False|   True   
+    False|False| True|   True   
+    False| True|False|   True   
+    False| True| True|   True   
+     True|False|False|  False   
+     True|False| True|   True   
+     True| True|False|   True   
+     True| True| True|   True   
+
+
+##### Exercício:
+Defina a função
+     cab(list)->
+em que dado uma lista de strings ['p1','p2','p3',...,'pn'], imprima o cabeçalho duma tabela de verdade. Por exemplo, tal que
+    >>> cab(['p1','p2','imp(p1,p2)'])
+    -------------------------
+     p1  | p2  |  imp(p1,p2)
+    -------------------------
+
+
+
+```python
+def cab(lista):
+    u''' cab(list)->
+
+         Imprime cabeçalho de tabela'''
+    print('-'*5*(len(lista)+1))
+    for prop in lista[:-1]:
+        print(prop.center(5)+'|', end='')
+    print(lista[-1])  # imprime último elemento
+    print('-'*5*(len(lista)+1))
+```
+
+
+```python
+cab(['p1','p2','imp(p1,p2)'])
+```
+
+    --------------------
+      p1 |  p2 |imp(p1,p2)
+    --------------------
+
+
+##### Exercício:
+Defina a função
+    linha(list)->
+em que dada uma lista de valores lógicos ['p1','p2','p3',...,'pn'], imprima uma linha 'p1|p2|p3|...|pn' duma tabela de verdade, onde cada valor lógico está numa string com 5 posições. Por exemplo, tal que
+      >>> linha([True,False,True])
+       True|False| True
+
+
+```python
+def linha(lista):
+    u''' linha(list)->
+
+         Imprime linha de tabela'''
+    for prop in lista[:-1]:
+        print(str(prop).center(5)+'|', end='')
+    print(str(lista[-1]))  # imprime último elemento
+```
+
+
+```python
+linha([True,False,True])
+```
+
+     True|False|True
+
+
+##### Exercício:
+Defina uma função trad(string)->string que faça a tradução duma expressão proposicional codificada, usando os símbolos 0,1,\&,$|$ e $\sim$, numa expressão proposicional no Python usando False, True, and, or e not. Por exemplo, tal que
+      >>>  trad('(p&~(q|w))')
+      '(p and  not (q or w))'
+
+
+```python
+def trad(exp):
+    u''' trans(str)->str
+
+         Tradução duma expressão proposicional codificada,
+         usando os símbolos 0,1,\&,$|$ e $\sim$, numa expressão
+         proposicional no Python usando False, True, and, or e not.
+         '''
+    exp = exp.replace('0','False')
+    exp = exp.replace('1','True')
+    exp = exp.replace('&',' and ')
+    exp = exp.replace('|',' or ')
+    exp = exp.replace('~',' not ')
+    return exp
+```
+
+
+```python
+trad('(p&~(q|w))')
+```
+
+
+
+
+    '(p and  not (q or w))'
+
+
+
+##### Exercício:
+Defina a função
+
+       Eval(string,list)->bool
+
+que avalia a expressão proposicional, na sintaxe do Python, associando a cada variável usada <var> o valor lógico <bool>. A associação entre variáveis e valores lógicos deve ser descrita por pares (<var>,<bool>) na lista que serve de argumento.
+
+    Eval('(p1 and  not (p2 or p3))',[('p1',True),('p2',False),('p3',True)])} avalia '(True and  not (False or True))'.
+
+Por exemplo, tal que
+
+    >>>  Eval('not(p1 and p2) or p1',[('p1',True),('p2',False)])
+    True
+
+
+```python
+def Eval(exp, atrib):
+    u''' Eval(string,list)->bool
+
+         Avalia a expressão proposicional, na sintaxe do Python,
+         associando a cada variável usada <var> o valor lógico <bool>.
+         A associação entre variáveis e valores lógicos deve ser descrita
+         por pares (<var>,<bool>) na lista que serve de argumento.
+             '''
+    for var in atrib:
+        exp = exp.replace(var[0],str(var[1]))
+    return eval(exp)
+```
+
+
+```python
+Eval('not(p1 and p2) or p1',[('p1',True),('p2',False)])
+```
+
+
+
+
+    True
+
+
+
+##### Exercício:
+Represente em representação binário os números de $2^n-1$ até zero. Exemplo:
+
+    >>> binlist(3)
+    111
+    110
+    101
+    100
+    011
+    010
+    001
+    000
+
+
+```python
+def binlist(nvar):
+    u''' binlist(int)->
+
+         lista em representação binária os números de 2**n-1 até 0
+             '''
+    for n in range(2**nvar-1,-1,-1):
+        print(bin(n)[2:].rjust(nvar,'0'))
+```
+
+
+```python
+binlist(3)
+```
+
+    111
+    110
+    101
+    100
+    011
+    010
+    001
+    000
+
+
+##### Exercício:
+Usando as funções anteriores, defina uma função
+     tabela(string, list)->
+que imprima a tabela de verdade da proposição $q$, descrita pela string, assumindo que as suas variáveis estão na lista $[p1,p2,...,pn]$. (USANDO: a linguagem proposicional de símbolos 0,1,\&,$|$ e $\sim$, mais as funções imp(bool,bool)->bool e biimp(bool,bool)->bool))
+    Por exemplo, tal que
+
+      >>> tabela('imp(u,q)|w',['u','q','w'])
+        -------------------------
+          u  |  q  |  w  |imp(u,q)|w
+        -------------------------
+         True| True| True|True
+         True| True|False|True
+         True|False| True|True
+         True|False|False|False
+        False| True| True|True
+        False| True|False|True
+        False|False| True|True
+        False|False|False|True
+
+
+
+
+```python
+def tabela(exp,var):
+    u''' tabela(str,list)->
+
+         Imprime a tabela de verdade da proposição descrita pela string,
+         assumindo que as suas variáveis estão na lista.
+         USANDO: a linguagem proposicional de símbolos 0,1,\&,$|$ e $\sim$,
+                 mais as funções imp(bool,bool)->bool e biimp(bool,bool)->bool)
+             '''
+    cab(var+[exp])
+    nvar = len(var)
+    for n in range(2**nvar-1,-1,-1):
+        l=bin(n)[2:].rjust(nvar,'0')
+        cont=0
+        lista = []
+        vlog = []
+        for v in var:
+            lista.append((v,bool(int(l[cont]))))
+            vlog.append(bool(int(l[cont])))
+            cont = cont + 1
+        linha(vlog+ [Eval(trad(exp),lista)])
+```
+
+
+```python
+tabela('imp(u,q)|w',['u','q','w'])
+```
+
+    -------------------------
+      u  |  q  |  w  |imp(u,q)|w
+    -------------------------
+     True| True| True|True
+     True| True|False|True
+     True|False| True|True
+     True|False|False|False
+    False| True| True|True
+    False| True|False|True
+    False|False| True|True
+    False|False|False|True
+
+
+##### Exercício:
+Usando as funções anteriores, defina uma função
+
+    tautologia(string, list)->bool
+
+que verifica se a proposição $q$, descrita pela string, é uma tautologia e assumindo que as suas variáveis estão descritas na lista $[p1,p2,...p_n]$. (USANDO: a linguagem proposicional de símbolos 0,1,\&,$|$ e $\sim$, mais as funções imp(bool,bool)->bool e biimp(bool,bool)->bool)
+
+      >>>  tautologia('biimp(~q | w, imp(q,w))',['q','w'])
+      False
+
+
+
+```python
+def tautologia(exp,var):
+    u''' tautologia(str,list)->bool
+
+         Verifica se a proposição descrita pela string é uma tautologia,
+         assumindo que as suas variáveis estão descritas na lista.
+         USANDO: a linguagem proposicional de símbolos 0,1,\&,$|$ e $\sim$,
+         mais as funções imp(bool,bool)->bool e biimp(bool,bool)->bool
+             '''
+    sai = True
+    nvar = len(var)
+    for n in range(2**nvar-1,-1,-1):
+        l=str(bin(n))[2:].rjust(nvar,'0')
+        cont=0
+        lista = []
+        for v in var:
+            lista.append((v,bool(int(l[cont]))))
+            cont = cont + 1
+        sai = sai and bool(Eval(exp,lista))
+    return sai
+```
+
+
+```python
+tautologia('biimp(~q | w, imp(q,w))',['q','w'])
+```
+
+
+
+
+    False
+
+
+
+
+```python
+
+```
