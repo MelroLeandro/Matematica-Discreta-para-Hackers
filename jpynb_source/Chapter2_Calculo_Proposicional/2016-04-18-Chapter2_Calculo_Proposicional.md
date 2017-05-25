@@ -1,3 +1,15 @@
+---
+layout: post
+title: "Capítulo 2 Lógica proposicional"
+subtitle: "Matemática Discreta para Hackers"
+author:  Mellean
+tags:   python
+category:  python
+visualworkflow: false
+---
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 
 Chapter 2
 ======
@@ -84,23 +96,18 @@ $\neg p$ deve ler-se "não *p*" e é verdadeira se *p* é falsa. A proposição 
 tabelas do tipo:
 
 
-\begin{align}
-\begin{array}{c|c}
-\hline
-  p & \neg p \\
-\hline
-  T & F \\
-  F & T
-\end{array}
-\text{ ou }
-\begin{array}{c|c}
-\hline
-  p & \neg p \\
-\hline
-  1 & 0 \\
-  0 & 1
-\end{array}
-\end{align}
+
+  $p$ | $\neg p$
+:----:|:-------:
+  T | F 
+  F | T
+
+ ou 
+
+  $p$ | $\neg p$ 
+:----:|:--------:  
+  1 | 0 
+  0 | 1
 
 stas tabelas são designadas por **tabelas de verdade**. Neste
 caso define completamente o operador negação, relacionando os
@@ -139,15 +146,12 @@ diz-se a \textbf{conjunção} de $p$ e $q$.
 Assim, os valores lógicos das três proposições $p$, $q$, e $p\wedge
 q$ estão relacionados pela tabela de verdade:
     
-\begin{array}{c|c|c}
-\hline
-  p & q & p\wedge q \\
-\hline
-  V & V & V \\
-  V & F & F \\
-  F & V & F \\
-  F & F & F
-\end{array}
+  $p$ |  $q$ | $p$ $\wedge$ $q$ 
+:-----:|:----:|:--------:
+  V | V  |   V 
+  V | F  |   F 
+  F | V  |   F 
+  F | F  |   F
 
 Note que a tabela tem quatro linhas, uma por cada combinação
 possível de valores de verdade para as proposições $p$ e $q$.
@@ -175,15 +179,13 @@ Sejam *p* e *q* proposições. A proposição "$p$ ou $q$", denotada
 ambas falsas, caso contrário é verdade. A proposição *p$\vee$q*
 diz-se a **disjunção** de *p* e *q*.
 A tabela de verdade de *p $\vee$q* toma assim a forma:
-\begin{array}{c|c|c}
-\hline
-  p & q & p\vee q \\
-\hline
-  V & V & V \\
-  V & F & V \\
-  F & V & V \\
-  F & F & F
-\end{array}
+
+  $p$ | $q$ | $p$ $\vee$ $q$ 
+:------:|:-----:|:---------:
+   V  | V   |    V 
+   V  | F   |    V 
+   F  | V   |    V 
+   F  | F   |    F
 
 A conectiva **ou** é interpretada na versão inclusiva da
 palavra "ou" em linguagem corrente. Note que, nas proposições seguintes *ou* tem ou *significado inclusivo* ou *significado
@@ -216,15 +218,14 @@ proposição que é verdade apenas quando, ou *p* é verdadeira ou *q* é
 verdadeira, caso contrário é falsa.
 
 A tabela de verdade de *p$\oplus$q* toma assim a forma:
-\begin{array}{c|c|c}
-\hline
-  p & q & p\oplus  q \\
-\hline
-  V & V & F \\
-  V & F & V \\
-  F & V & V \\
-  F & F & F
-\end{array}
+
+  $p$ | $q$ | $p$ $\oplus$  $q$ 
+:------:|:-----:|:--------:
+   V  |  V  |  F 
+   V  |  F  |  V 
+   F  |  V  |  V 
+   F  |  F  |  F
+   
 
 
 ```python
@@ -261,15 +262,13 @@ a proposição que é falsa quando *p* é verdadeira e *q* é falsa, nos
 outros casos é verdadeira.
 
 A tabela de verdade de *p$\rightarrow$q* toma assim a forma:
-\begin{array}{c|c|c}
-\hline
-  p & q & p\rightarrow q \\
-\hline
-  V & V & V \\
-  V & F & F \\
-  F & V & V \\
-  F & F & V
-\end{array}
+
+  $p$ | $q$ | $p$ $\rightarrow$ $q$ 
+:------:|:-----:|:----------:
+   V  |  V  |   V 
+   V  |  F  |   F 
+   F  |  V  |   V 
+   F  |  F  |   V
 
 Numa proposição do tipo *p$\rightarrow$q* a proposição *p* recebe o
 nome de **hipótese** (antecedente ou premissa) e a *q* chama-se
@@ -303,15 +302,13 @@ quando *p* e *q* têm o mesmo valor lógico.
 
 A tabela de verdade de *p$\leftrightarrow$q* toma assim a forma:
 
-\begin{array}{c|c|c}
-\hline
-  p & q & p\leftrightarrow q \\
-\hline
-  V & V & V \\
-  V & F & F \\
-  F & V & F \\
-  F & F & V
-\end{array}
+
+  $p$ | $q$ | $p$ $\leftrightarrow$ $q$ 
+:------:|:-----:|:----------:
+   V  |  V  |   V 
+   V  |  F  |   F 
+   F  |  V  |   F 
+   F  |  F  |   V
 
 A proposição *p$\leftrightarrow$q* deve ler-se "*p* se e só se *q*"
 (abreviado por "*p* sse *q*") ou "*p* é condição necessária e
@@ -341,18 +338,17 @@ e  $(p\rightarrow q)\wedge(q\rightarrow p)$ têm os mesmos valores
 lógicos, ou seja a proposição $(p\leftrightarrow  q)\leftrightarrow
 ((p\rightarrow q)\wedge(q\rightarrow p))$ é sempre verdadeira.
 
- \begin{array}{|c|c|c||c||c|c|c|c|c|c|c|}
-\hline
-    (p & \leftrightarrow & q) & \leftrightarrow & ((p & \rightarrow & q) & \wedge & (q & \rightarrow  & p)) \\
-\hline
-    V & V & V & V & V & V & V & V & V & V & V \\
-    V & F & F & V & V & F & F & F & F & V & V \\
-    F & F & V & V & F & V & V & F & V & F & F \\
-    F & V & F & V & F & V & F & V & F & V & F \\
-\hline
-    1 & 2 & 1 & 4 & 1 & 2 & 1 & 3 & 1 & 2 & 1 \\
-\hline
-  \end{array}
+
+(p | $\leftrightarrow$ | q) | $\leftrightarrow$ | ((p | $\rightarrow$ | q) | $\wedge$ | (q | $\rightarrow$  | p)) 
+:------:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----: 
+  V   |  V | V  |  V |  V |  V |  V |  V |  V |  V |  V 
+  V   |  F | F  |  V |  V |  F |  F |  F |  F |  V |  V 
+  F   |  F | V  |  V |  F |  V |  V |  F |  V |  F |  F 
+  F   |  V | F  |  V |  F |  V |  F |  V |  F |  V |  F 
+------|----|----|----|----|----|----|----|----|----|---- 
+1  | 2 | 1 | 4 | 1 | 2 | 1 | 3 | 1 | 2 | 1 
+
+
 
 ##### Exercício:
 Suponhamos que *p,q,r* representam as seguintes sentenças:
@@ -443,48 +439,40 @@ Diz-se que a proposição $p$ **implica logicamente** a proposição $q$ se a ve
 
 
 1. $\neg q\rightarrow \neg p \Leftrightarrow p\rightarrow q$
-\begin{align}
-\begin{array}{|c|c||c||c|c|}
-\hline
-    \neg & q & \rightarrow & \neg & p \\
-\hline
-    F & V & V & F & V \\
-    V & F & F & F & V \\
-    F & V & V & V & F \\
-    V & F & V & V & F \\
-\hline
-    2 & 1 & 3 & 2 & 1 \\
-\hline
-  \end{array}
-\text{e}
-\begin{array}{|c||c||c|}
-\hline
-  p & \rightarrow & q \\
-\hline
-  V & V & V \\
-  V & F & F \\
-  F & V & V \\
-  F & V & F \\
-\hline
-  1 & 2 & 1 \\
-\hline
-\end{array}
-\end{align}
+
+$\neg$ |  $q$  | $\rightarrow$ | $\neg$ | $p$ 
+:-----------:|:-------:|:---------------:|:--------:|:-----:
+F  |  V  |  V  |   F   |   V 
+V  |  F  |  F  |   F   |   V 
+F  |  V  |  V  |   V   |   F 
+V  |  F  |  V  |   V   |   F 
+-----------|-------|---------------|--------|-----
+2  |  1  |  3  |   2   |   1 
+
+e
+
+
+$p$  | $\rightarrow$ |  $q$ 
+:-----:|:-------------:|:----:  
+V | V | V 
+V | F | F 
+F | V | V 
+F | V | F 
+-------|---------------|------ 
+1 | 2 | 1 
+
 
 1. $p\leftrightarrow  q\Leftrightarrow (p\rightarrow q)\wedge(q\rightarrow p)$
 
-  \begin{array}{|c|c|c||c||c|c|c|c|c|c|c|}
-\hline
-    (p & \leftrightarrow & q) & \leftrightarrow & ((p & \rightarrow & q) & \wedge & (q & \rightarrow  & p)) \\
-\hline
-    V & V & V & V & V & V & V & V & V & V & V \\
-    V & F & F & V & V & F & F & F & F & V & V \\
-    F & F & V & V & F & V & V & F & V & F & F \\
-    F & V & F & V & F & V & F & V & F & V & F \\
-\hline
-    1 & 2 & 1 & 4 & 1 & 2 & 1 & 3 & 1 & 2 & 1 \\
-\hline
-  \end{array}
+
+($p$ | $\leftrightarrow$ | q) | $\leftrightarrow$ | (($p$ | $\rightarrow$ | $q$) | $\wedge$ | ($q$ | $\rightarrow$  | $p$)) 
+:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:
+V | V | V | V | V | V | V | V | V | V | V 
+V | F | F | V | V | F | F | F | F | V | V 
+F | F | V | V | F | V | V | F | V | F | F 
+F | V | F | V | F | V | F | V | F | V | F 
+----|----|----|----|----|----|----|----|----|----|----
+  1 |  2 |  1 |  4 |  1 |  2 |  1 |  3 |  1 |  2 |  1 
 
 Deste modo,  a equivalência proposicional pode ser sempre verificada através duma tabela de verdade. Em particular, as proposições $p$ e $q$ são equivalentes se e só se as colunas, na tabela de verdade, que determinam os seu valores lógicos coincidirem.
 
@@ -586,15 +574,14 @@ Expresse a proposição $p\leftrightarrow q$ usando apenas os símbolos $\wedge,
 ### Considerações sobre a implicação
 As duas primeiras linhas da tabela da implicação
 
-\begin{array}{c|c|c}
-\hline
-  p & q & p\rightarrow q \\
-\hline
-  V & V & V \\
-  V & F & F \\
-  F & V & V \\
-  F & F & V
-\end{array}
+
+  $p$  |  $q$  |  $p\rightarrow q$ 
+:-------:|:-------:|:------------:
+  V  |  V | V 
+  V  |  F | F 
+  F  |  V | V 
+  F  |  F | V
+
 
 não apresentam qualquer problema sob o ponto de vista intuitivo do senso comum. Quanto às duas últimas, qualquer outra escolha possível apresenta desvantagens sob o ponto de vista lógico, o que levou à escolha das soluções apresentadas, já que:
 
@@ -606,33 +593,26 @@ $$
 $$
 que é uma equivalência aconselhável, já que a proposição "se o Pedro fala, existe" é (intuitivamente) equivalente à proposição "se o Pedro não existe, não fala". A aceitação desta equivalência impõe a tabela considerada para a implicação.
 
-\begin{align}
-\begin{array}{|c|c||c||c|c|}
-\hline
-\neg & q & \rightarrow & \neg & p \\
-\hline
-F & V & V & F & V \\
-V & F & F & F & V \\
-F & V & V & V & F \\
-V & F & V & V & F \\
-\hline
-2 & 1 & 3 & 2 & 1 \\
-\hline
-\end{array}
+
+$\neg$ | $q$ | $\rightarrow$ | $\neg$ | $p$ 
+:-------:|:-----:|:---------------:|:--------:|:-------:
+ F | V | V | F | V
+ V | F | F | F | V 
+ F | V | V | V | F 
+ V | F | V | V | F 
+-------|-----|---------------|--------|-------
+2 | 1 | 3 | 2 | 1 
+
 e 
-\begin{array}{|c||c||c|}
-\hline
-p & \rightarrow & q \\
-\hline
-V & V & V \\
-V & F & F \\
-F & V & V \\
-F & V & F \\
-\hline
-1 & 2 & 1 \\
-\hline
-\end{array}
-\end{align}
+
+$p$ | $\rightarrow$ | $q$ 
+:----:|:---------------:|:-------:
+V | V | V 
+V | F | F 
+F | V | V 
+F | V | F 
+----|---------------|-------
+1 | 2 | 1 
 
 A partir duma implicação $r$ dada por $p\rightarrow q$ define-se as
 proposições:
@@ -648,6 +628,206 @@ Determine:
 1. a inversa de $(\neg q)\rightarrow p$
 1. a recíproca da inversa de $q\rightarrow (\neg p)$
 1. a negação de $p\rightarrow (\neg q)$
+
+## Voltando ao Python
+
+### Python: de volta às cláusulas if
+
+
+O mecanismo que mais temos usado para controlo de fluxo da execução são cláusulas if. Por exemplo:
+
+
+
+```python
+x = int(input("Escreva um inteiro: "))
+```
+
+    Escreva um inteiro: 42
+
+
+
+```python
+if x < 0:
+    x = 0
+    print('É negativo... vou transforma-lo em zero!')
+elif x == 0:
+    print('É zero')
+elif x == 1:
+    print('É a unidade.')
+else:
+    print('É num número grande!')
+```
+
+    É num número grande!
+
+
+Já vimos que podem existir um ou mais blocos elif, e o bloco else é opcional. O comando elif é uma abreviação para ``else if'', sendo útil para reduzir a quantidade de indentações. Uma sequência if ... elif ... elif ... é o substituto para os comandos switch ou case disponíveis noutras linguagens de programação.
+
+
+### Python: de volta  ao comando for
+
+Como vimos no Python o comando *for* permite iterar sobre objectos de qualquer sequência (uma lista ou uma string) ou um conjunto, nas sequências o ciclo *for* segue a ordem pela qual os objectos aparecem na sequência. Por examplo:
+
+
+```python
+# Medindo strings
+words = ['Platão', 'Sócrates', 'Eu']
+for w in words:
+    print(w, len(w))
+```
+
+    Platão 6
+    Sócrates 8
+    Eu 2
+
+
+Caso tenha de modificar a sequência durante o ciclo *for* (por exemplo para duplicar elementos seleccionados), é conveniente fazer primeiro uma cópia. A noção de slice torna isso possível:
+
+
+```python
+for w in words[:]:
+    if len(w) > 6:
+        words.insert(0, w)
+```
+
+
+```python
+words
+```
+
+
+
+
+    ['Sócrates', 'Platão', 'Sócrates', 'Eu']
+
+
+
+### Python: A função range()
+Quando temos de iterar numa sequência de números, a função built-in  *range*() trata do assunto. Permitindo gerar progressões aritméticas
+
+
+```python
+L=range(10)
+```
+
+
+```python
+for i in L: print(i,' ',end='')
+```
+
+    0  1  2  3  4  5  6  7  8  9  
+
+O ponto final nunca é parte da lista gerada; range(10) gera uma sequência de 10 valores, os índices de uma lista com 10 objectos. É possível fazer o domínio ter inicio noutro número, ou indicar um incremento diferente (mesmo negativo; este incremento é usualmente designado de 'passo'):
+
+
+```python
+for i in range(5, 10): print(i,' ',end='')
+```
+
+    5  6  7  8  9  
+
+
+```python
+for i in range(0, 10, 3): print(i,' ',end='')
+```
+
+    0  3  6  9  
+
+
+```python
+for i in range(-10, -100, -30): print(i,' ',end='')
+```
+
+    -10  -40  -70  
+
+Para iterar nos índices de uma sequência, pode combinar *range*() com a função *len*() como por exemplo:
+
+
+```python
+a = ['Euler', 'Decarte', 'Pascal', 'Newton', 'Eu']
+for i in range(len(a)):
+    print( i, a[i])
+```
+
+    0 Euler
+    1 Decarte
+    2 Pascal
+    3 Newton
+    4 Eu
+
+
+Na maioria dos casos, é conveniente usar a função enumerate().
+
+### Python:Comando break e continue, e cláusulas else nos ciclos
+
+O comando *break*, permite encurtar os ciclos *for* ou *while*.
+
+Os ciclos podem ter uma cláusula *else*; que é executado após ter percorrido todo o domínio do ciclo *for* ou quando a condição dum ciclo  *while* se torna falsa, mas nunca quando o ciclo é interrompido com um comando *break*. Exemplificamos isto no ciclo seguinte, que tem por objectivo determinar números primos (recorde quando é um número natural primo):
+
+
+```python
+#
+# O crivo de Eratóstenes
+#
+for n in range(2, 10):
+    for m in range(2, n):
+        if n % m == 0:
+            print(n, '=', m, '*', n//m, "=>",n,'não é primo')
+            break
+        else:
+            print(n,' é um primo')
+```
+
+    3  é um primo
+    4 = 2 * 2 => 4 não é primo
+    5  é um primo
+    5  é um primo
+    5  é um primo
+    6 = 2 * 3 => 6 não é primo
+    7  é um primo
+    7  é um primo
+    7  é um primo
+    7  é um primo
+    7  é um primo
+    8 = 2 * 4 => 8 não é primo
+    9  é um primo
+    9 = 3 * 3 => 9 não é primo
+
+
+O que faz a operador binário %?
+
+
+```python
+
+```
+
+O que faz a operador binário //? Onde está a diferênça entre / e //
+
+
+```python
+
+```
+
+O comando *continue* pára a iteração corrente, saltando para a iteração seguinte do *loop*:
+
+
+```python
+for num in range(2, 10):
+    if num % 2 == 0:
+        print("É par o número ", num)
+        continue
+    print("O número ", num, "é ímpar")
+```
+
+    É par o número  2
+    O número  3 é ímpar
+    É par o número  4
+    O número  5 é ímpar
+    É par o número  6
+    O número  7 é ímpar
+    É par o número  8
+    O número  9 é ímpar
+
 
 ## Exercícios de python
 
