@@ -19,7 +19,7 @@ Devemos notar que os temas apresentados não são novos. Aliás a estrutura da a
 
 ## Capílulos do livro:
 
-1. Introdução Python
+1. [Introdução Python](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers/blob/master/jpynb_source/Chapter1_Introducao/Chapter1_Introducao.ipynb)
 2. Lógica proposicional
 3. Dedução Natural
 4. Lógica de predicados
