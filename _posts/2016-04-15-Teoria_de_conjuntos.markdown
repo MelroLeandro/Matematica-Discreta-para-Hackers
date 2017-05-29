@@ -2,7 +2,7 @@
 layout: post
 title: "Capítulo 5: Teoria de Conjuntos"
 subtitle: "Matemática Discreta para Hackers"
-author:  Mellean
+author:  Mellean igualdade refexiva simétrica transitiva inclusão união vazio ordem  potência relação-binária 
 tags:   python
 category:  python
 visualworkflow: false

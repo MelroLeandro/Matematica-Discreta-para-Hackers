@@ -3,7 +3,7 @@ layout: post
 title: "Capítulo 8 Estruturas Algébricas"
 subtitle: "Matemática Discreta para Hackers"
 author:  Mellean
-tags:   python
+tags:   python semi-grupo elemento-neutro monóide alfabeto palavra concatenação linguage união expressão-regular linguagem regular gramática
 category:  python
 visualworkflow: false
 ---

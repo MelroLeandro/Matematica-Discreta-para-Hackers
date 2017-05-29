@@ -3,7 +3,7 @@ layout: post
 title: "Capítulo 3 Deducão Natural"
 subtitle: "Matemática Discreta para Hackers"
 author:  Mellean
-tags:   python
+tags:   python argumento demonstração inferência
 category:  python
 visualworkflow: false
 ---

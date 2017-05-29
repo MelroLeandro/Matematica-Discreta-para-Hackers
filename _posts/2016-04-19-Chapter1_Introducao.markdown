@@ -3,8 +3,8 @@ layout: post
 title: "Capítulo 1 Introdução"
 subtitle: "Matemática Discreta para Hackers"
 author:  Mellean
-tags:   python
-category:  python
+tags:   python string variável identação operadores if while for break  
+category:  python matemática-discreta
 visualworkflow: false
 ---
 <!-- Start Writing Below in Markdown -->
@@ -106,4 +106,4 @@ Sempre que pedimos ao Python para executar uma instrução desconhecida, ou cuja
 
 Acima são apresentados dois exemplos de expressões que não respeitam as regras gramaticais da linguagem de programação.
 
-[continuação](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers/blob/master/jpynb_source/Chapter1_Introducao/Chapter1_Introducao.ipynb) 
+[Continuação](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers/jpynb_source/Chapter2_Calculo_Proposicional/Chapter2_Calculo_Proposicional.ipynb)

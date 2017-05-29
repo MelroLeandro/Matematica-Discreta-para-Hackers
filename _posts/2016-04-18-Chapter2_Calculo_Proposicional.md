@@ -3,8 +3,8 @@ layout: post
 title: "Capítulo 2 Lógica proposicional"
 subtitle: "Matemática Discreta para Hackers"
 author:  Mellean
-tags:   python
-category:  python
+tags:   python proposição conectiva negação conjunção disjunção implicação bi-implicação tautologia equivalência if for range break continue ciclos
+category:  python matemática-discreta
 visualworkflow: false
 ---
 

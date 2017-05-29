@@ -3,7 +3,7 @@ layout: post
 title: "Capítulo 4 Lógica de Predicados"
 subtitle: "Matemática Discreta para Hackers"
 author:  Mellean
-tags:   python
+tags:   python conjunto-solução universo quantificador existencial universal vazio  
 category:  python
 visualworkflow: false
 ---
