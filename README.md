@@ -6,15 +6,15 @@ Uma parte considerável destas notas têm sido usadas para alunos do primeiro an
 
 Devemos notar que os temas apresentados não são novos. Aliás a estrutura da apresentação é semelhante à sequência estabelecida por textos mais tradicionais. A utilização de uma linguagem de programação como a linguagem Python adaptasse bem as exigências dos problemas matemáticos, sem a introdução de complexidade superior à da linguagem usada para descrever as estruturas matemáticas clássicas.
 
-## [Capílulos do livro:](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers/blob/master/jpynb_source/Index.ipynb)
+## [Capílulos do livro:](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers-ipnyb/blob/master/Index.ipynb)
 
-1. [Introdução Python](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers/blob/master/jpynb_source/Chapter1_Introducao/Chapter1_Introducao.ipynb)
-2. [Lógica proposicional](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers/blob/master/jpynb_source/Chapter2_Calculo_Proposicional/Chapter2_Calculo_Proposicional.ipynb)
-3. [Dedução Natural](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers/blob/master/jpynb_source/Chapter3_Deducao_Natural/Chapter3_Deducao_Natural.ipynbb)
-4. [Lógica de predicados](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers/blob/master/jpynb_source/Chapter4_Logica_de_predicados/Chapter4_Logica_de_predicados.ipynb)
-5. [Teoria de Conjuntos](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers/blob/master/jpynb_source/Chapter5_Teoria_de_conjuntos/Teoria_de_conjuntos.ipynb)
-6. [Complementos de Python](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers/blob/master/jpynb_source/Chapter6_Python/Chapter6_Python.ipynb)
-8. [Estruturas Algébricas](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers/blob/master/jpynb_source/Chapter9_Gramaticas_Automatos/Chapter8_Estruturas_Algebricas.ipynb)
-9. [Gramáticas e Automatos](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers/blob/master/jpynb_source/Chapter9_Gramaticas_Automatos/Chapter8_Estruturas_Algebricas.ipynb)
-10. [A biblioteca PyGame](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers/blob/master/jpynb_source/Chapter10_PyGame/Chapter10_PyGame.ipynb)
-11. [Teoria de grafos](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers/blob/master/jpynb_source/Chapter9_Gramaticas_Automatos/Chapter8_Estruturas_Algebricas.ipynb)
+1. [Introdução Python](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers-ipnyb/blob/master/Chapter1_Introducao/Chapter1_Introducao.ipynb)
+2. [Lógica proposicional](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers-ipnyb/blob/master/Chapter2_Calculo_Proposicional/Chapter2_Calculo_Proposicional.ipynb)
+3. [Dedução Natural](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers-ipnyb/blob/master/Chapter3_Deducao_Natural/Chapter3_Deducao_Natural.ipynbb)
+4. [Lógica de predicados](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers-ipnyb/blob/master/Chapter4_Logica_de_predicados/Chapter4_Logica_de_predicados.ipynb)
+5. [Teoria de Conjuntos](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers-ipnyb/blob/master/Chapter5_Teoria_de_conjuntos/Teoria_de_conjuntos.ipynb)
+6. [Complementos de Python](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers-ipnyb/blob/master/Chapter6_Python/Chapter6_Python.ipynb)
+8. [Estruturas Algébricas](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers-ipnyb/blob/master/Chapter9_Gramaticas_Automatos/Chapter8_Estruturas_Algebricas.ipynb)
+9. [Gramáticas e Automatos](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers-ipnyb/blob/master/Chapter9_Gramaticas_Automatos/Chapter8_Estruturas_Algebricas.ipynb)
+10. [A biblioteca PyGame](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers-ipnyb/blob/master/jpynb_source/Chapter10_PyGame/Chapter10_PyGame.ipynb)
+11. [Teoria de grafos](https://github.com/MelroLeandro/Matematica-Discreta-para-Hackers-ipnyb/blob/master/jpynb_source/Chapter9_Gramaticas_Automatos/Chapter8_Estruturas_Algebricas.ipynb)
